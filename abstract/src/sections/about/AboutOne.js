@@ -14,9 +14,9 @@ class AboutOne extends React.Component {
   render() {
     const Section = styled.section`
             position: relative;
-            overflow: hidden;
-            // background-color: #000;
-            background-color: #013567;
+            overflow: hidden; 
+            background-color: #000;
+            // background-color: #013567;
             .particles {
                 position: absolute;
                 width: 100%;
@@ -120,7 +120,7 @@ class AboutOne extends React.Component {
               },
               "color": {
                 // "value": ["#03afaf", "#04e5e5"]
-                "value": ["#03afaf", "#04e5e5"]
+                "value": ["#f6b10a", "#f6b10a"]
               },
               "shape": {
                 "type": "circle",
@@ -153,7 +153,7 @@ class AboutOne extends React.Component {
                 "enable": true,
                 "distance": 150,
                 "color": this.context.theme === "dark" ? "#fff" : "#555",
-                // "color": this.context.theme === "dark" ? "#555" : "#fff",
+                // "color": this.context.theme === "dark" ? "#fff" : "#fff",
                 "opacity": 0.5,
                 "width": 1
               },

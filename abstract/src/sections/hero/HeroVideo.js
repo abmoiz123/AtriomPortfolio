@@ -105,7 +105,8 @@ class HeroVideo extends React.Component {
         // `
         const Heading2 = styled.h2`
             font-size: 120px;
-            color: rgb(246, 177, 10);
+            // color: rgb(246, 177, 10);
+            color: #013567;
             font-weight: 700;
             text-transform: uppercase;
            @media (max-width:767px) {
@@ -188,14 +189,14 @@ class HeroVideo extends React.Component {
 
         const Service = styled.div`
             min-height: 300px;
-            background-color: #033c73;
+            background-color: #111;
             transition: .2s;
             display: flex;
             justify-content: center;
             flex-direction: column;
             &:hover {
-                // background-color: #222;
-                opacity: 0.8;
+                background-color: #222;
+                // opacity: 0.8;
             }
         `
         const ServiceContent = styled.div`
@@ -211,7 +212,7 @@ class HeroVideo extends React.Component {
             font-size: 30px;
             font-weight: 400;
             font-family: Teko;
-            color: rgb(246, 177, 10);
+            color: #00468c;
         `
         const ServiceSeparator = styled.div`
             height: 5px;

@@ -1,0 +1,91 @@
+.Heading {
+    color: #f6b10a !important;
+}
+/* .Inputele {
+    background: transparent !important;
+    border: none !important;
+} */
+input[type="text"]
+{
+    background: rgba(0, 0, 0, 0);
+    /* border: none; */
+    /* outline: none; */
+    /* color: white; */
+}
+input::placeholder {
+    color:#fff;
+}
+/* .inputdiv {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+} */
+.service {
+    margin: 5px 0px 10px 0px;
+    color: #fff;
+}
+.serviceselect {
+    cursor: pointer;
+    font-size: small;
+    font-weight: lighter;
+    border: 1px solid #fff;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 50px;
+    color: #f6b10a;
+    margin: 3px 3px;
+}
+.serviceselect2 {
+    /* cursor: pointer;
+    font-size: small;
+    font-weight: lighter; */
+    border: 1px solid #fff;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 50px;
+    /* color: #f6b10a; */
+    margin: 3px 3px;
+}
+.serviceselect:hover {
+    /* border: 1px solid #fff; */
+    width: fit-content;
+    /* padding: 8px 25px;
+    border-radius: 50px; */
+    color: #fff;
+    background-color: #f6b10a;
+    transition: 1s;
+}
+.serviceslist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.selectable {
+    display: none;
+}
+.selectable+label{
+    cursor: pointer;
+    font-size: small;
+    font-weight: lighter;
+    border: 1px solid #fff;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 50px;
+    color: #f6b10a;
+    margin: 3px 3px;
+}
+.selectable+label:hover {
+    color: #fff;
+    background-color: #f6b10a;
+    transition: 1s;
+}
+.selectable:checked + .selectable2 {
+    color: #fff;
+    background-color: #f6b10a;
+}
+/* .selectable:checked + .selectable2 {
+    color: #fff;
+    background-color: #f6b10a;
+} */

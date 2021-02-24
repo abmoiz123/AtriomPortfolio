@@ -5,9 +5,12 @@ import styled from 'styled-components'
 import Typewriter from 'typewriter-effect'
 // import LoopVideo from './assets/loop.mp4'
 import LoopVideo from './assets/intro_video.mp4'
-import webimage from '../../../static/web.png'
-import mobimage from '../../../static/mobile.png'
-import seoimage from '../../../static/seo.png'
+// import webimage from '../../../static/web.png'
+// import mobimage from '../../../static/mobile.png'
+// import seoimage from '../../../static/seo.png'
+import newwebimage from '../../../static/WEBDEVELOPMENT.png'
+import newmobimage from '../../../static/MOBDEVELOPMENT.png'
+import newseoimage from '../../../static/SEO2.png'
 class HeroVideo extends React.Component {
 
     constructor(props) {
@@ -106,7 +109,8 @@ class HeroVideo extends React.Component {
         const Heading2 = styled.h2`
             font-size: 120px;
             // color: rgb(246, 177, 10);
-            color: #013567;
+            // color: #013567;
+            color: #f6b10a;
             font-weight: 700;
             text-transform: uppercase;
            @media (max-width:767px) {
@@ -149,7 +153,8 @@ class HeroVideo extends React.Component {
         const Separator = styled.div`
             height: 5px;
             width: 50px;
-            background-color: rgb(246, 177, 10);
+            // background-color: rgb(246, 177, 10);
+            background-color: #013567;
             margin-bottom: 30px;
             @media (min-width:768px) {
                 margin-left: 6px;
@@ -189,14 +194,17 @@ class HeroVideo extends React.Component {
 
         const Service = styled.div`
             min-height: 300px;
-            background-color: #111;
+            // background-color: #111;
+            background-color: #00468b;
             transition: .2s;
             display: flex;
             justify-content: center;
             flex-direction: column;
+            box-shadow: 0px 20px 30px rgb(255,255,255,.2);
             &:hover {
-                background-color: #222;
-                // opacity: 0.8;
+                box-shadow: 0 28px 50px rgb(255,255,255,.5);
+                // background-color: #013567;
+                // opacity: 0.7;
             }
         `
         const ServiceContent = styled.div`
@@ -212,19 +220,19 @@ class HeroVideo extends React.Component {
             font-size: 30px;
             font-weight: 400;
             font-family: Teko;
-            color: #00468c;
+            color: #f6b10a;
         `
         const ServiceSeparator = styled.div`
             height: 5px;
             width: 50px;
-            background-color: rgb(246, 177, 10);
+            background-color: #013567;
             margin-bottom: 10px;
         `
 
         const ServiceIcon = styled.div`
             margin-bottom: 20px;
             img {
-                max-height: 70px;
+                max-height: 80px;
             }
         `
 
@@ -276,7 +284,7 @@ class HeroVideo extends React.Component {
                                         <ServiceContent>
                                             <ServiceIcon>
                                                 {/* <img src={this.props.webexpertIcon.childImageSharp.fluid.src} alt="web experts" /> */}
-                                                <img src={webimage} alt="web experts" />
+                                                <img src={newwebimage} alt="web experts" />
                                             </ServiceIcon>
                                             <ServiceHeading>Web Experts</ServiceHeading>
                                             <ServiceSeparator/>
@@ -292,7 +300,7 @@ class HeroVideo extends React.Component {
                                         <ServiceContent>
                                             <ServiceIcon>
                                                     {/* <img src={this.props.mobileIcon.childImageSharp.fluid.src} alt="mobile experts" /> */}
-                                                    <img src={mobimage} alt="mobile experts" />
+                                                    <img src={newmobimage} alt="mobile experts" />
                                             </ServiceIcon>
                                             <ServiceHeading>Mobile Experts</ServiceHeading>
                                             <ServiceSeparator/>
@@ -308,7 +316,7 @@ class HeroVideo extends React.Component {
                                         <ServiceContent>
                                             <ServiceIcon>
                                                     {/* <img src={this.props.seoIcon.childImageSharp.fluid.src} alt="seo experts" /> */}
-                                                    <img src={seoimage} alt="seo experts" />
+                                                    <img src={newseoimage} alt="seo experts" />
                                             </ServiceIcon>
                                             <ServiceHeading>SEO Experts</ServiceHeading>
                                             <ServiceSeparator/>

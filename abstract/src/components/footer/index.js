@@ -7,7 +7,8 @@ class Footer extends React.Component{
 
     render() {
         const FooterMain = styled.div`
-            background-color: #111;
+            // background-color: #111;
+            background-color: #013567;
             height: 50px;
             display: flex;
             align-items: center;
@@ -17,7 +18,8 @@ class Footer extends React.Component{
         const SocialIcons = styled.div`
             .social_icon {
                 font-size: 15px;
-                color: #555;
+                // color: #555;
+                color: #fff;
                 margin: 0 5px;
                 cursor: pointer;
                 transition: .5s;

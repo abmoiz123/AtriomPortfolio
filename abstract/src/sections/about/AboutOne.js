@@ -15,8 +15,8 @@ class AboutOne extends React.Component {
     const Section = styled.section`
             position: relative;
             overflow: hidden; 
-            background-color: #000;
-            // background-color: #013567;
+            // background-color: #000;
+            background-color: #013567;
             .particles {
                 position: absolute;
                 width: 100%;

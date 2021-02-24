@@ -1,0 +1,8 @@
+.formRow {
+    border-radius: 50px;
+    background-color: #013567 !important;
+    /* border-radius: 50px;
+    content:'';
+    background: rgba(0,70,140,1);
+    background: linear-gradient(180deg, rgba(10,70,140, 1) 0%, rgba(250,219,42, 1) 25%, rgba(10,70,140, 1) 51%, rgba(250,219,42, 1) 100%); */
+}

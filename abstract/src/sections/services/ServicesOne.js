@@ -4,13 +4,14 @@ import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import AnimationContainer from 'components/animation-container'
 import AnimatedHeading from 'components/animated-heading'
-import webimage from '../../../static/web.png'
-import mobimage from '../../../static/mobile.png'
-import seoimage from '../../../static/seo.png'
-import emailimage from '../../../static/email.png'
-import networkimage from '../../../static/network.png'
-import sketchimage from '../../../static/sketch.png'
-import servicebackgroundimage from '../../../static/servicebackground.jpg'
+import webimage from '../../../static/WEBDEVELOPMENT.png'
+import mobimage from '../../../static/MOBDEVELOPMENT.png'
+import seoimage from '../../../static/SEO2.png'
+import emailimage from '../../../static/EMAILS.png'
+import networkimage from '../../../static/NETWORK2.png'
+import sketchimage from '../../../static/UIUX.png'
+// import servicebackgroundimage from '../../../static/servicebackground.jpg'
+import servicebackgroundimage from '../../../static/polygonz.png'
 
 
 class ServicesOne extends React.Component {
@@ -25,7 +26,7 @@ class ServicesOne extends React.Component {
         const Section = styled.section`
             position: relative;
             overflow: hidden;
-            background-color: #111;
+            // background-color: #111;
             // background-image: url(${this.props.background.childImageSharp.fluid.src});
             background-image: url(${servicebackgroundimage});
             background-size: cover;
@@ -37,7 +38,7 @@ class ServicesOne extends React.Component {
         `
 
         const ServiceContainer = styled.div`
-            background-color: rgba(0,0,0,.9);
+            // background-color: rgba(0,0,0,.9);
             // background-color: #fff;
             padding: 100px 0;
         `
@@ -50,9 +51,9 @@ class ServicesOne extends React.Component {
             border-radius: 20px;
             transition: .2s;
             &:hover {
-                background-color: #000;
+                background-color: #013567;
                 // box-shadow: 0 28px 60px rgb(4, 229, 229, .1);
-                box-shadow: 0 28px 60px rgb(0,70,140, .3);
+                box-shadow: 0 28px 60px rgb(255,255,255, .3);
                 transform: translateY(-10px);
             }
         `
@@ -61,20 +62,20 @@ class ServicesOne extends React.Component {
             font-weight: 500;
             font-family: Teko;
             // color: #fff;
-            color: #013567;
+            color: #f6b10a;
         `
         const ServiceSeparator = styled.div`
             height: 5px;
             width: 50px;
             // background-color: #04e5e5;
-            background-color: #f6b10a;
+            background-color: #00468b;
             margin-bottom: 10px;
             margin: auto;
          `
         const ServiceIcon = styled.div`
             margin-bottom: 20px;
             img {
-                max-height: 70px;
+                max-height: 90px;
             }
         `
 

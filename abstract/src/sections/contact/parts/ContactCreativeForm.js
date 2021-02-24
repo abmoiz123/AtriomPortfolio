@@ -41,7 +41,8 @@ class ContactOneForm extends React.Component {
         const Separator = styled.div`
             height: 5px;
             width: 50px;
-            background-color: #04e5e5;
+            // background-color: #04e5e5;
+            background-color: #f6b10a;
             margin-bottom: 30px;
             margin-left: 6px;
         `
@@ -54,7 +55,8 @@ class ContactOneForm extends React.Component {
         const Heading = styled.h2`
             font-size: 70px;
             font-family: Teko;
-            color: #fff;
+            // color: #fff;
+            color: #013567;
         `
 
         const InputElement = styled.div`
@@ -81,7 +83,8 @@ class ContactOneForm extends React.Component {
             color: #fff;
             transition: .5s;
             &:focus {
-              border-bottom: 1px solid #04e5e5;
+              // border-bottom: 1px solid #04e5e5;
+              border-bottom: 1px solid #013567;
               outline: none;
             }
             &.error {
@@ -103,7 +106,8 @@ class ContactOneForm extends React.Component {
             margin-bottom: 0px;
             height: 100px;
             &:focus {
-              border-bottom: 1px solid #04e5e5;
+              // border-bottom: 1px solid #04e5e5;
+              border-bottom: 1px solid #013567;
               outline: none;
             }
         `
@@ -120,8 +124,10 @@ class ContactOneForm extends React.Component {
               position: absolute;
               content:'';
               display: inline-block;
-              background: rgba(59,173,227,1);
-              background: linear-gradient(45deg, rgba(41, 153, 153, 1) 0%, rgba(50, 189, 189, 1) 25%, rgba(4, 229, 229, 1) 51%, rgba(41, 153, 153, 1) 100%);
+              // background: rgba(59,173,227,1);
+              background: rgba(0,70,140,1);
+              // background: linear-gradient(45deg, rgba(41, 153, 153, 1) 0%, rgba(50, 189, 189, 1) 25%, rgba(4, 229, 229, 1) 51%, rgba(41, 153, 153, 1) 100%);
+              background: linear-gradient(45deg, rgba(10,70,140, 1) 0%, rgba(250,219,42, 1) 25%, rgba(10,70,140, 1) 51%, rgba(250,219,42, 1) 100%);
               height: 100%;
               width:  140%;
               top: 0;

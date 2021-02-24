@@ -3,14 +3,15 @@ import Layout from 'components/layout'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 // import Hero from 'sections/hero/Hero.js'
-import HeroVideo from 'sections/hero/HeroVideo.js'
-import AboutOne from 'sections/about/AboutOne.js'
-import ServicesOne from 'sections/services/ServicesOne.js'
-import PortfolioOne from 'sections/portfolio/PortfolioOne.js'
-import TestimonialsOne from 'sections/testimonials/TestimonialsOne.js'
-import TeamOne from 'sections/team/TeamOne.js'
-import ClientsOne from 'sections/clients/ClientsOne.js'
-import ContactCreative from 'sections/contact/ContactCreative.js'
+// import HeroVideo from 'sections/hero/HeroVideo.js'
+// import AboutOne from 'sections/about/AboutOne.js'
+// import ServicesOne from 'sections/services/ServicesOne.js'
+// import PortfolioOne from 'sections/portfolio/PortfolioOne.js'
+// import TestimonialsOne from 'sections/testimonials/TestimonialsOne.js'
+// import TeamOne from 'sections/team/TeamOne.js'
+// import ClientsOne from 'sections/clients/ClientsOne.js'
+// import ContactCreative from 'sections/contact/ContactCreative.js'
+import ContactCreative2 from "../sections/contact/ContactCreative2/ContactCreative2"
 
 class Index extends React.Component {
 
@@ -24,11 +25,13 @@ class Index extends React.Component {
           <title>{site.meta.title}</title>
           <meta name="description" content={site.meta.description} />
         </Helmet>
-        <Layout
+        <ContactCreative2 />
+        {/* <Layout
           isHome={true}
           sections={['home', 'about', 'services', 'portfolio', 'testimonials', 'team', 'clients', 'contact']}
+          sections={['contact']}
         >
-          {/* <Hero /> */}
+          <Hero />
           <HeroVideo />
           <AboutOne />
           <ServicesOne />
@@ -37,7 +40,8 @@ class Index extends React.Component {
           <TeamOne />
           <ClientsOne />
           <ContactCreative />
-        </Layout>
+          <ContactCreative2 />
+        </Layout> */}
       </div>
     )
   }

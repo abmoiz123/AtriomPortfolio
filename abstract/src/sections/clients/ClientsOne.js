@@ -16,9 +16,10 @@ class ClientsOne extends React.Component {
         const Section = styled.section`
             position: relative;
             overflow: hidden;
-            background-color: #050505;
+            // background-color: #050505;
+            background-color: #013567;
             background-size: cover;
-            padding: 100px 0;
+            padding: 100px 0; 
             .heading {
                 width: 100%;
             }
@@ -30,7 +31,8 @@ class ClientsOne extends React.Component {
             font-size: 110px;
             line-height: 100px;
             font-family: Teko;
-            color: #fff;
+            // color: #fff;
+            color: #f6b10a;
             text-transform: uppercase;
             text-align: center;
             width: 100%;
@@ -45,7 +47,8 @@ class ClientsOne extends React.Component {
             }
         `
         const Color = styled.span`
-          color:  #04e5e5;
+          // color:  #04e5e5;
+          color:  #fff;
           font-size: 120px;
           line-height: 80px;
           font-family: Teko;
@@ -102,7 +105,8 @@ class ClientsOne extends React.Component {
             transition: .1s;
             &:hover {
               transform: scale(1.1);
-              background-color: #04e5e5;
+              // background-color: #04e5e5;
+              background-color: #f6b10a;
               z-index: 5;
               border-radius: 10px;
             }

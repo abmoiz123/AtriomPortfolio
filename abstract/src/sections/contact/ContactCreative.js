@@ -4,6 +4,10 @@ import { graphql, StaticQuery } from 'gatsby'
 import styled from 'styled-components'
 import AnimationContainer from 'components/animation-container'
 import ContactCreativeForm from './parts/ContactCreativeForm.js'
+import servicebackgroundimage from '../../../static/servicebackground.jpg'
+import emailimage from '../../../static/email2.png'
+import phoneimage from '../../../static/phone.png'
+import mapimage from '../../../static/map.png'
 
 class ContactCreative extends React.Component {
 
@@ -13,7 +17,10 @@ class ContactCreative extends React.Component {
         const Section = styled.section`
             position: relative;
             overflow: hidden;
-            background-color: #000;
+            background-image: url(${servicebackgroundimage});
+            background-size: cover;
+            // background-color: #000;
+            background-color: #013567;
             padding: 100px 0;
         `
 
@@ -53,7 +60,8 @@ class ContactCreative extends React.Component {
             text-align: center;
             position: relative;
             bottom: 75px;
-            background-color: #04e5e5;
+            // background-color: #04e5e5;
+            background-color: #013567;
             border-radius: 150px;
             transition: .5s;
         `
@@ -74,7 +82,8 @@ class ContactCreative extends React.Component {
 
         const InfoTitle = styled.h4`
             font-size: 35px;
-            color: #fff;
+            // color: #fff;
+            color: #f6b10a;
             font-family: Teko;
             text-align: center;
         `
@@ -89,7 +98,8 @@ class ContactCreative extends React.Component {
         `
 
         const InfoLink = styled.a`
-            color: #04e5e5;
+            // color: #04e5e5;
+            color: #fff;
             transition: .5s;
             &:hover {
               color: #fff;
@@ -117,7 +127,8 @@ class ContactCreative extends React.Component {
                         <AnimationContainer animation="fadeIn" delay={500}>
                           <InfoPart>
                             <IconContainer>
-                                <Icon src={this.props.emailIcon.childImageSharp.fluid.src} alt="email" />
+                                {/* <Icon src={this.props.emailIcon.childImageSharp.fluid.src} alt="email" /> */}
+                                <Icon src={emailimage} alt="email" />
                             </IconContainer>
                             <Info>
                               <InfoTitle>
@@ -136,7 +147,8 @@ class ContactCreative extends React.Component {
                         <AnimationContainer animation="fadeIn" delay={1000}>
                           <InfoPart>
                             <IconContainer>
-                              <Icon src={this.props.phoneIcon.childImageSharp.fluid.src} alt="phone" />
+                              {/* <Icon src={this.props.phoneIcon.childImageSharp.fluid.src} alt="phone" /> */}
+                              <Icon src={phoneimage} alt="phone" />
                             </IconContainer>
                             <Info>
                               <InfoTitle>
@@ -155,7 +167,8 @@ class ContactCreative extends React.Component {
                         <AnimationContainer animation="fadeIn" delay={1500}>
                           <InfoPart>
                             <IconContainer>
-                              <Icon src={this.props.mapIcon.childImageSharp.fluid.src} alt="map" />
+                              {/* <Icon src={this.props.mapIcon.childImageSharp.fluid.src} alt="map" /> */}
+                              <Icon src={mapimage} alt="map" />
                             </IconContainer>
                             <Info>
                               <InfoTitle>

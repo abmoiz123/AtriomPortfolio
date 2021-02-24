@@ -34,7 +34,8 @@ class PageRevealer extends React.Component {
             return (
                 <AnimationContainer animation="fadeIn">
                     <BaffleText
-                        text="Abstract"
+                        // text="Abstract"
+                        text="Atriom Technologies"
                         revealDuration={500}
                         revealDelay={1000}
                         parentMethod={this.reveal}
@@ -55,7 +56,8 @@ class PageRevealer extends React.Component {
             height: 100%;
             align-items: center;
             justify-content: center;
-            background-color: #000;
+            // background-color: #000;
+            background-color: #013567;
             opacity: 1;
             visibility: visible;
             overflow-x: hidden !important;
@@ -85,7 +87,8 @@ class PageRevealer extends React.Component {
             width: 100%;
             pointer-events: none;
             height: 100%;
-            background-color: #04e5e5;
+            // background-color: #04e5e5;
+            background-color: #000;
             transform: translateX(100%);
             &.animate {
                 animation: ${RevealAnimation} 1.1s cubic-bezier(0.2, 1, 0.3, 1) forwards;

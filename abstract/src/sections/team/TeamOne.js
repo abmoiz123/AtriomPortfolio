@@ -8,17 +8,19 @@ import AnimatedHeading from 'components/animated-heading'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-
+// import backgroundImage from '../../../static/servicebackground2.jpg'
+import backgroundImage from '../../../static/polygonz.png'
 class TeamOne extends React.Component {
     
     shouldComponentUpdate() {
       return false
-    }
+    } 
     
     render() {
 
         const Section = styled.section`
-          background-image: url(${this.props.background.childImageSharp.fluid.src});
+          // background-image: url(${this.props.background.childImageSharp.fluid.src});
+          background-image: url(${backgroundImage});
           background-size: cover;
           padding: 100px 0;
           position: relative;
@@ -30,7 +32,7 @@ class TeamOne extends React.Component {
           height: 100%;
           width: 100%;
           top: 0;
-          background-color: rgba(0,0,0,.8);
+          // background-color: rgba(0,0,0,.8);
         `
         const TeamContainer = styled.div`
             @media (max-width:767px) {
@@ -38,7 +40,8 @@ class TeamOne extends React.Component {
             }
             .slick-dots {
               li button:before,.slick-dots li.slick-active button:before {
-                color: #04e5e5;
+                // color: #04e5e5;
+                color: #f6b10a;
               }
             }
         `
@@ -52,7 +55,8 @@ class TeamOne extends React.Component {
           slidesToScroll: 2,
           arrows: false,
           autoplay: true,
-          autoplaySpeed: 10000,
+          // autoplaySpeed: 10000,
+          autoplaySpeed: 5000,
           loop: true,
           responsive: [
             {

@@ -1,6 +1,7 @@
 ---
 id: 2
-image: './image.jpg'
+# image: './image.jpg'
+image: './Member2.jpg'
 name: "John Doe"
 profession: "React Developer"
 facebook: "https://www.facebook.com/"

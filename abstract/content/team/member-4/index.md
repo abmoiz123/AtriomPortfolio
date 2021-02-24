@@ -1,6 +1,7 @@
 ---
 id: 4
-image: './image.jpg'
+# image: './image.jpg'
+image: './Member4.jpg'
 name: "John Doe"
 profession: "Software Architect"
 facebook: "https://www.facebook.com/"

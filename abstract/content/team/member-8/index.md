@@ -1,6 +1,7 @@
 ---
 id: 8
-image: './image.jpg'
+# image: './image.jpg'
+image: './Member8.jpg'
 name: "Stephen Brice"
 profession: "Angular Developer"
 facebook: "https://www.facebook.com/"

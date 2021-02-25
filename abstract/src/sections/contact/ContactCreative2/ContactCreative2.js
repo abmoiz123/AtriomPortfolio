@@ -4,14 +4,15 @@ import { graphql, StaticQuery } from 'gatsby'
 import styled from 'styled-components'
 import AnimationContainer from 'components/animation-container'
 import ContactForm2 from '../parts/ContactForm2/ContactForm2'
+import ContactSection from '../parts/ContactSection/ContactSection2'
 import servicebackgroundimage from '../../../../static/polygonz.png'
 import "./ContactCreative2.css"
 class ContactCreative2 extends React.Component {
 
 
-    render() {
+  render() {
 
-        const Section = styled.section`
+    const Section = styled.section`
             position: relative;
             overflow: hidden;
             background-image: url(${servicebackgroundimage});
@@ -21,11 +22,11 @@ class ContactCreative2 extends React.Component {
             padding: 100px 0;
         `
 
-        const FormRow = styled(Row)`
+    const FormRow = styled(Row)`
            background-color: #111;
         `
 
-        const ContactCol = styled(Col)`
+    const ContactCol = styled(Col)`
             // min-height: 600px;
             // max-height: 600px;
             padding: 0;
@@ -33,23 +34,23 @@ class ContactCreative2 extends React.Component {
             align-items: center;
         `
 
-        const Map = styled.iframe`
+    const Map = styled.iframe`
             border: none;
             height: 100%;
             width: 100%;
         `
 
-        const IconRow = styled(Row)`
+    const IconRow = styled(Row)`
             margin-top: 150px;
         `
 
-        const IconCol = styled(Col)`
+    const IconCol = styled(Col)`
             @media (max-width: 500px) {
               margin-bottom: 140px;
             }
         `
 
-        const IconContainer = styled.div`
+    const IconContainer = styled.div`
             width: 150px;
             height: 150px;
             margin: auto;
@@ -62,8 +63,8 @@ class ContactCreative2 extends React.Component {
             border-radius: 150px;
             transition: .5s;
         `
-        
-        const InfoPart = styled.div`
+
+    const InfoPart = styled.div`
             min-height: 250px;
             background-color: #111;
             border: 2px solid #444;
@@ -71,13 +72,13 @@ class ContactCreative2 extends React.Component {
               background-color: #009e9e;
             }
         `
-        const Icon = styled.img`
+    const Icon = styled.img`
             height: 70px;
             width: 70px;
             object-fit: contain;
         `
 
-        const InfoTitle = styled.h4`
+    const InfoTitle = styled.h4`
             font-size: 35px;
             // color: #fff;
             color: #f6b10a;
@@ -85,16 +86,16 @@ class ContactCreative2 extends React.Component {
             text-align: center;
         `
 
-        const Info = styled.div`
+    const Info = styled.div`
             position: relative;
             bottom: 30px;
         `
 
-        const InfoLinkContainer = styled.div`
+    const InfoLinkContainer = styled.div`
             text-align: center;
         `
 
-        const InfoLink = styled.a`
+    const InfoLink = styled.a`
             // color: #04e5e5;
             color: #fff;
             transition: .5s;
@@ -104,25 +105,25 @@ class ContactCreative2 extends React.Component {
             }
         `
 
-        return(
-            <Section id="contact">
-                <Container>
-                  <AnimationContainer animation="fadeIn">
-                    <FormRow className="formRow">
-                      <ContactCol md={8}>
-                          <ContactForm2 />
-                      </ContactCol>
-                      {/* <ContactCol md={6}>
-                        <Map  
-                          title="map"
-                          src="https://maps.google.com/maps?width=500&amp;height=500&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"/>
-                      </ContactCol> */}
-                    </FormRow>
-                  </AnimationContainer>
-                </Container>
-            </Section>
-        )
-    }
+    return (
+      <Section id="contact">
+        <Container>
+          <AnimationContainer animation="fadeIn">
+            <FormRow className="formRow">
+              <Col md={8}><ContactForm2 /></Col>
+              <Col md={4}><ContactSection /></Col>
+              {/* <ContactCol md={8}>
+                <ContactForm2 />
+              </ContactCol>
+              <ContactCol md={4}>
+                <ContactSection />
+              </ContactCol> */}
+            </FormRow>
+          </AnimationContainer>
+        </Container>
+      </Section>
+    )
+  }
 
 }
 
@@ -153,13 +154,13 @@ export default props => (
       }
     }
     `}
-    render={({ 
-      emailIcon, 
-      mapIcon, 
-      phoneIcon}) => <ContactCreative2  
-      emailIcon={emailIcon} 
-      mapIcon={mapIcon} 
-      phoneIcon={phoneIcon}
-      {...props} />}
+    render={({
+      emailIcon,
+      mapIcon,
+      phoneIcon }) => <ContactCreative2
+        emailIcon={emailIcon}
+        mapIcon={mapIcon}
+        phoneIcon={phoneIcon}
+        {...props} />}
   />
 )

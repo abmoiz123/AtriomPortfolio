@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
-import { Row, Col, Container } from 'react-bootstrap'
+import { Row, Col, Container, Button } from 'react-bootstrap'
 
 import "./ContactForm2.css"
 class ContactForm2 extends React.Component {
@@ -12,17 +12,32 @@ class ContactForm2 extends React.Component {
       phone: "",
       email: "",
       services: [],
+      budget: "",
       message: "",
       error: false
     }
   }
 
   formSubmit() {
-    if (this.state.name === "" || this.state.email === "" || this.state.message === "") {
+    if (this.state.name === "" || this.state.email === "" || this.state.message === "" || this.state.company === "" || this.state.phone === "") {
       this.setState({ error: true })
     } else {
       this.setState({ error: false })
     }
+    let name = this.state.name;
+    let company = this.state.company;
+    let phone = this.state.phone;
+    let email = this.state.email;
+    let services = this.state.services;
+    let budget = this.state.budget;
+    let message = this.state.message;
+    // console.log("===>name", this.state.name)
+    // console.log("===>company", this.state.company)
+    // console.log("===>phone", this.state.phone)
+    // console.log("===>email", this.state.email)
+    // console.log("===>services", this.state.services)
+    // console.log("===>budget", this.state.budget)
+    // console.log("===>messages", this.state.message)
     this.forceUpdate()
   }
 
@@ -39,14 +54,9 @@ class ContactForm2 extends React.Component {
   }
   serviceSelect = (e) => {
     let services = e.target.id
-    this.setState({
-      services: services
-    })
-    // alert('hello')
-    // e.target.style
-    console.log(this.state.services)
-
-    // console.log(e.target)
+    this.setState(state => ({
+      services: [...state.services, services]
+    }));
   }
   render() {
 
@@ -57,7 +67,7 @@ class ContactForm2 extends React.Component {
             width: 50px;
             // background-color: #04e5e5;
             background-color: #00468b;
-            margin-bottom: 10px;
+            // margin-bottom: 10px;
             margin-left: 6px;
         `
 
@@ -67,7 +77,7 @@ class ContactForm2 extends React.Component {
         `
 
     const Heading = styled.h2`
-            font-size: 70px;
+            font-size: 50px;
             font-family: Teko;
             // color: #fff;
             color: #013567;
@@ -90,8 +100,9 @@ class ContactForm2 extends React.Component {
     const Input = styled.input`
             width: 100%;
             border: none;
+            font-size: 14px;
             border-bottom: 1px solid #444;
-            padding: 10px 5px;
+            padding: 5px 0px;
             border-radius: 0;
             color: #fff;
             transition: .5s;
@@ -106,60 +117,25 @@ class ContactForm2 extends React.Component {
         `
 
     const Textarea = styled.textarea`
+            background: rgba(0, 0, 0, 0);
+            font-size: small;
             width: 100%;
-            background-color: #111;
+            color: #fff;
             border: none;
+            // height: 100px
             border-bottom: 1px solid #444;
-            padding: 10px 5px;
             border-radius: 0;
-            color: rgb(255, 255, 255);
             transition: all 0.5s ease 0s;
-            min-height: 100px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            height: 100px;
+            min-height: 80px;
+            &::placeholder {
+              color: #fff;
+            }
             &:focus {
-              // border-bottom: 1px solid #04e5e5;
-              border-bottom: 1px solid #013567;
+              border-bottom: 1px solid #fff;
               outline: none;
             }
-        `
-
-    const Submit = styled.button`
-            display: block;
-            height: 50px;
-            width: 186px;
-            position: relative;
-            border: none;
-            overflow: hidden;
-            transition: .5s;
-            &::after {
-              position: absolute;
-              content:'';
-              display: inline-block;
-              // background: rgba(59,173,227,1);
-              background: rgba(0,70,140,1);
-              // background: linear-gradient(45deg, rgba(41, 153, 153, 1) 0%, rgba(50, 189, 189, 1) 25%, rgba(4, 229, 229, 1) 51%, rgba(41, 153, 153, 1) 100%);
-              background: linear-gradient(45deg, rgba(10,70,140, 1) 0%, rgba(250,219,42, 1) 25%, rgba(10,70,140, 1) 51%, rgba(250,219,42, 1) 100%);
-              height: 100%;
-              width:  140%;
-              top: 0;
-              left: 0;
-              transition: .5s;
-            }
-            
-            &:hover {
-              &::after {
-                transform: translateX(-20%);
-              }
-            }
-            span {
-              position: relative;
-              top: 0;
-              color: #fff;
-              z-index: 10;
-              text-transform: uppercase;
-              letter-spacing: 2px;
+            &.error {
+              animation: ${ErrorInputAnimation} 1s forwards;
             }
         `
     return (
@@ -176,12 +152,12 @@ class ContactForm2 extends React.Component {
           </Col>
           <Col md={6}>
             <InputElement className="inputdiv">
-              <Input type="text" defaultValue={this.state.email} className={`email ${this.check(this.state.email) ? "" : "error"}`} placeholder="Company" onChange={e => this.setState({ email: e.target.value })} />
+              <Input type="text" defaultValue={this.state.email} className={`company ${this.check(this.state.company) ? "" : "error"}`} placeholder="Company" onChange={e => this.setState({ company: e.target.value })} />
             </InputElement>
           </Col>
           <Col md={6}>
             <InputElement className="inputdiv">
-              <Input type="text" defaultValue={this.state.phone} className="phone" placeholder="Phone" onChange={e => this.setState({ phone: e.target.value })} />
+              <Input type="text" defaultValue={this.state.phone} className={`company ${this.check(this.state.phone) ? "" : "error"}`} placeholder="Phone" onChange={e => this.setState({ phone: e.target.value })} />
             </InputElement>
           </Col>
           <Col md={6}>
@@ -192,14 +168,6 @@ class ContactForm2 extends React.Component {
           <Col md={12}>
             <p className="service">Services</p>
             <div className="serviceslist">
-              {/* {this.state.services.map((i, v) =>
-                <div key={v}>
-                  <input type="checkbox" onChange={this.serviceSelect} id={i.id} className="selectable" />
-                  <label className="selectable2" htmlFor={i.service}>
-                    {i.service}
-                  </label>
-                </div>
-              )} */}
               <div>
                 <input type="checkbox" onClick={this.serviceSelect} id="Design" className="selectable" />
                 <label className="selectable2" htmlFor="Design">
@@ -209,59 +177,100 @@ class ContactForm2 extends React.Component {
               <div>
                 <input type="checkbox" onClick={this.serviceSelect} id="Website Development" className="selectable" />
                 <label className="selectable2" htmlFor="Website Development">
-                Website Development
+                  Website Development
                 </label>
               </div>
               <div>
                 <input type="checkbox" onClick={this.serviceSelect} id="Mobile Application" className="selectable" />
                 <label className="selectable2" htmlFor="Mobile Application">
-                Mobile Application
+                  Mobile Application
                 </label>
               </div>
               <div>
                 <input type="checkbox" onClick={this.serviceSelect} id="Branding" className="selectable" />
                 <label className="selectable2" htmlFor="Branding">
-                Branding
+                  Branding
                 </label>
               </div>
               <div>
                 <input type="checkbox" onClick={this.serviceSelect} id="Marketing" className="selectable" />
                 <label className="selectable2" htmlFor="Marketing">
-                Marketing
+                  Marketing
                 </label>
               </div>
               <div>
                 <input type="checkbox" onClick={this.serviceSelect} id="Other" className="selectable" />
                 <label className="selectable2" htmlFor="Other">
-                Other
+                  Other
                 </label>
               </div>
-              {/* <p className="serviceselect" id="Design" onClick={this.serviceSelect}>Design</p>
-                <p className="serviceselect" id="Website Development" onClick={this.serviceSelect}>Website Development</p>
-                <p className="serviceselect" id="Mobile Application" onClick={this.serviceSelect}>Mobile Application</p>
-                <p className="serviceselect" id="Branding" onClick={this.serviceSelect}>Branding</p>
-                <p className="serviceselect" id="Marketing" onClick={this.serviceSelect}>Marketing</p>
-                <p className="serviceselect" id="Other" onClick={this.serviceSelect}>Other</p> */}
             </div>
           </Col>
+          <Col md={12}>
+            <p className="service">Approximate Budget</p>
+            <div className="serviceslist">
+              <div>
+                <input
+                  type="radio"
+                  onClick={(e) => this.setState({ budget: e.target.value })}
+                  name="budget"
+                  id="budget1"
+                  value="$5.000 - $10.000"
+                  className="selectable" />
+                <label className="selectable2" htmlFor="budget1">
+                  $5.000 - $10.000
+                </label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  onClick={(e) => this.setState({ budget: e.target.value })}
+                  name="budget"
+                  id="budget2"
+                  value="$10.000 - $100.000"
+                  className="selectable" />
+                <label className="selectable2" htmlFor="budget2">
+                  $10.000 - $100.000
+                </label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  onClick={(e) => this.setState({ budget: e.target.value })}
+                  name="budget"
+                  id="budget3"
+                  value="$100.000 - $1.000.000"
+                  className="selectable" />
+                <label className="selectable2" htmlFor="budget3">
+                  $100.000 - $1.000.000
+                </label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  onClick={(e) => this.setState({ budget: e.target.value })}
+                  name="budget"
+                  id="budget4"
+                  value="$1.000.000 +"
+                  className="selectable" />
+                <label className="selectable2" htmlFor="budget4">
+                  $1.000.000 +
+                </label>
+              </div>
+            </div>
+            <Col md={12} className="colum">
+              <InputElement className="inputdiv">
+                <Textarea
+                  placeholder="Tell Us More About Project"
+                  defaultValue={this.state.message}
+                  className={`message ${this.check(this.state.message) ? "" : "error"}`}
+                  onChange={e => this.setState({ message: e.target.value })}
+                />
+              </InputElement>
+            </Col>
+          </Col>
         </Row>
-        {/* <InputElement className="inputdiv">
-                <Input type="text" defaultValue={this.state.name} className={`name ${this.check(this.state.name) ? "" : "error"}`} placeholder="Name" onChange={e => this.setState({name: e.target.value})} />
-              </InputElement>
-              <InputElement className="inputdiv">
-                <Input type="text" defaultValue={this.state.email} className={`email ${this.check(this.state.email) ? "" : "error"}`} placeholder="Email" onChange={e => this.setState({email: e.target.value})} />
-              </InputElement>
-              <InputElement className="inputdiv">
-                <Input type="text" defaultValue={this.state.phone} className="phone" placeholder="Phone" onChange={e => this.setState({phone: e.target.value})} />
-              </InputElement>
-              <InputElement className="inputdiv">
-                <Textarea placeholder="Message" defaultValue={this.state.message}  className={`message ${this.check(this.state.message) ? "" : "error"}`} onChange={e => this.setState({message: e.target.value})} />
-              </InputElement> */}
-        <Submit onClick={() => this.formSubmit()}>
-          <span>
-            Submit
-                </span>
-        </Submit>
+        <Button onClick={() => this.formSubmit()} className="submitbtn">Submit</Button>
       </ContactForm>
     )
   }

@@ -14,7 +14,8 @@ class PortfolioItem extends React.Component {
         setTimeout(() => {
             this.child.enable()
             document.getElementById(`portfolio-item-${this.props.index}`).classList.add("blue-shadow");
-        }, 800)
+        }, 0)
+    // }, 800)
     }
 
     showImage() {

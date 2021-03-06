@@ -1,8 +1,34 @@
+.creative_container {
+    background-image: url('../../../../static/polygonz.png');
+    background-size: cover !important;
+    padding: 100px !important;
+    overflow: hidden !important;
+    margin: 0px !important;
+    width: 100% !important;
+
+}
 .formRow {
     border-radius: 50px;
     background-color: #013567 !important;
-    /* border-radius: 50px;
-    content:'';
-    background: rgba(0,70,140,1);
-    background: linear-gradient(180deg, rgba(10,70,140, 1) 0%, rgba(250,219,42, 1) 25%, rgba(10,70,140, 1) 51%, rgba(250,219,42, 1) 100%); */
+    padding: 40px !important;
+}
+.form_col {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+@media only screen and (max-width: 600px) {
+    .creative_container {
+        padding: 25px 15px !important;
+        overflow: hidden !important;
+    }
+    .formRow {
+        border-radius: 50px;
+        background-color: #013567 !important;
+        margin: 0px !important;
+        padding: 20px 0px !important;
+    }
+    .form_col {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
 }

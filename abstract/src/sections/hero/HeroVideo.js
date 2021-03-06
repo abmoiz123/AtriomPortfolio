@@ -62,7 +62,8 @@ class HeroVideo extends React.Component {
             video {
                 position: absolute;
                 width: 100%;
-                opacity: 0.2;
+                opacity: 0.7;
+                // z-index: 1;
             }
         `
         const Heading1 = styled.h1`

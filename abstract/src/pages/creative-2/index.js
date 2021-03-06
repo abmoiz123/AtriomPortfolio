@@ -3,13 +3,13 @@ import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from 'components/layout'
 import Hero from 'sections/hero/Hero.js'
-import AboutTwo from 'sections/about/AboutTwo.js'
-import ServicesTwo from 'sections/services/ServicesTwo.js'
-import PortfolioTwo from 'sections/portfolio/PortfolioTwo.js'
-import TestimonialsTwo from 'sections/testimonials/TestimonialsTwo.js'
-import TeamTwo from 'sections/team/TeamTwo.js'
-import ClientsTwo from 'sections/clients/ClientsTwo.js'
-import ContactCreative from 'sections/contact/ContactCreative.js'
+// import AboutTwo from 'sections/about/AboutTwo.js'
+// import ServicesTwo from 'sections/services/ServicesTwo.js'
+// import PortfolioTwo from 'sections/portfolio/PortfolioTwo.js'
+// import TestimonialsTwo from 'sections/testimonials/TestimonialsTwo.js'
+// import TeamTwo from 'sections/team/TeamTwo.js'
+// import ClientsTwo from 'sections/clients/ClientsTwo.js'
+// import ContactCreative from 'sections/contact/ContactCreative.js'
 
 class Index extends React.Component {
 
@@ -23,7 +23,8 @@ class Index extends React.Component {
           <title>{site.meta.title}</title>
           <meta name="description" content={site.meta.description} />
         </Helmet>
-        <Layout
+        <Hero />
+        {/* <Layout
           isHome={true}
           sections={['home', 'about', 'services', 'portfolio', 'testimonials', 'team', 'clients', 'contact']}
         >
@@ -35,7 +36,7 @@ class Index extends React.Component {
           <TeamTwo />
           <ClientsTwo />
           <ContactCreative />
-        </Layout>
+        </Layout> */}
       </div>
     )
   }

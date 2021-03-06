@@ -1,3 +1,40 @@
-.conti {
-    border: 1px solid white;
+.contact_detail_container {
+    /* border: 1px solid white; */
+    height: auto;
+    /* padding: 0px !important;
+    margin: 0px !important; */
+    /* padding: 0px !important; */
+    width: 100%;
+}
+/* * {
+    border: 1px solid;
+} */
+.contact_detail_col {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.atmlogo {
+    width: 180px;
+    margin: 8px 0px;
+}
+.com_info {
+    font-size: small;
+    color: white;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.infoheding {
+    color: #f6b10a;
+    padding-top: 5px;
+    /* padding-bottom: 5px; */
+}
+@media only screen and (max-width: 600px) {
+    .contact_detail_col {
+        padding: 10px !important;
+        /* margin: 0px !important; */
+    }
+    .atmlogo {
+        display: block;
+        margin: 0 auto;
+    }
 }

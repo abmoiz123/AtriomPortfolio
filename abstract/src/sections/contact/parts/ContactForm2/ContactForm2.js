@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
-import { Row, Col, Container, Button } from 'react-bootstrap'
+import { Container, Row, Col, Button } from 'react-bootstrap'
 
 import "./ContactForm2.css"
 class ContactForm2 extends React.Component {
@@ -24,20 +24,13 @@ class ContactForm2 extends React.Component {
     } else {
       this.setState({ error: false })
     }
-    let name = this.state.name;
-    let company = this.state.company;
-    let phone = this.state.phone;
-    let email = this.state.email;
-    let services = this.state.services;
-    let budget = this.state.budget;
-    let message = this.state.message;
-    // console.log("===>name", this.state.name)
-    // console.log("===>company", this.state.company)
-    // console.log("===>phone", this.state.phone)
-    // console.log("===>email", this.state.email)
-    // console.log("===>services", this.state.services)
-    // console.log("===>budget", this.state.budget)
-    // console.log("===>messages", this.state.message)
+    // let name = this.state.name;
+    // let company = this.state.company;
+    // let phone = this.state.phone;
+    // let email = this.state.email;
+    // let services = this.state.services;
+    // let budget = this.state.budget;
+    // let message = this.state.message;
     this.forceUpdate()
   }
 
@@ -69,11 +62,6 @@ class ContactForm2 extends React.Component {
             background-color: #00468b;
             // margin-bottom: 10px;
             margin-left: 6px;
-        `
-
-    const ContactForm = styled.div`
-            padding: 40px;
-            width: 100%;
         `
 
     const Heading = styled.h2`
@@ -139,33 +127,33 @@ class ContactForm2 extends React.Component {
             }
         `
     return (
-      <ContactForm>
+      <Container className="contact_form_container">
         <Heading className="Heading">
           Let's Think Together
               </Heading>
         <Separator />
-        <Row>
-          <Col md={6}>
+        <Row className="Contact_form_row">
+          <Col className="Contact_form_col" md={6}>
             <InputElement className="inputdiv">
               <Input type="text" defaultValue={this.state.name} className={`name ${this.check(this.state.name) ? "" : "error"}`} placeholder="Your Name*" onChange={e => this.setState({ name: e.target.value })} />
             </InputElement>
           </Col>
-          <Col md={6}>
+          <Col className="Contact_form_col" md={6}>
             <InputElement className="inputdiv">
               <Input type="text" defaultValue={this.state.email} className={`company ${this.check(this.state.company) ? "" : "error"}`} placeholder="Company" onChange={e => this.setState({ company: e.target.value })} />
             </InputElement>
           </Col>
-          <Col md={6}>
+          <Col className="Contact_form_col" md={6}>
             <InputElement className="inputdiv">
               <Input type="text" defaultValue={this.state.phone} className={`company ${this.check(this.state.phone) ? "" : "error"}`} placeholder="Phone" onChange={e => this.setState({ phone: e.target.value })} />
             </InputElement>
           </Col>
-          <Col md={6}>
+          <Col className="Contact_form_col" md={6}>
             <InputElement className="inputdiv">
               <Input type="text" defaultValue={this.state.email} className={`email ${this.check(this.state.email) ? "" : "error"}`} placeholder="Email" onChange={e => this.setState({ email: e.target.value })} />
             </InputElement>
           </Col>
-          <Col md={12}>
+          <Col className="Contact_form_col" md={12}>
             <p className="service">Services</p>
             <div className="serviceslist">
               <div>
@@ -206,7 +194,7 @@ class ContactForm2 extends React.Component {
               </div>
             </div>
           </Col>
-          <Col md={12}>
+          <Col className="Contact_form_col" md={12}>
             <p className="service">Approximate Budget</p>
             <div className="serviceslist">
               <div>
@@ -271,7 +259,7 @@ class ContactForm2 extends React.Component {
           </Col>
         </Row>
         <Button onClick={() => this.formSubmit()} className="submitbtn">Submit</Button>
-      </ContactForm>
+      </Container>
     )
   }
 

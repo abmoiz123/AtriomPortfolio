@@ -12,8 +12,8 @@ export default class HTML extends React.Component {
           {this.props.headComponents}
           <link href="/img/favicon.ico" rel="icon" />
         </head>
-        <body style={{ backgroundColor: '#000' }}>
-        {/* <body style={{ backgroundColor: '#013567' }}> */}
+        {/* <body style={{ backgroundColor: '#000' }}> */}
+        <body style={{ backgroundColor: '#013567' }}>
           <div
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}

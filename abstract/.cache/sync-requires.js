@@ -7,6 +7,7 @@ const preferDefault = m => m && m.default || m
 exports.components = {
   "component---cache-dev-404-page-js": hot(preferDefault(require("C:\\Users\\ITC\\Desktop\\Abstract\\abstract\\.cache\\dev-404-page.js"))),
   "component---src-pages-404-js": hot(preferDefault(require("C:\\Users\\ITC\\Desktop\\Abstract\\abstract\\src\\pages\\404.js"))),
+  "component---src-pages-about-index-js": hot(preferDefault(require("C:\\Users\\ITC\\Desktop\\Abstract\\abstract\\src\\pages\\About\\index.js"))),
   "component---src-pages-creative-2-index-js": hot(preferDefault(require("C:\\Users\\ITC\\Desktop\\Abstract\\abstract\\src\\pages\\creative-2\\index.js"))),
   "component---src-pages-creative-video-1-index-js": hot(preferDefault(require("C:\\Users\\ITC\\Desktop\\Abstract\\abstract\\src\\pages\\creative-video-1\\index.js"))),
   "component---src-pages-creative-video-2-index-js": hot(preferDefault(require("C:\\Users\\ITC\\Desktop\\Abstract\\abstract\\src\\pages\\creative-video-2\\index.js"))),

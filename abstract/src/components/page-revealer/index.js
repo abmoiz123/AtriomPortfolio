@@ -36,6 +36,10 @@ class PageRevealer extends React.Component {
                     <BaffleText
                         // text="Abstract"
                         text="Atriom Technologies"
+                        // revealDuration={0}
+                        // revealDelay={0}
+                        // parentMethod={this.reveal}
+                        // callMethodTime={500}
                         revealDuration={500}
                         revealDelay={1000}
                         parentMethod={this.reveal}

@@ -81,8 +81,8 @@ class Navbar extends React.Component {
         `
 
         const Nav = styled.nav`
-            flex: 0 0 80%;
-            max-width: 80%;
+            flex: 0 0 70%;
+            max-width: 70%;
             display: flex;
             justify-content: flex-end;
             align-items: center;
@@ -90,7 +90,7 @@ class Navbar extends React.Component {
                 flex: 0 0 100%;
                 max-width: 100%;
                 justify-content: center;
-                background-color: rgba(0,0,0,.8);
+                background-color: rgba(0,70,140,.8);
                 margin-top: 20px;
                 &.hidden_mobile {
                     display: none;

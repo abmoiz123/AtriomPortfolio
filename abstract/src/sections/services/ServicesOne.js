@@ -12,7 +12,7 @@ import networkimage from '../../../static/NETWORK2.png'
 import sketchimage from '../../../static/UIUX.png'
 // import servicebackgroundimage from '../../../static/servicebackground.jpg'
 import servicebackgroundimage from '../../../static/polygonz.png'
-
+import './ServiceOne.css'
 
 class ServicesOne extends React.Component {
 
@@ -41,16 +41,26 @@ class ServicesOne extends React.Component {
             // background-color: rgba(0,0,0,.9);
             // background-color: #fff;
             padding: 100px 0;
+            @media (max-width:767px) {
+                padding: 20px 0;
+            }
         `
 
 
         const ServiceElement = styled.div`
-            margin-bottom: 20px;
+            // margin-bottom: 20px;
             text-align: center;
             padding: 40px;
             border-radius: 20px;
             transition: .2s;
             &:hover {
+                background-color: #013567;
+                // box-shadow: 0 28px 60px rgb(4, 229, 229, .1);
+                box-shadow: 0 28px 60px rgb(255,255,255, .3);
+                transform: translateY(-10px);
+            }
+            @media (max-width:767px) {
+                padding: 10px 0px;
                 background-color: #013567;
                 // box-shadow: 0 28px 60px rgb(4, 229, 229, .1);
                 box-shadow: 0 28px 60px rgb(255,255,255, .3);
@@ -63,6 +73,9 @@ class ServicesOne extends React.Component {
             font-family: Teko;
             // color: #fff;
             color: #f6b10a;
+            @media (max-width:767px) {
+                font-size: 20px;
+            }
         `
         const ServiceSeparator = styled.div`
             height: 5px;
@@ -76,6 +89,12 @@ class ServicesOne extends React.Component {
             margin-bottom: 20px;
             img {
                 max-height: 90px;
+            }
+            @media (max-width:767px) {    
+                margin-bottom: 10px;
+                img {
+                    max-height: 70px;
+                }
             }
         `
 
@@ -111,7 +130,7 @@ class ServicesOne extends React.Component {
                     <Container>
                         <AnimatedHeading text="Our Services" />
                         <Row>
-                            <Col md={4}>
+                            <Col className="service_col" md={4} sm={6} xs={6}>
                                 <AnimationContainer animation="fadeInLeft" delay={200}>
                                     <ServiceElement>
                                         <ServiceIcon>
@@ -137,7 +156,7 @@ class ServicesOne extends React.Component {
                                     </ServiceElement>
                                 </AnimationContainer>
                             </Col>
-                            <Col md={4}>
+                            <Col className="service_col" md={4} sm={6} xs={6}>
                                 <AnimationContainer animation="fadeInDown" delay={400}>
                                     <ServiceElement>
                                         <ServiceIcon>
@@ -162,7 +181,7 @@ class ServicesOne extends React.Component {
                                     </ServiceElement>
                                 </AnimationContainer>
                             </Col>
-                            <Col md={4}>
+                            <Col className="service_col" md={4} sm={6} xs={6}>
                                 <AnimationContainer animation="fadeInRight" delay={600}>
                                     <ServiceElement>
                                         <ServiceIcon>
@@ -187,7 +206,7 @@ class ServicesOne extends React.Component {
                                     </ServiceElement>
                                 </AnimationContainer>
                             </Col>
-                            <Col md={4}>
+                            <Col className="service_col" md={4} sm={6} xs={6}>
                                 <AnimationContainer animation="fadeInLeft" delay={800}>
                                     <ServiceElement>
                                         <ServiceIcon>
@@ -212,7 +231,7 @@ class ServicesOne extends React.Component {
                                     </ServiceElement>
                                 </AnimationContainer>
                             </Col>
-                            <Col md={4}>
+                            <Col className="service_col" md={4} sm={6} xs={6}>
                                 <AnimationContainer animation="fadeInUp" delay={1000}>
                                     <ServiceElement>
                                         <ServiceIcon>
@@ -237,7 +256,7 @@ class ServicesOne extends React.Component {
                                     </ServiceElement>
                                 </AnimationContainer>
                             </Col>
-                            <Col md={4}>
+                            <Col className="service_col" md={4} sm={6} xs={6}>
                                 <AnimationContainer animation="fadeInRight" delay={1200}>
                                     <ServiceElement>
                                         <ServiceIcon>

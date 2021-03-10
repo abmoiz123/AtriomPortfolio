@@ -18,6 +18,12 @@ import { FaTwitter } from "@react-icons/all-files/fa/FaTwitter";
 import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
 import "./Footer2.css"
 import Paymentpic from '../../../../static/paymentfooter.png'
+import googlepartner from '../../../../static/googlepartner.png'
+import hubspot from '../../../../static/hubspot.png'
+import ppc from '../../../../static/ppc.png'
+import bingads from '../../../../static/bingads.png'
+import facebookpartner from '../../../../static/facebookpartner.png'
+import review from '../../../../static/review.png'
 
 
 
@@ -153,6 +159,30 @@ class Footer2 extends React.Component {
                                             <FaLinkedinIn className="social_icon" />
                                         </a>
                                         </li>
+                                    </ul>
+                                </div>
+                            </Navbar.Collapse>
+                        </Navbar>
+                    </Col>
+                    <Col lg={12} md={12} sm={12}>
+                        <Navbar className="info_col" expand="lg">
+                            <Navbar.Toggle className="nav_toggle" aria-controls="basic-navbar-nav">
+                                <div className="about_us_div">
+                                    <p className="about_us_p">Our Partners</p>
+                                    <FontAwesomeIcon className="plusicon" icon={faPlusCircle} />
+                                </div>
+                            </Navbar.Toggle>
+                            <Navbar.Collapse id="basic-navbar-nav">
+                                <div className="subscribediv">
+                                    <h3 className="About_Us_heading">Our Partners</h3>
+                                    <Separator className="About_Us_heading" />
+                                    <ul className="partners_ul">
+                                       <li className="partners_li"><img src={googlepartner} alt="Partners" className="partners_pic" /></li> 
+                                       <li className="partners_li"><img src={hubspot} alt="Partners" className="partners_pic" /></li> 
+                                       <li className="partners_li"><img src={ppc} alt="Partners" className="partners_pic" /></li> 
+                                       <li className="partners_li"><img src={bingads} alt="Partners" className="partners_pic" /></li> 
+                                       <li className="partners_li"><img src={facebookpartner} alt="Partners" className="partners_pic" /></li> 
+                                       <li className="partners_li"><img src={review} alt="Partners" className="partners_pic" /></li> 
                                     </ul>
                                 </div>
                             </Navbar.Collapse>

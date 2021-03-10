@@ -42,6 +42,7 @@ class HeroVideo extends React.Component {
     render() {
 
         const Section = styled.section`
+            // border: 5px solid black;
             position: relative;
             .particles {
                 position: absolute;
@@ -115,7 +116,7 @@ class HeroVideo extends React.Component {
             font-weight: 700;
             text-transform: uppercase;
            @media (max-width:767px) {
-                font-size: 40px;
+                font-size: 30px;
                 line-height: 40px;
             }
            @media (min-width:768px) and (max-width:1500px) {
@@ -174,8 +175,9 @@ class HeroVideo extends React.Component {
                 bottom: -35%;
             }
             @media (max-width:767px) {
-                position: relative;
-                bottom: 0;
+                // position: relative;
+                // bottom: 0;
+                display: none;
             } 
             @media (min-width:768px) and (max-width: 1023px) {    
                 bottom: -25%;

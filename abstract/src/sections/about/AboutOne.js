@@ -37,7 +37,7 @@ class AboutOne extends React.Component {
               padding: 400px 0 100px 0;
             }
             @media (max-width:767px) {
-                padding: 50px 50px;
+                padding: 10px 50px;
             }
         `
     const Heading = styled.h1`
@@ -75,9 +75,9 @@ class AboutOne extends React.Component {
         `
 
     const CounterComponent = styled.div`
-            margin: 10px 0;
+            margin: 30px 0;
             @media (max-width:767px) {
-                margin: 50px 0;
+                margin: 10px 0;
                 text-align:center;
             }
             .value {
@@ -226,14 +226,14 @@ class AboutOne extends React.Component {
               <Row>
                 <Col md={6}>
                   <AnimationContainer animation="fadeInLeft" delay={1000}>
-                    <CounterComponent style={{ marginBottom: "100px" }}>
+                    <CounterComponent>
                       <Counter value={5} duration={5} delay={1000} symbol="+" text="5 Years of Experience" />
                     </CounterComponent>
                   </AnimationContainer>
                 </Col>
                 <Col md={6}>
                   <AnimationContainer animation="fadeInRight" delay={1000}>
-                    <CounterComponent style={{ marginBottom: "100px" }}>
+                    <CounterComponent>
                       <Counter value={100} duration={5} delay={1000} symbol="+" text="Clients Worked With" />
                     </CounterComponent>
                   </AnimationContainer>

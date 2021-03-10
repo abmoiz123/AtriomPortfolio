@@ -3,31 +3,34 @@ import { Row, Col, Container } from 'react-bootstrap'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import AnimationContainer from 'components/animation-container'
+import Slider from 'react-slick'
+import backgroundImage from '../../../static/polygonz.png'
+import './ClientsOne.css'
 
 class ClientsOne extends React.Component {
 
 
-    shouldComponentUpdate() {
-      return false
-    }
-  
+  shouldComponentUpdate() {
+    return false
+  }
 
-    render() {
-        const Section = styled.section`
+
+  render() {
+    const Section = styled.section`
             position: relative;
             overflow: hidden;
-            // background-color: #050505;
-            background-color: #013567;
+            background-image: url(${backgroundImage});
             background-size: cover;
-            padding: 100px 0; 
+            // background-color: #013567;
+            padding: 50px 0; 
             .heading {
                 width: 100%;
             }
           }
         `
 
-        
-        const Heading = styled.h1`
+
+    const Heading = styled.h1`
             font-size: 110px;
             line-height: 100px;
             font-family: Teko;
@@ -46,7 +49,7 @@ class ClientsOne extends React.Component {
                 text-align: center;
             }
         `
-        const Color = styled.span`
+    const Color = styled.span`
           // color:  #04e5e5;
           color:  #fff;
           font-size: 120px;
@@ -64,39 +67,74 @@ class ClientsOne extends React.Component {
           }
       `
 
-      const LeftCol = styled(Col)`
+    const LeftCol = styled(Col)`
           display: flex;
           align-items: center;
+          // @media (max-width:767px) {
+          //   margin: 30px;
+          // }
       `
 
+    const Mob = styled(Col)`
+          display: none;
+          @media (max-width:767px) {
+            padding: 10px;
+            display: block;
+          }
+      `
 
-        return(
-            <Section id="clients">
-                  <Container>
-                    <Row>
-                      <LeftCol md={6}>
-                        <Heading>
-                          <Color>Clients</Color> we worked with
+    const Web = styled(Col)`
+          display: block;
+          @media (max-width:767px) {
+            display: none;
+          }
+      `
+    const settings = {
+      dots: true,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 2000,
+      autoplaySpeed: 2000,
+      cssEase: "linear"
+    };
+
+
+    return (
+      <Section id="clients">
+        <Container>
+          <Row>
+            <LeftCol md={6}>
+              <Heading>
+                <Color>Clients</Color> we worked with
                         </Heading>
-                      </LeftCol>
-                      <Col md={6}>
-                        <Row>
-                          {this.clients()}
-                        </Row>
-                      </Col>
-                    </Row>
-                  </Container>
-            </Section>
-        )
-    }
+            </LeftCol>
+            <Col md={6}>
+              <Mob>
+                <Slider {...settings}>
+                  {this.clients()}
+                </Slider>
+              </Mob>
+              <Web>
+                <Row>
+                  {this.clients()}
+                </Row>
+              </Web>
+            </Col>
+          </Row>
+        </Container>
+      </Section>
+    )
+  }
 
-    clients() {
-      return this.props.clients.map((value, index) => {
-        const Client = styled.img`
+  clients() {
+    return this.props.clients.map((value, index) => {
+      const Client = styled.img`
             height: 100px;
         `
 
-        const ClientCol = styled(Col)`
+      const ClientCol = styled(Col)`
             text-align: center;
             padding: 20px 0;
             border-color: #efefef;
@@ -105,33 +143,41 @@ class ClientsOne extends React.Component {
             transition: .1s;
             &:hover {
               transform: scale(1.1);
-              // background-color: #04e5e5;
               background-color: #f6b10a;
               z-index: 5;
               border-radius: 10px;
             }
-            @media (max-width: 500px) {
-              border: none !important;
+            @media (max-width: 767px) {
+              text-align: center;
+              // margin: 0px 10px;
+              padding: 15px;
+              transition: .1s;
+              &:hover {
+                // transform: scale(1.1);
+                background-color: #f6b10a;
+                z-index: 1;
+                border-radius: 10px;
+              }
             }
         `
-          return (
-              <ClientCol md={3} key={index} style={{borderRight: (index+1)%4 === 0 ? "none" : "1px solid", borderBottom: index < 8 ? "1px solid" : "none"}}>
-                  <AnimationContainer animation="fadeIn slower" delay={index*200}>
-                    <Client
-                      src={value.node.childImageSharp.fluid.src}
-                      alt="Client"
-                    />
-                  </AnimationContainer>
-              </ClientCol>
-          )
-      })
-    }
+      return (
+        <ClientCol md={3} key={index} style={{ borderRight: (index + 1) % 4 === 0 ? "none" : "1px solid", borderBottom: index < 8 ? "1px solid" : "none" }}>
+          <AnimationContainer animation="fadeIn slower" delay={index * 200}>
+            <Client
+              src={value.node.childImageSharp.fluid.src}
+              alt="Client"
+            />
+          </AnimationContainer>
+        </ClientCol>
+      )
+    })
+  }
 
 }
 
 export default props => (
-    <StaticQuery
-      query={graphql`
+  <StaticQuery
+    query={graphql`
       query {
         clients: allFile(filter: {extension: {regex: "/(png)/"}, relativeDirectory: {eq: "clients"}}) {
           edges {
@@ -146,6 +192,6 @@ export default props => (
         }
       }      
       `}
-      render={({ clients }) => <ClientsOne clients={clients.edges} {...props} />}
-    />
-  )
+    render={({ clients }) => <ClientsOne clients={clients.edges} {...props} />}
+  />
+)

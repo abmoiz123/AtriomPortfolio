@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import AnimationContainer from 'components/animation-container'
 import Slider from 'react-slick'
 import backgroundImage from '../../../static/polygonz.png'
-import './ClientsOne.css'
+import Particles from 'react-particles-js';
 
 class ClientsOne extends React.Component {
 
@@ -18,13 +18,24 @@ class ClientsOne extends React.Component {
   render() {
     const Section = styled.section`
             position: relative;
-            overflow: hidden;
-            background-image: url(${backgroundImage});
-            background-size: cover;
-            // background-color: #013567;
-            padding: 50px 0; 
+            overflow: hidden; 
+            // background-color: #000;
+            background-color: #013567;
+            .particles {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            // background-image: url(${backgroundImage});
+            // background-size: cover;
+            // padding: 100px 0; 
             .heading {
                 width: 100%;
+            }
+            @media (max-width:767px) {   
+              .particles {
+                display: none;
+              }
             }
           }
         `
@@ -67,6 +78,13 @@ class ClientsOne extends React.Component {
           }
       `
 
+      const ContainerStyle = styled(Container)`
+            padding: 100px 0;
+            @media (max-width:767px) {
+              padding: 50px 0;
+            }
+        `
+
     const LeftCol = styled(Col)`
           display: flex;
           align-items: center;
@@ -78,7 +96,7 @@ class ClientsOne extends React.Component {
     const Mob = styled(Col)`
           display: none;
           @media (max-width:767px) {
-            padding: 10px;
+            padding: 10px 30px;
             display: block;
           }
       `
@@ -103,7 +121,113 @@ class ClientsOne extends React.Component {
 
     return (
       <Section id="clients">
-        <Container>
+        <Particles
+          className="particles"
+          params={{
+            "particles": {
+              "number": {
+                "value": 100,
+                "density": {
+                  "enable": true,
+                  "value_area": 2000
+                }
+              },
+              "color": {
+                // "value": ["#03afaf", "#04e5e5"]
+                "value": ["#f6b10a", "#f6b10a"]
+              },
+              "shape": {
+                "type": "circle",
+                "stroke": {
+                  "width": 0,
+                  "color": "#fff"
+                }
+              },
+              "opacity": {
+                "value": 0.5,
+                "random": false,
+                "anim": {
+                  "enable": true,
+                  "speed": 0.5,
+                  "opacity_min": 0.1,
+                  "sync": false
+                }
+              },
+              "size": {
+                "value": 8.017060304327615,
+                "random": true,
+                "anim": {
+                  "enable": true,
+                  "speed": 12.181158184520175,
+                  "size_min": 0.1,
+                  "sync": true
+                }
+              },
+              "line_linked": {
+                "enable": true,
+                "distance": 150,
+                "color": this.context.theme === "dark" ? "#fff" : "#555",
+                // "color": this.context.theme === "dark" ? "#fff" : "#fff",
+                "opacity": 0.5,
+                "width": 1
+              },
+              "move": {
+                "enable": true,
+                "speed": 1,
+                "direction": "none",
+                "random": false,
+                "straight": false,
+                "out_mode": "bounce",
+                "bounce": false,
+                "attract": {
+                  "enable": false,
+                  "rotateX": 600,
+                  "rotateY": 1200
+                }
+              }
+            },
+            "interactivity": {
+              "detect_on": "canvas",
+              "events": {
+                "onhover": {
+                  "enable": false,
+                  "mode": "repulse"
+                },
+                "onclick": {
+                  "enable": false,
+                  "mode": "push"
+                },
+                "resize": true
+              },
+              "modes": {
+                "grab": {
+                  "distance": 400,
+                  "line_linked": {
+                    "opacity": 1
+                  }
+                },
+                "bubble": {
+                  "distance": 400,
+                  "size": 40,
+                  "duration": 2,
+                  "opacity": 8,
+                  "speed": 3
+                },
+                "repulse": {
+                  "distance": 200,
+                  "duration": 0.4
+                },
+                "push": {
+                  "particles_nb": 4
+                },
+                "remove": {
+                  "particles_nb": 2
+                }
+              }
+            },
+            "retina_detect": true
+          }} />
+        <ContainerStyle>
           <Row>
             <LeftCol md={6}>
               <Heading>
@@ -123,7 +247,7 @@ class ClientsOne extends React.Component {
               </Web>
             </Col>
           </Row>
-        </Container>
+        </ContainerStyle>
       </Section>
     )
   }
@@ -132,6 +256,7 @@ class ClientsOne extends React.Component {
     return this.props.clients.map((value, index) => {
       const Client = styled.img`
             height: 100px;
+            width: 100px
         `
 
       const ClientCol = styled(Col)`
@@ -148,9 +273,9 @@ class ClientsOne extends React.Component {
               border-radius: 10px;
             }
             @media (max-width: 767px) {
-              text-align: center;
-              // margin: 0px 10px;
-              padding: 15px;
+              // text-align: center;
+              margin: 10px 0px;
+              padding: 5px;
               transition: .1s;
               &:hover {
                 // transform: scale(1.1);

@@ -1,5 +1,10 @@
 import React from 'react'
-import { Row, Col, Container } from 'react-bootstrap'
+import {
+    Container,
+    Row,
+    Col,
+    Navbar
+} from 'react-bootstrap'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import AnimationContainer from 'components/animation-container'
@@ -20,7 +25,10 @@ class ServicesOne extends React.Component {
     shouldComponentUpdate() {
         return false
     }
-
+    // check = (e) => {
+    //     let id = e.target.id
+    //     console.log(id)
+    // }
 
     render() {
         const Section = styled.section`
@@ -122,6 +130,9 @@ class ServicesOne extends React.Component {
                 position: relative;
                 bottom: 2.5px;
             }
+            @media (max-width:767px) {    
+                font-size: 11px;
+            }
         `
 
         return (
@@ -142,17 +153,22 @@ class ServicesOne extends React.Component {
                                             Mobile App Development
                                             </ServiceHeading>
                                         <ServiceSeparator />
-                                        <ServiceList>
-                                            <ServiceListElement>
-                                                Lorem ipsum dolor sit amet
-                                                </ServiceListElement>
-                                            <ServiceListElement>
-                                                In vitae ultricies lacus vitae
-                                                </ServiceListElement>
-                                            <ServiceListElement>
-                                                Pellentesque blandit libero
-                                                </ServiceListElement>
-                                        </ServiceList>
+                                        <Navbar className="readmore_con" expand="lg">
+                                            <Navbar.Toggle className="nav_toggle2" aria-controls="basic-navbar-nav">Read More</Navbar.Toggle>
+                                            <Navbar.Collapse className="readmore_col" id="basic-navbar-nav">
+                                                <ServiceList>
+                                                    <ServiceListElement>
+                                                        Lorem ipsum dolor sit amet
+                                                    </ServiceListElement>
+                                                    <ServiceListElement>
+                                                        In vitae ultricies lacus vitae
+                                                    </ServiceListElement>
+                                                    <ServiceListElement>
+                                                        Pellentesque blandit libero
+                                                    </ServiceListElement>
+                                                </ServiceList>
+                                            </Navbar.Collapse>
+                                        </Navbar>
                                     </ServiceElement>
                                 </AnimationContainer>
                             </Col>
@@ -167,17 +183,22 @@ class ServicesOne extends React.Component {
                                             Web  Development
                                         </ServiceHeading>
                                         <ServiceSeparator />
-                                        <ServiceList>
-                                            <ServiceListElement>
-                                                Lorem ipsum dolor sit amet
-                                            </ServiceListElement>
-                                            <ServiceListElement>
-                                                In vitae ultricies lacus vitae
-                                            </ServiceListElement>
-                                            <ServiceListElement>
-                                                Pellentesque blandit libero
-                                            </ServiceListElement>
-                                        </ServiceList>
+                                        <Navbar className="readmore_con" expand="lg">
+                                            <Navbar.Toggle className="nav_toggle2" aria-controls="basic-navbar-nav">Read More</Navbar.Toggle>
+                                            <Navbar.Collapse className="readmore_col" id="basic-navbar-nav">
+                                                <ServiceList>
+                                                    <ServiceListElement>
+                                                        Lorem ipsum dolor sit amet
+                                                    </ServiceListElement>
+                                                    <ServiceListElement>
+                                                        In vitae ultricies lacus vitae
+                                                    </ServiceListElement>
+                                                    <ServiceListElement>
+                                                        Pellentesque blandit libero
+                                                    </ServiceListElement>
+                                                </ServiceList>
+                                            </Navbar.Collapse>
+                                        </Navbar>
                                     </ServiceElement>
                                 </AnimationContainer>
                             </Col>
@@ -192,17 +213,22 @@ class ServicesOne extends React.Component {
                                             Email Marketing
                                         </ServiceHeading>
                                         <ServiceSeparator />
-                                        <ServiceList>
-                                            <ServiceListElement>
-                                                Lorem ipsum dolor sit amet
-                                            </ServiceListElement>
-                                            <ServiceListElement>
-                                                In vitae ultricies lacus vitae
-                                            </ServiceListElement>
-                                            <ServiceListElement>
-                                                Pellentesque blandit libero
-                                            </ServiceListElement>
-                                        </ServiceList>
+                                        <Navbar className="readmore_con" expand="lg">
+                                            <Navbar.Toggle className="nav_toggle2" aria-controls="basic-navbar-nav">Read More</Navbar.Toggle>
+                                            <Navbar.Collapse className="readmore_col" id="basic-navbar-nav">
+                                                <ServiceList>
+                                                    <ServiceListElement>
+                                                        Lorem ipsum dolor sit amet
+                                                    </ServiceListElement>
+                                                    <ServiceListElement>
+                                                        In vitae ultricies lacus vitae
+                                                    </ServiceListElement>
+                                                    <ServiceListElement>
+                                                        Pellentesque blandit libero
+                                                    </ServiceListElement>
+                                                </ServiceList>
+                                            </Navbar.Collapse>
+                                        </Navbar>
                                     </ServiceElement>
                                 </AnimationContainer>
                             </Col>
@@ -217,17 +243,22 @@ class ServicesOne extends React.Component {
                                             Search Engine Optimization
                                         </ServiceHeading>
                                         <ServiceSeparator />
-                                        <ServiceList>
-                                            <ServiceListElement>
-                                                Lorem ipsum dolor sit amet
-                                            </ServiceListElement>
-                                            <ServiceListElement>
-                                                In vitae ultricies lacus vitae
-                                            </ServiceListElement>
-                                            <ServiceListElement>
-                                                Pellentesque blandit libero
-                                            </ServiceListElement>
-                                        </ServiceList>
+                                        <Navbar className="readmore_con" expand="lg">
+                                            <Navbar.Toggle className="nav_toggle2" aria-controls="basic-navbar-nav">Read More</Navbar.Toggle>
+                                            <Navbar.Collapse className="readmore_col" id="basic-navbar-nav">
+                                                <ServiceList>
+                                                    <ServiceListElement>
+                                                        Lorem ipsum dolor sit amet
+                                                    </ServiceListElement>
+                                                    <ServiceListElement>
+                                                        In vitae ultricies lacus vitae
+                                                    </ServiceListElement>
+                                                    <ServiceListElement>
+                                                        Pellentesque blandit libero
+                                                    </ServiceListElement>
+                                                </ServiceList>
+                                            </Navbar.Collapse>
+                                        </Navbar>
                                     </ServiceElement>
                                 </AnimationContainer>
                             </Col>
@@ -242,17 +273,22 @@ class ServicesOne extends React.Component {
                                             Network Management
                                         </ServiceHeading>
                                         <ServiceSeparator />
-                                        <ServiceList>
-                                            <ServiceListElement>
-                                                Lorem ipsum dolor sit amet
-                                            </ServiceListElement>
-                                            <ServiceListElement>
-                                                In vitae ultricies lacus vitae
-                                            </ServiceListElement>
-                                            <ServiceListElement>
-                                                Pellentesque blandit libero
-                                            </ServiceListElement>
-                                        </ServiceList>
+                                        <Navbar className="readmore_con" expand="lg">
+                                            <Navbar.Toggle className="nav_toggle2" aria-controls="basic-navbar-nav">Read More</Navbar.Toggle>
+                                            <Navbar.Collapse className="readmore_col" id="basic-navbar-nav">
+                                                <ServiceList>
+                                                    <ServiceListElement>
+                                                        Lorem ipsum dolor sit amet
+                                                    </ServiceListElement>
+                                                    <ServiceListElement>
+                                                        In vitae ultricies lacus vitae
+                                                    </ServiceListElement>
+                                                    <ServiceListElement>
+                                                        Pellentesque blandit libero
+                                                    </ServiceListElement>
+                                                </ServiceList>
+                                            </Navbar.Collapse>
+                                        </Navbar>
                                     </ServiceElement>
                                 </AnimationContainer>
                             </Col>
@@ -267,17 +303,22 @@ class ServicesOne extends React.Component {
                                             UI/UX Development
                                             </ServiceHeading>
                                         <ServiceSeparator />
-                                        <ServiceList>
-                                            <ServiceListElement>
-                                                Lorem ipsum dolor sit amet
-                                                </ServiceListElement>
-                                            <ServiceListElement>
-                                                In vitae ultricies lacus vitae
-                                                </ServiceListElement>
-                                            <ServiceListElement>
-                                                Pellentesque blandit libero
-                                                </ServiceListElement>
-                                        </ServiceList>
+                                        <Navbar className="readmore_con" expand="lg">
+                                            <Navbar.Toggle className="nav_toggle2" aria-controls="basic-navbar-nav">Read More</Navbar.Toggle>
+                                            <Navbar.Collapse className="readmore_col" id="basic-navbar-nav">
+                                                <ServiceList>
+                                                    <ServiceListElement>
+                                                        Lorem ipsum dolor sit amet
+                                                    </ServiceListElement>
+                                                    <ServiceListElement>
+                                                        In vitae ultricies lacus vitae
+                                                    </ServiceListElement>
+                                                    <ServiceListElement>
+                                                        Pellentesque blandit libero
+                                                    </ServiceListElement>
+                                                </ServiceList>
+                                            </Navbar.Collapse>
+                                        </Navbar>
                                     </ServiceElement>
                                 </AnimationContainer>
                             </Col>

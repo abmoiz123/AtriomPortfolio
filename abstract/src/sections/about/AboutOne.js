@@ -76,10 +76,6 @@ class AboutOne extends React.Component {
 
     const CounterComponent = styled.div`
             margin: 30px 0;
-            @media (max-width:767px) {
-                margin: 10px 0;
-                text-align:center;
-            }
             .value {
                 font-size: 120px;
                 font-family: Teko;
@@ -96,6 +92,27 @@ class AboutOne extends React.Component {
                 position: absolute;
                 font-size: 39px;
                 top: -28px;
+            }
+            @media (max-width:767px) {
+                margin: 10px 0;
+                text-align:center;
+                .value {
+                    font-size: 60px;
+                    font-family: Teko;
+                    color: #fff;
+                    line-height: 90px;
+                }
+                .text {
+                    font-size: 17px;
+                    color: #fff;
+                }
+                .symbol {
+                    // color: #04e5e5;
+                    color: rgb(246, 177, 10);
+                    position: absolute;
+                    font-size: 39px;
+                    top: -10px;
+                }
             }
 
         `

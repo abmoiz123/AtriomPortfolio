@@ -24,6 +24,7 @@ import ppc from '../../../../static/ppc.png'
 import bingads from '../../../../static/bingads.png'
 import facebookpartner from '../../../../static/facebookpartner.png'
 import review from '../../../../static/review.png'
+import shopify from '../../../../static/shopify.jpg'
 
 
 
@@ -31,7 +32,7 @@ class Footer2 extends React.Component {
     constructor() {
         super()
         this.state = {
-            tags: ['Website', 'Webdeveloper', 'React', 'E-Commerce']
+            tags: ['Web Development', 'E-Commerce Solution', 'Search Engine Optimization', 'Social Media Marketing', 'Business Software Solutions', 'Mobile App Development', 'Customized Software Development', 'Graphic Design & Video Animation']
         }
     }
     render() {
@@ -182,7 +183,7 @@ class Footer2 extends React.Component {
                                        <li className="partners_li"><img src={ppc} alt="Partners" className="partners_pic" /></li> 
                                        <li className="partners_li"><img src={bingads} alt="Partners" className="partners_pic" /></li> 
                                        <li className="partners_li"><img src={facebookpartner} alt="Partners" className="partners_pic" /></li> 
-                                       <li className="partners_li"><img src={review} alt="Partners" className="partners_pic" /></li> 
+                                       <li className="partners_li"><img src={shopify} alt="Partners" className="partners_pic" /></li> 
                                     </ul>
                                 </div>
                             </Navbar.Collapse>

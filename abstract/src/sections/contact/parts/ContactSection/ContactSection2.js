@@ -20,12 +20,12 @@ class ContactSection extends React.Component {
                     <p className="com_info">KoderLabs is a custom software development company that offers services ranging from Website Designing, Mobile Application Development, Ecommerce solutions to Business Data Analysis.</p>
                     <h5 className="infoheding">Locate</h5>
                     <Separator />
-                    <p className="com_info">950 E Hwy 114, Suite<br /> 160,<br />Southlake, TX 76092</p>
+                    <p className="com_info">3rd Floor, R-209, Saba Avenue, Main Road, Block 13 D 2 Gulshan-e-Iqbal, Karachi City, Sindh 75300</p>
                     <br />
-                    <p className="com_info">950 E Hwy 114, Suite<br /> 160,<br />Southlake, TX 76092</p>
+                    <p className="com_info">International House, 12 Constance Street, London, United Kingdom</p>
                     <h5 className="infoheding">Contact</h5>
                     <Separator />
-                    <p className="com_info">contact@koderlabs.com<br />+1-800-515-3181</p>
+                    <p className="com_info">contact@atriom.co.uk<br />+447401379573, +923020825699</p>
                 </Col>
             </Container>
         )

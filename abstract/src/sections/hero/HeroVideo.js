@@ -2,7 +2,7 @@ import React from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
-import Typewriter from 'typewriter-effect'
+// import Typewriter from 'typewriter-effect'
 // import LoopVideo from './assets/loop.mp4'
 import LoopVideo from './assets/intro_video.mp4'
 // import webimage from '../../../static/web.png'
@@ -67,27 +67,27 @@ class HeroVideo extends React.Component {
                 // z-index: 1;
             }
         `
-        const Heading1 = styled.h1`
-            font-size: 80px;
-            font-family: Teko;
-            line-height: 40px;
-            color: #fff;
-            font-weight: 400;
-            text-transform: uppercase;
-            @media (min-width:768px) {
-                margin-left: 4px;
-            }
-            @media (max-width:767px) {
-                margin-left: 2px;
-            }
-            @media (min-width:768px) and (max-width:1500px) {
-                font-size: 40px;
-            }
-            @media (max-width:767px) {
-                font-size: 20px;
-                line-height: 20px;
-            }
-        `
+        // const Heading1 = styled.h1`
+        //     font-size: 80px;
+        //     font-family: Teko;
+        //     line-height: 40px;
+        //     color: #fff;
+        //     font-weight: 400;
+        //     text-transform: uppercase;
+        //     @media (min-width:768px) {
+        //         margin-left: 4px;
+        //     }
+        //     @media (max-width:767px) {
+        //         margin-left: 2px;
+        //     }
+        //     @media (min-width:768px) and (max-width:1500px) {
+        //         font-size: 40px;
+        //     }
+        //     @media (max-width:767px) {
+        //         font-size: 20px;
+        //         line-height: 20px;
+        //     }
+        // `
 
         // const Heading2 = styled.h2`
         //     font-size: 120px;
@@ -108,63 +108,63 @@ class HeroVideo extends React.Component {
         //         font-size: 70px;
         //     }
         // `
-        const Heading2 = styled.h2`
-            font-size: 120px;
-            // color: rgb(246, 177, 10);
-            // color: #013567;
-            color: #f6b10a;
-            font-weight: 700;
-            text-transform: uppercase;
-           @media (max-width:767px) {
-                font-size: 30px;
-                line-height: 40px;
-            }
-           @media (min-width:768px) and (max-width:1500px) {
-                font-size: 70px;
-            }
-        `
+        // const Heading2 = styled.h2`
+        //     font-size: 120px;
+        //     // color: rgb(246, 177, 10);
+        //     // color: #013567;
+        //     color: #f6b10a;
+        //     font-weight: 700;
+        //     text-transform: uppercase;
+        //    @media (max-width:767px) {
+        //         font-size: 30px;
+        //         line-height: 40px;
+        //     }
+        //    @media (min-width:768px) and (max-width:1500px) {
+        //         font-size: 70px;
+        //     }
+        // `
 
-        const Type = styled.div`
-            font-size: 50px;
-            line-height: 50px;
-            color: #fff;
-            text-transform: uppercase;
-            @media (min-width:768px) {
-                margin-left: 6px;
-            }
-            @media (max-width:767px) {
-                margin-left: 2px;
-            }
-            @media (min-width:768px) and (max-width:1500px) {
-                font-size: 23px;
-                line-height: 20px;
-            }
-            @media (max-width:767px) {
-                font-size: 20px;
-                line-height: 20px;
-            }
-            span {
-                font-family: Teko;
-            }
-        `
-        const Content = styled.div`
-            position: relative;
-            z-index: 10
-        `
+        // const Type = styled.div`
+        //     font-size: 50px;
+        //     line-height: 50px;
+        //     color: #fff;
+        //     text-transform: uppercase;
+        //     @media (min-width:768px) {
+        //         margin-left: 6px;
+        //     }
+        //     @media (max-width:767px) {
+        //         margin-left: 2px;
+        //     }
+        //     @media (min-width:768px) and (max-width:1500px) {
+        //         font-size: 23px;
+        //         line-height: 20px;
+        //     }
+        //     @media (max-width:767px) {
+        //         font-size: 20px;
+        //         line-height: 20px;
+        //     }
+        //     span {
+        //         font-family: Teko;
+        //     }
+        // `
+        // const Content = styled.div`
+        //     position: relative;
+        //     z-index: 10
+        // `
 
-        const Separator = styled.div`
-            height: 5px;
-            width: 50px;
-            // background-color: rgb(246, 177, 10);
-            background-color: #013567;
-            margin-bottom: 30px;
-            @media (min-width:768px) {
-                margin-left: 6px;
-            }
-            @media (max-width:767px) {
-                margin-left: 2px;
-            }
-        `
+        // const Separator = styled.div`
+        //     height: 5px;
+        //     width: 50px;
+        //     // background-color: rgb(246, 177, 10);
+        //     background-color: #013567;
+        //     margin-bottom: 30px;
+        //     @media (min-width:768px) {
+        //         margin-left: 6px;
+        //     }
+        //     @media (max-width:767px) {
+        //         margin-left: 2px;
+        //     }
+        // `
 
         const BottomContent = styled.div`
             position: absolute;
@@ -254,7 +254,7 @@ class HeroVideo extends React.Component {
                     <video autoPlay="autoplay" loop="loop" muted style={{height: `${this.state.width >= 1024 && this.state.width < 1200 ? "100%": "auto"}`}}>
                         <source src={LoopVideo} type="video/mp4" />
                     </video>
-                    <Container>
+                    {/* <Container>
                         <Content>
                             <Heading1>
                                 Creative
@@ -277,7 +277,7 @@ class HeroVideo extends React.Component {
                                 />
                             </Type>
                         </Content>
-                    </Container>
+                    </Container> */}
                 </VideoContainer>
                 <BottomContent>
                         <Container>
@@ -289,7 +289,7 @@ class HeroVideo extends React.Component {
                                                 {/* <img src={this.props.webexpertIcon.childImageSharp.fluid.src} alt="web experts" /> */}
                                                 <img src={newwebimage} alt="web experts" />
                                             </ServiceIcon>
-                                            <ServiceHeading>Web Experts</ServiceHeading>
+                                            <ServiceHeading>Digital Marketing</ServiceHeading>
                                             <ServiceSeparator/>
                                             <ServiceText>
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae ultricies lacus, vitae varius velit. 
@@ -305,7 +305,7 @@ class HeroVideo extends React.Component {
                                                     {/* <img src={this.props.mobileIcon.childImageSharp.fluid.src} alt="mobile experts" /> */}
                                                     <img src={newmobimage} alt="mobile experts" />
                                             </ServiceIcon>
-                                            <ServiceHeading>Mobile Experts</ServiceHeading>
+                                            <ServiceHeading>E-Commerce Solution</ServiceHeading>
                                             <ServiceSeparator/>
                                             <ServiceText>
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae ultricies lacus, vitae varius velit. 
@@ -321,7 +321,7 @@ class HeroVideo extends React.Component {
                                                     {/* <img src={this.props.seoIcon.childImageSharp.fluid.src} alt="seo experts" /> */}
                                                     <img src={newseoimage} alt="seo experts" />
                                             </ServiceIcon>
-                                            <ServiceHeading>SEO Experts</ServiceHeading>
+                                            <ServiceHeading>Software Development</ServiceHeading>
                                             <ServiceSeparator/>
                                             <ServiceText>
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae ultricies lacus, vitae varius velit. 

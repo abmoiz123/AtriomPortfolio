@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import RevealContent from 'components/reveal-content'
 import Tilt from 'react-tilt'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin, faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faLinkedin, faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons'
 import DesktopContent from './DesktopContent.js'
 
 class TeamItem extends React.Component {
@@ -144,7 +144,7 @@ class TeamItem extends React.Component {
                                     <FontAwesomeIcon icon={faFacebook} onClick={() => window.open(this.props.facebook)}/>
                                     <FontAwesomeIcon icon={faTwitter} onClick={() => window.open(this.props.twitter)} />
                                     <FontAwesomeIcon icon={faLinkedin} onClick={() => window.open(this.props.linkedin)} />
-                                    <FontAwesomeIcon icon={faGithub} onClick={() => window.open(this.props.github)} />
+                                    <FontAwesomeIcon icon={faInstagram} onClick={() => window.open(this.props.github)} />
                                 </Social>
                             </Info>
                         </MobileContent>
@@ -174,7 +174,7 @@ class TeamItem extends React.Component {
                                     <FontAwesomeIcon icon={faFacebook} onClick={() => window.open(this.props.facebook)}/>
                                     <FontAwesomeIcon icon={faTwitter} onClick={() => window.open(this.props.twitter)} />
                                     <FontAwesomeIcon icon={faLinkedin} onClick={() => window.open(this.props.linkedin)} />
-                                    <FontAwesomeIcon icon={faGithub} onClick={() => window.open(this.props.github)} />
+                                    <FontAwesomeIcon icon={faInstagram} onClick={() => window.open(this.props.github)} />
                                 </Social>
                             </Info>
                         </MobileContent>

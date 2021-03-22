@@ -1,8 +1,8 @@
 ---
 id: 6
 # image: './image.jpg'
-image: './project3.jpg'
-title: "UX Development for Company"
-category: "UI/UX Design"
+image: './project6.png'
+title: "Big Map Clothing"
+category: "Graphics&Video Animation"
 link: "https://github.com"
 ---

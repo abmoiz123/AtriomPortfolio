@@ -173,14 +173,14 @@ class ServicesOne extends React.Component {
                                 </AnimationContainer>
                             </Col>
                             <Col className="service_col" md={4} sm={6} xs={6}>
-                                <AnimationContainer animation="fadeInDown" delay={400}>
+                                <AnimationContainer animation="fadeInRight" delay={600}>
                                     <ServiceElement>
                                         <ServiceIcon>
-                                            {/* <img src={this.props.web.childImageSharp.fluid.src} alt="Mobile App Development" /> */}
-                                            <img src={webimage} alt="Web Development" />
+                                            {/* <img src={this.props.email.childImageSharp.fluid.src} alt="Mobile App Development" /> */}
+                                            <img src={emailimage} alt="Email Marketing" />
                                         </ServiceIcon>
                                         <ServiceHeading>
-                                            Web  Development
+                                            E-Commerce Solution
                                         </ServiceHeading>
                                         <ServiceSeparator />
                                         <Navbar className="readmore_con" expand="lg">
@@ -203,14 +203,14 @@ class ServicesOne extends React.Component {
                                 </AnimationContainer>
                             </Col>
                             <Col className="service_col" md={4} sm={6} xs={6}>
-                                <AnimationContainer animation="fadeInRight" delay={600}>
+                                <AnimationContainer animation="fadeInDown" delay={400}>
                                     <ServiceElement>
                                         <ServiceIcon>
-                                            {/* <img src={this.props.email.childImageSharp.fluid.src} alt="Mobile App Development" /> */}
-                                            <img src={emailimage} alt="Email Marketing" />
+                                            {/* <img src={this.props.web.childImageSharp.fluid.src} alt="Mobile App Development" /> */}
+                                            <img src={webimage} alt="Web Development" />
                                         </ServiceIcon>
                                         <ServiceHeading>
-                                            Email Marketing
+                                            Web  Development
                                         </ServiceHeading>
                                         <ServiceSeparator />
                                         <Navbar className="readmore_con" expand="lg">
@@ -270,7 +270,7 @@ class ServicesOne extends React.Component {
                                             <img src={networkimage} alt="Network Management" />
                                         </ServiceIcon>
                                         <ServiceHeading>
-                                            Network Management
+                                            Software Development
                                         </ServiceHeading>
                                         <ServiceSeparator />
                                         <Navbar className="readmore_con" expand="lg">
@@ -300,7 +300,7 @@ class ServicesOne extends React.Component {
                                             <img src={sketchimage} alt="UI/UX Development" />
                                         </ServiceIcon>
                                         <ServiceHeading>
-                                            UI/UX Development
+                                            Graphics/Video Animation
                                             </ServiceHeading>
                                         <ServiceSeparator />
                                         <Navbar className="readmore_con" expand="lg">

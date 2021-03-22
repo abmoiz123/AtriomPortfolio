@@ -79,7 +79,7 @@ class PortfolioItem extends React.Component {
             height: 100%;
             width: 100%;
             top: 0;
-            opacity: 0 !important;
+            // opacity: 0 !important;
             transition: .5s;
             display: flex;
             align-items: flex-end;
@@ -124,11 +124,9 @@ class PortfolioItem extends React.Component {
                 }
             }
             &.blue-shadow {
-                // box-shadow: 0 28px 60px rgb(4,229,229,.2);
-                box-shadow: 0 28px 60px rgb(255,255,255,.2);
+                // box-shadow: 0 28px 60px rgb(255,255,255,.2);
                 transition: .5s;
                 &:hover {
-                    // box-shadow: 0 28px 60px rgb(4,229,229,.5);
                     box-shadow: 0 28px 60px rgb(255,255,255,.5);
                 }
                 

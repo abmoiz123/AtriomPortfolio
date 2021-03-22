@@ -1,9 +1,9 @@
 ---
 id: 5
 # image: './image.jpg'
-image: './Member5.jpg'
-name: "Brian Miller"
-profession: "Junior Developer"
+image: './mem5.jpeg'
+name: "Osama Ansari"
+profession: "Creative Head"
 facebook: "https://www.facebook.com/"
 twitter: "https://www.twitter.com/"
 linkedin: "https://www.linkedin.com/"

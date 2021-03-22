@@ -1,9 +1,9 @@
 ---
 id: 1
 # image: './image.jpg'
-image: './Member1.jpg'
-name: "Robert Doe"
-profession: "Angular Developer"
+image: './mem1.JPG'
+name: "Asad Azhar Sheikh"
+profession: "Chief Financial Officer CFO"
 facebook: "https://www.facebook.com/"
 twitter: "https://www.twitter.com/"
 linkedin: "https://www.linkedin.com/"

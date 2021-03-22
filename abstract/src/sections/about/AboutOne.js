@@ -251,14 +251,14 @@ class AboutOne extends React.Component {
                 <Col md={6}>
                   <AnimationContainer animation="fadeInRight" delay={1000}>
                     <CounterComponent>
-                      <Counter value={100} duration={5} delay={1000} symbol="+" text="Clients Worked With" />
+                      <Counter value={300} duration={5} delay={1000} symbol="+" text="Clients Worked With" />
                     </CounterComponent>
                   </AnimationContainer>
                 </Col>
                 <Col md={6}>
                   <AnimationContainer animation="fadeInLeft" delay={1000}>
                     <CounterComponent>
-                      <Counter value={15} duration={5} delay={1000} text="Team Members" />
+                      <Counter value={20} duration={5} delay={1000} text="Team Members" />
                     </CounterComponent>
                   </AnimationContainer>
                 </Col>

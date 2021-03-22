@@ -2,7 +2,7 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import Baffle from "baffle-react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin, faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faLinkedin, faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons'
 
 class DesktopContent extends React.Component {
     constructor(props) {
@@ -122,7 +122,7 @@ class DesktopContent extends React.Component {
                         <FontAwesomeIcon icon={faFacebook} onClick={() => window.open(this.props.facebook)}/>
                         <FontAwesomeIcon icon={faTwitter} onClick={() => window.open(this.props.twitter)} />
                         <FontAwesomeIcon icon={faLinkedin} onClick={() => window.open(this.props.linkedin)} />
-                        <FontAwesomeIcon icon={faGithub} onClick={() => window.open(this.props.github)} />
+                        <FontAwesomeIcon icon={faInstagram} onClick={() => window.open(this.props.github)} />
                     </Social>
                 </>
             )

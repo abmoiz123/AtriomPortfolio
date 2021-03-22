@@ -1,9 +1,9 @@
 ---
 id: 2
 # image: './image.jpg'
-image: './Member2.jpg'
-name: "John Doe"
-profession: "React Developer"
+image: './mem2.jpg'
+name: "Sameer-ul-Hassan"
+profession: "Chief Executive Officer CEO"
 facebook: "https://www.facebook.com/"
 twitter: "https://www.twitter.com/"
 linkedin: "https://www.linkedin.com/"

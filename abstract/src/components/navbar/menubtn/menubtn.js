@@ -12,10 +12,10 @@ function MenuComponent() {
                 </span>
                 <ul className="menu_ul">
                     <li className="menu_li">
-                        <a href='#' className="menu_li_a">Home</a>
+                        <a href='/' className="menu_li_a">Home</a>
                     </li>
                     <li className="menu_li">
-                        <a href='#' className="menu_li_a">About</a>
+                        <a href='/About' className="menu_li_a">About</a>
                     </li>
                     <li className="menu_li">
                         <a href='#' className="menu_li_a">Services</a>

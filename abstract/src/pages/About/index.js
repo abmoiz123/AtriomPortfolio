@@ -1,29 +1,36 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
-import Hero from 'sections/hero/Hero.js'
+import AboutPage from '../../pagesMaterial/AboutPage/AboutPage'
+import ChooseUs from '../../pagesMaterial/AboutPage/ChooseUs/Chooseus'
+import OurSpecialization from '../../pagesMaterial/AboutPage/OurSpecialization/OurSpecialization'
+import Service from '../../sections/services/ServicesOne'
 
 class Index extends React.Component {
 
-    render() {
+  render() {
 
-        const { site } = this.props.data
+    const { site } = this.props.data
 
-        return (
-            <div>
-                <Helmet>
-                    <title>{site.meta.title}</title>
-                    <meta name="description" content={site.meta.description} />
-                </Helmet>
-                <Hero />
-            </div>
-        )
-    }
+    return (
+      <div>
+        <Helmet>
+          <title>{site.meta.title}</title>
+          <meta name="description" content={site.meta.description} />
+        </Helmet>
+        <OurSpecialization />
+        {/* <AboutPage />
+        <ChooseUs />
+        <OurSpecialization />
+        <Service /> */}
+      </div>
+    )
+  }
 }
 
 export default Index
 
-export const creativeTwoQuery = graphql`
+export const AboutQuery = graphql`
   query {
     site {
       meta: siteMetadata {

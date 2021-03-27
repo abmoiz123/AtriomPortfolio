@@ -61,9 +61,10 @@ class Footer2 extends React.Component {
                                     <h3 className="About_Us_heading">About Us</h3>
                                     <Separator className="About_Us_heading" />
                                     <ul className="info_ul">
-                                        <li className="info_li">Perfect sleep has the perfect sleep solution for you.</li>
-                                        <li className="info_li">000000000000000</li>
-                                        <li className="info_li">atriomtechnology@gmail.com</li>
+                                        <li className="info_li">We Promise the Growth of your Business!</li>
+                                        <li className="info_li">+447401379573</li>
+                                        <li className="info_li">+923020825699</li>
+                                        <li className="info_li">contact@atriom.co.uk</li>
                                         <li className="info_li">7 Days a week from 10-00 am to 6-00 pm</li>
                                     </ul>
                                 </div>

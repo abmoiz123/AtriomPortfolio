@@ -18,22 +18,22 @@ function MenuComponent() {
                         <a href='/About' className="menu_li_a">About</a>
                     </li>
                     <li className="menu_li">
-                        <a href='#' className="menu_li_a">Services</a>
+                        <a href='/Services' className="menu_li_a">Services</a>
                     </li>
                     <li className="menu_li">
-                        <a href='#' className="menu_li_a">Portfolio</a>
+                        <a href='/Portfolio' className="menu_li_a">Portfolio</a>
                     </li>
                     <li className="menu_li">
-                        <a href='#' className="menu_li_a">Team</a>
+                        <a href='/Team' className="menu_li_a">Team</a>
                     </li>
                     <li className="menu_li">
-                        <a href='#' className="menu_li_a">Clients</a>
+                        <a href='/Clients' className="menu_li_a">Clients</a>
                     </li>
                     <li className="menu_li">
-                        <a href='#' className="menu_li_a">Blog</a>
+                        <a href='/Blog' className="menu_li_a">Blog</a>
                     </li>
                     <li className="menu_li">
-                        <a href='#' className="menu_li_a">Contact</a>
+                        <a href='/Contact' className="menu_li_a">Contact</a>
                     </li>
                 </ul>
             </label>

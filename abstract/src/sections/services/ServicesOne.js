@@ -145,8 +145,6 @@ class ServicesOne extends React.Component {
                                 <AnimationContainer animation="fadeInLeft" delay={200}>
                                     <ServiceElement>
                                         <ServiceIcon>
-                                            {/* <img src={this.props.mobile.childImageSharp.fluid.src} alt="Mobile App Development" />
-                                                      */}
                                             <img src={mobimage} alt="Mobile App Development" />
                                         </ServiceIcon>
                                         <ServiceHeading>

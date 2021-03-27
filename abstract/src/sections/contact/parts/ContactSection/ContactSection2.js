@@ -17,7 +17,10 @@ class ContactSection extends React.Component {
             <Container className="contact_detail_container">
                 <Col className="contact_detail_col" md={12}>
                     <img className="atmlogo" src="/img/Atriom-Logo-2.png" alt="Atriom" />
-                    <p className="com_info">KoderLabs is a custom software development company that offers services ranging from Website Designing, Mobile Application Development, Ecommerce solutions to Business Data Analysis.</p>
+                    <p className="com_info">
+                        We Promise the Growth of your Business!
+                        <br />
+                        At Atriom Technologies, we deliver innovative solutions that allow you to reach your goals and  surpass them, with us it’s a complete roadmap to success.</p>
                     <h5 className="infoheding">Locate</h5>
                     <Separator />
                     <p className="com_info">3rd Floor, R-209, Saba Avenue, Main Road, Block 13 D 2 Gulshan-e-Iqbal, Karachi City, Sindh 75300</p>

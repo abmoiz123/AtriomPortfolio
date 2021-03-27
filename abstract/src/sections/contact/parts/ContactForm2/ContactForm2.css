@@ -85,14 +85,14 @@ input::placeholder {
     padding: 0px !important;
 }
 .submitbtn {
-    background-color: #f6b10a;
-    border: 2px solid #fff;
-    color: #fff;
-    margin-left: 15px;
+    background-color: #f6b10a !important;
+    border: 2px solid #fff !important;
+    color: #fff !important;
+    margin-left: 15px !important;
 }
 .submitbtn:hover, .submitbtn:focus, .submitbtn:active{
-    background-color: #fff;
-    color: #f6b10a;
+    background-color: #fff !important;
+    color: #f6b10a !important;
     border: 2px solid #f6b10a !important;
 }
 .submitbtn:focus, .submitbtn:active{

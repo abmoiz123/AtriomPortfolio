@@ -1,8 +1,8 @@
 ---
 id: 6
 # image: './image.jpg'
-image: './project6.png'
-title: "Big Map Clothing"
+image: './Portfolio6.png'
+title: "Mush Edition"
 category: "Graphics&Video Animation"
 link: "https://github.com"
 ---

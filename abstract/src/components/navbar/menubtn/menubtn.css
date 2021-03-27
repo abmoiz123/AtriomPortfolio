@@ -13,7 +13,7 @@
     box-shadow: 0 0 0 0 #013567, 0 0 0 0 #013567;
   cursor: pointer;
 }
-.open .hamburger {
+.open .hamburger { 
   position: relative;
   top: 49%;
   left: 25%;
@@ -68,10 +68,14 @@
   top: 0;
 }
 .open .menu_input:checked + .menu + .menu_ul {
+  -webkit-transition: .25s 0s ease-in-out;
+  transition: .25s 0s ease-in-out;
+  display: block;
   opacity: 1;
 }
 
 .open .menu_ul {
+  display: none;
   z-index: 200;
   position: absolute;
   width: 300px;
@@ -167,7 +171,6 @@
         line-height: 20px;
         padding: 6px;
         font-size: small;
-        /* background-color: #fadb2a; */
         display: block;
         transition: 1s;
         margin: 3px 0px;

@@ -22,19 +22,19 @@ class HeroVideo extends React.Component {
     }
     updateDimensions = () => {
         if (this.state.height !== window.innerHeight) {
-            this.setState({height: window.innerHeight})
+            this.setState({ height: window.innerHeight })
         }
         if (this.state.width !== window.innerWidth) {
-            this.setState({width: window.innerWidth})
+            this.setState({ width: window.innerWidth })
         }
     }
 
-    
+
     componentDidMount() {
-        this.setState({height: window.innerHeight, width: window.innerWidth})
+        this.setState({ height: window.innerHeight, width: window.innerWidth })
         window.addEventListener('resize', this.updateDimensions)
     }
-    
+
     componentWillUnmount() {
         window.removeEventListener('resize', this.updateDimensions)
     }
@@ -185,6 +185,7 @@ class HeroVideo extends React.Component {
         `
 
         const ServiceCol = styled(Col)`
+            text-Align: center;
             padding: 0;
             border-right: #444;
             &.no-border {
@@ -240,6 +241,10 @@ class HeroVideo extends React.Component {
         `
 
         const ServiceText = styled.p`
+            text-align: justify;
+            overflow: hidden;
+            width: 100%;
+            text-overflow: ellipsis;
             font-size: 14px;
             font-weight: 300;
             color: #c5c5c5;
@@ -247,11 +252,11 @@ class HeroVideo extends React.Component {
 
         return (
             <Section id="home">
-                <VideoContainer style={{height: `${this.state.width > 500 ? this.state.height : 350}px`}}>
+                <VideoContainer style={{ height: `${this.state.width > 500 ? this.state.height : 350}px` }}>
                     {/* <video autoPlay="autoplay" loop="loop" muted style={{height: `${this.state.width >= 1024 && this.state.width < 1200 ? "100%": "auto"}`}}>
                         <source src={LoopVideo} type="video/mp4" />
                     </video> */}
-                    <video autoPlay="autoplay" loop="loop" muted style={{height: `${this.state.width >= 1024 && this.state.width < 1200 ? "100%": "auto"}`}}>
+                    <video autoPlay="autoplay" loop="loop" muted style={{ height: `${this.state.width >= 1024 && this.state.width < 1200 ? "100%" : "auto"}` }}>
                         <source src={LoopVideo} type="video/mp4" />
                     </video>
                     {/* <Container>
@@ -280,58 +285,52 @@ class HeroVideo extends React.Component {
                     </Container> */}
                 </VideoContainer>
                 <BottomContent>
-                        <Container>
-                            <Row>
-                                <ServiceCol md={4} style={{borderRight: this.state.width > 500 ? "1px solid #444" : "none"}}>
-                                    <Service>
-                                        <ServiceContent>
-                                            <ServiceIcon>
-                                                {/* <img src={this.props.webexpertIcon.childImageSharp.fluid.src} alt="web experts" /> */}
-                                                <img src={newwebimage} alt="web experts" />
-                                            </ServiceIcon>
-                                            <ServiceHeading>Digital Marketing</ServiceHeading>
-                                            <ServiceSeparator/>
-                                            <ServiceText>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae ultricies lacus, vitae varius velit. 
-                                                Pellentesque blandit libero eu turpis condimentum bibendum.
-                                            </ServiceText>
-                                        </ServiceContent>
-                                    </Service>
-                                </ServiceCol>
-                                <ServiceCol md={4} style={{borderRight: this.state.width > 500 ? "1px solid #444" : "none"}}>
-                                    <Service>
-                                        <ServiceContent>
-                                            <ServiceIcon>
-                                                    {/* <img src={this.props.mobileIcon.childImageSharp.fluid.src} alt="mobile experts" /> */}
-                                                    <img src={newmobimage} alt="mobile experts" />
-                                            </ServiceIcon>
-                                            <ServiceHeading>E-Commerce Solution</ServiceHeading>
-                                            <ServiceSeparator/>
-                                            <ServiceText>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae ultricies lacus, vitae varius velit. 
-                                                Pellentesque blandit libero eu turpis condimentum bibendum.
-                                            </ServiceText>
-                                        </ServiceContent>
-                                    </Service>
-                                </ServiceCol>
-                                <ServiceCol md={4}>
-                                    <Service>
-                                        <ServiceContent>
-                                            <ServiceIcon>
-                                                    {/* <img src={this.props.seoIcon.childImageSharp.fluid.src} alt="seo experts" /> */}
-                                                    <img src={newseoimage} alt="seo experts" />
-                                            </ServiceIcon>
-                                            <ServiceHeading>Software Development</ServiceHeading>
-                                            <ServiceSeparator/>
-                                            <ServiceText>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae ultricies lacus, vitae varius velit. 
-                                                Pellentesque blandit libero eu turpis condimentum bibendum.
-                                            </ServiceText>
-                                        </ServiceContent>
-                                    </Service>
-                                </ServiceCol>
-                            </Row>
-                        </Container>
+                    <Container>
+                        <Row>
+                            <ServiceCol md={4} style={{ borderRight: this.state.width > 500 ? "1px solid #444" : "none" }}>
+                                <Service>
+                                    <ServiceContent>
+                                        <ServiceIcon>
+                                            <img src={newwebimage} alt="web experts" />
+                                        </ServiceIcon>
+                                        <ServiceHeading>Digital Marketing</ServiceHeading>
+                                        <ServiceSeparator />
+                                        <ServiceText>
+                                            We offer a full service of digital marketing that provides a diverse range of capabilities. We offer SEO, Social Media Marketing, Mobile advertising and Premium content to gain more visitors and buyers to your business.
+                                        </ServiceText>
+                                    </ServiceContent>
+                                </Service>
+                            </ServiceCol>
+                            <ServiceCol md={4} style={{ borderRight: this.state.width > 500 ? "1px solid #444" : "none" }}>
+                                <Service>
+                                    <ServiceContent>
+                                        <ServiceIcon>
+                                            <img src={newmobimage} alt="mobile experts" />
+                                        </ServiceIcon>
+                                        <ServiceHeading>E-Commerce Solution</ServiceHeading>
+                                        <ServiceSeparator />
+                                        <ServiceText>
+                                            Through eCommerce solutions, we help you get e-commerce services that help you to conduct business digitally. The range of eCommerce is broad, including traditional designs and creative websites, dropshipping stores.
+                                        </ServiceText>
+                                    </ServiceContent>
+                                </Service>
+                            </ServiceCol>
+                            <ServiceCol md={4}>
+                                <Service>
+                                    <ServiceContent>
+                                        <ServiceIcon>
+                                            <img src={newseoimage} alt="seo experts" />
+                                        </ServiceIcon>
+                                        <ServiceHeading>Software Development</ServiceHeading>
+                                        <ServiceSeparator />
+                                        <ServiceText>
+                                            We work on industry-specific technology, experienced to deliver highly flexible, scalable, and interoperable mobile, desktop, hybrid and web applications. With our software development services, you will surely empower your business.    
+                                        </ServiceText>
+                                    </ServiceContent>
+                                </Service>
+                            </ServiceCol>
+                        </Row>
+                    </Container>
                 </BottomContent>
             </Section>
         )
@@ -340,7 +339,7 @@ class HeroVideo extends React.Component {
 
 export default props => (
     <StaticQuery
-      query={graphql`
+        query={graphql`
       query {
         background: file(relativePath: {eq: "background-poly.jpg"}) {
           childImageSharp {
@@ -372,15 +371,15 @@ export default props => (
         }
       }
       `}
-      render={({ 
-        background, 
-        webexpertIcon, 
-        mobileIcon, 
-        seoIcon}) => <HeroVideo  
-        background={background} 
-        webexpertIcon={webexpertIcon} 
-        mobileIcon={mobileIcon} 
-        seoIcon={seoIcon}
-        {...props} />}
+        render={({
+            background,
+            webexpertIcon,
+            mobileIcon,
+            seoIcon }) => <HeroVideo
+                background={background}
+                webexpertIcon={webexpertIcon}
+                mobileIcon={mobileIcon}
+                seoIcon={seoIcon}
+                {...props} />}
     />
-  )
+)

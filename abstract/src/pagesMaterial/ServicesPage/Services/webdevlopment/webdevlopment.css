@@ -49,7 +49,7 @@
     .service_heading {
         margin-top: 15px;
         color: #f6b10a;
-        font-size: 30px;
+        font-size: 28px !important;
     }
     .service_separator {
         margin-left: 40%;
@@ -58,5 +58,6 @@
         color: #fff;
         text-overflow: ellipsis;
         text-align: justify;
+        font-size: small;
     }
 }

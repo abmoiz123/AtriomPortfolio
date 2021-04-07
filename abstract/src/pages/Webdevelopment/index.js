@@ -21,11 +21,11 @@ class Index extends React.Component {
                     <meta name="description" content={site.meta.description} />
                 </Helmet>
                 <Header />
-                {/* <Webdevlopment />
-                <Webdevlopment3 /> */}
+                <Webdevlopment />
+                <Webdevlopment3 />
                 <Projects />
-                {/* <Contact />
-                <Footer2 /> */}
+                <Contact />
+                <Footer2 />
             </div>
         )
     }

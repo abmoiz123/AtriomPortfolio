@@ -6,6 +6,9 @@ import {
 } from 'react-bootstrap'
 import styled from 'styled-components'
 import servicebackgroundimage from '../../../../../static/polygonz.png'
+import softwareservice from '../../Servicesimg/softwareservice.jpg'
+import AnimationContainer from 'components/animation-container'
+
 
 class Bss extends React.Component {
     render() {
@@ -33,13 +36,18 @@ class Bss extends React.Component {
                     <Container>
                         <Row className="services_row">
                             <Col className="service_img_col" md={5} sm={12} xs={12}>
-                                <a href="/BusinessSoftwareSolutions" className="read_more_link"><img className="service_img" src={servicebackgroundimage} alt="Web-devlopment" /></a>
+                                <AnimationContainer animation="fadeInLeft" delay={2000}>
+                                    <a href="/BusinessSoftwareSolutions" className="read_more_link"><img className="service_img" src={softwareservice} alt="Web-devlopment" /></a>
+                                </AnimationContainer>
+
                             </Col>
                             <Col className="service_text_col" md={7} sm={12} xs={12}>
-                                <a href="/BusinessSoftwareSolutions" className="read_more_link"><h1 className="service_heading">Business Software Solutions</h1></a>
-                                <div className="service_separator"></div>
-                                <p className="service_para">It is a set of computer programs that businesses use to perform various functions. The applications are useful in increasing productivity and also measuring the production of the company to see which areas need improvement.</p>
-                                <a href="/BusinessSoftwareSolutions" className="read_more_link">Read More</a>
+                                <AnimationContainer animation="fadeInDown" delay={2200}>
+                                    <a href="/BusinessSoftwareSolutions" className="read_more_link"><h1 className="service_heading">Business Software Solutions</h1></a>
+                                    <div className="service_separator"></div>
+                                    <p className="service_para">It is a set of computer programs that businesses use to perform various functions. The applications are useful in increasing productivity and also measuring the production of the company to see which areas need improvement.</p>
+                                    <a href="/BusinessSoftwareSolutions" className="read_more_link">Read More</a>
+                                </AnimationContainer>
                             </Col>
                         </Row>
                     </Container>

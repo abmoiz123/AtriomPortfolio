@@ -6,6 +6,8 @@ import {
 } from 'react-bootstrap'
 import styled from 'styled-components'
 import servicebackgroundimage from '../../../../../static/polygonz.png'
+import mobileappservice from '../../Servicesimg/mobileappservice.jpg'
+import AnimationContainer from 'components/animation-container'
 
 class Mad extends React.Component {
     render() {
@@ -33,13 +35,18 @@ class Mad extends React.Component {
                     <Container>
                         <Row className="services_row">
                             <Col className="service_img_col" md={5} sm={12} xs={12}>
-                                <a href="/MobileAppDevelopment" className="read_more_link"><img className="service_img" src={servicebackgroundimage} alt="Web-devlopment" /></a>
+                                <AnimationContainer animation="fadeInLeft" delay={2800}>
+                                    <a href="/MobileAppDevelopment" className="read_more_link"><img className="service_img" src={mobileappservice} alt="mobileappservice" /></a>
+                                </AnimationContainer>
+
                             </Col>
                             <Col className="service_text_col" md={7} sm={12} xs={12}>
-                                <a href="/MobileAppDevelopment" className="read_more_link"><h1 className="service_heading">Mobile App Development</h1></a>
-                                <div className="service_separator"></div>
-                                <p className="service_para">It entails the process through which a new application is made to be run on devices such as the android operating system or IOS. Mobile app development is not so notable, but if you necessitate it for your business, we chip in to offer you our expertise in developing mobile apps.</p>
-                                <a href="/MobileAppDevelopment" className="read_more_link">Read More</a>
+                                <AnimationContainer animation="fadeInDown" delay={3000}>
+                                    <a href="/MobileAppDevelopment" className="read_more_link"><h1 className="service_heading">Mobile App Development</h1></a>
+                                    <div className="service_separator"></div>
+                                    <p className="service_para">It entails the process through which a new application is made to be run on devices such as the android operating system or IOS. Mobile app development is not so notable, but if you necessitate it for your business, we chip in to offer you our expertise in developing mobile apps.</p>
+                                    <a href="/MobileAppDevelopment" className="read_more_link">Read More</a>
+                                </AnimationContainer>
                             </Col>
                         </Row>
                     </Container>

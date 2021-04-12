@@ -15,6 +15,15 @@ import servicebackgroundimage from '../../../../../static/polygonz.png'
 import portimage from '../../../PortfolioPage/PortfolioImages'
 import './Projects.css'
 import ClientImg from '../../../../../content/team/member-1/mem1.jpg'
+import Client1project from '../projects/clientspic/salimkhanproject.png'
+import Client2project from '../projects/clientspic/masoodahmadproject.png'
+import Client3project from '../projects/clientspic/usmanabdurrazzaqproject.png'
+import Client4project from '../projects/clientspic/Asimlatifproject.png'
+import Client1img from '../projects/clientspic/salimkhan.jpg'
+import Client2img from '../projects/clientspic/masoodahmad.jpg'
+import Client3img from '../projects/clientspic/usmanabdurrazzaq.jpg'
+import Client4img from '../projects/clientspic/Asimlatif.jpg'
+
 
 class Projects extends React.Component {
 
@@ -104,9 +113,9 @@ class Projects extends React.Component {
                     projectName: "Zaiqa Delivery",
                     reviewDate: "November 25, 2019",
                     service: "E-commerce",
-                    projectLogo: servicebackgroundimage,
+                    projectLogo: Client1project,
                     review: "Atriom developed our e-commerce site. They are very professional and patience. Throughout the development, we had numerous requests e.g. trying different fonts, pictures, backgrounds, adding pages etc., every time, they listened and came back with even better ideas. I am very happy and would highly recommend them.",
-                    clientImg: ClientImg,
+                    clientImg: Client1img,
                     clientName: "Salim Khan",
                     clientStatus: "Director",
                     link: "https://zaiqadelivery.com/",
@@ -116,9 +125,9 @@ class Projects extends React.Component {
                     projectName: "Zubair Coals",
                     reviewDate: "December 15, 2019",
                     service: "Web Development",
-                    projectLogo: servicebackgroundimage,
+                    projectLogo: Client2project,
                     review: "Our decision to select Atriom Technologies as our Website Solution partner, now turned into relationship, is never regretted. Atriom is best web development company in Pakistan and serving us with best of the best professional Web development services.",
-                    clientImg: ClientImg,
+                    clientImg: Client2img,
                     clientName: "Masood Ahmad",
                     clientStatus: "CEO",
                     link: "https://www.zubaircoals.com/",
@@ -128,9 +137,9 @@ class Projects extends React.Component {
                     projectName: "Waha Industries.ltd",
                     reviewDate: "February 12, 2020",
                     service: "Graphics Designing, E-commerce",
-                    projectLogo: servicebackgroundimage,
+                    projectLogo: Client3project,
                     review: "We worked with Atriom for past 3 months and we are completely satisfied with the Project handled by their team. Excellent efforts and highly professional communication. Their staff is efficient, trained well and organized. Follow up was effective from them and team lead Sameer Ul Hassan Ansari has successfully completed all our customized requests and was cooperative throughout the project. We highly recommend Atriom and its team members and are planning to line up more projects with them in near future! Good Luck and Job Nicely Done!",
-                    clientImg: ClientImg,
+                    clientImg: Client3img,
                     clientName: "Usman Abdur Razaq",
                     clientStatus: "Head of IT",
                     link: "https://wahaind.co.uk/",
@@ -140,12 +149,12 @@ class Projects extends React.Component {
                     projectName: "E-commercecentral",
                     reviewDate: "March 30, 2020",
                     service: "E-commerce",
-                    projectLogo: servicebackgroundimage,
+                    projectLogo: Client4project,
                     review: "Very professional and reasonable prices. Highly recommended! Special commendations and kudos to Asad Sheikh",
-                    clientImg: ClientImg,
+                    clientImg: Client4img,
                     clientName: "Asim Latif",
                     clientStatus: "Director",
-                    link: "https://a2zutility.com/",
+                    link: "https://e-commercecentral.com/",
                 },
                 {
                     id: 5,

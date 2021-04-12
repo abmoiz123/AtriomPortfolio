@@ -7,6 +7,7 @@ import {
 import styled from 'styled-components'
 import AnimatedHeading from 'components/animated-heading'
 import servicebackgroundimage from '../../../../../static/polygonz.png'
+import webservice from '../../Servicesimg/webdevelopservice.jpg'
 import '../projects/Projects.css'
 
 class Webdevlopment extends React.Component {
@@ -36,7 +37,7 @@ class Webdevlopment extends React.Component {
                         <AnimatedHeading text="Web Development" />
                         <Row className="services_define_row">
                             <Col className="service_define_img_col" md={6} sm={12} xs={12}>
-                                <img className="service_define_img" src={servicebackgroundimage} alt="Web-devlopment" />
+                                <img className="service_define_img" src={webservice} alt="Web-devlopment" />
                             </Col>
                             <Col className="service_define_text_col" md={6} sm={12} xs={12}>
                                 <p className="service_define_para">It refers to the work related to developing websites and their hosting through the use of the internet. The process of web development includes web content development, web design, network security and marketing. <br />Therefore, Atriom Technologies offer you web development services to assist you to generate more product according to awareness, communicating with your potential clients, generating leads to promote or sell your product and services.

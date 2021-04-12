@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import AnimationContainer from 'components/animation-container'
 import Slider from 'react-slick'
 import backgroundImage from '../../../static/polygonz.png'
-import Particles from 'react-particles-js';
+// import Particles from 'react-particles-js';
 
 class ClientsOne extends React.Component {
 
@@ -20,23 +20,23 @@ class ClientsOne extends React.Component {
             position: relative;
             overflow: hidden; 
             // background-color: #000;
-            background-color: #013567;
-            .particles {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-            }
-            // background-image: url(${backgroundImage});
-            // background-size: cover;
+            // background-color: #013567;
+            // .particles {
+            //     position: absolute;
+            //     width: 100%;
+            //     height: 100%;
+            // }
+            background-image: url(${backgroundImage});
+            background-size: cover;
             // padding: 100px 0; 
             .heading {
                 width: 100%;
             }
-            @media (max-width:767px) {   
-              .particles {
-                display: none;
-              }
-            }
+            // @media (max-width:767px) {   
+            //   .particles {
+            //     display: none;
+            //   }
+            // }
           }
         `
 
@@ -121,7 +121,7 @@ class ClientsOne extends React.Component {
 
     return (
       <Section id="clients">
-        <Particles
+        {/* <Particles
           className="particles"
           params={{
             "particles": {
@@ -133,7 +133,6 @@ class ClientsOne extends React.Component {
                 }
               },
               "color": {
-                // "value": ["#03afaf", "#04e5e5"]
                 "value": ["#f6b10a", "#f6b10a"]
               },
               "shape": {
@@ -167,7 +166,6 @@ class ClientsOne extends React.Component {
                 "enable": true,
                 "distance": 150,
                 "color": this.context.theme === "dark" ? "#fff" : "#555",
-                // "color": this.context.theme === "dark" ? "#fff" : "#fff",
                 "opacity": 0.5,
                 "width": 1
               },
@@ -226,7 +224,7 @@ class ClientsOne extends React.Component {
               }
             },
             "retina_detect": true
-          }} />
+          }} /> */}
         <ContainerStyle>
           <Row>
             <LeftCol md={6}>

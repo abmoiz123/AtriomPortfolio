@@ -1,0 +1,35 @@
+.clients_logo_div {
+    /* margin-bottom: 20px; */
+    padding: 0px;
+    margin: 0px;
+    /* height: 150px; */
+    /* max-height: 150px;
+    min-height: 150px; */
+    width: 100%;
+}
+.clients_logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.clients_project_div {
+    width: 100%;
+}
+.clients_project {
+    color: #fadb2a;
+    width: 100% !important;
+    text-decoration: underline #fff 2px;
+    transition: 0.4s;
+    font-size: 20px;
+    text-transform: capitalize;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+}
+.clients_project:hover, .clients_project:link {
+    color: #fff;
+    text-decoration: underline #fadb2a 2px;
+}
+
+/* * {
+    border: 1px solid;
+} */

@@ -34,13 +34,13 @@ class Smm extends React.Component {
                     <Container>
                         <Row className="services_row2">
                             <Col className="service_img_col" md={5} sm={12} xs={12}>
-                                <AnimationContainer animation="fadeInRight" delay={1600}>
+                                <AnimationContainer animation="fadeInRight" delay={800}>
                                     <a href="/SocialMediaMarketing" className="read_more_link"><img className="service_img" src={socialservice} alt="Web-devlopment" /></a>
                                 </AnimationContainer>
 
                             </Col>
                             <Col className="service_text_col" md={7} sm={12} xs={12}>
-                                <AnimationContainer animation="fadeInUp" delay={1800}>
+                                <AnimationContainer animation="fadeInUp" delay={800}>
                                     <a href="/SocialMediaMarketing" className="read_more_link"><h1 className="service_heading">Social Media Marketing</h1></a>
                                     <div className="service_separator"></div>
                                     <p className="service_para">Through this technique, we help you to reach your targeted social media users and other suitable applications that will help you spread brand awareness. Social media marketing is popular and widely used all over the countries.</p>

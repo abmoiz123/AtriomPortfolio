@@ -38,12 +38,12 @@ class Webdevlopment extends React.Component {
                         <AnimatedHeading text="Our Services" />
                         <Row className="services_row">
                             <Col className="service_img_col" md={5} sm={12} xs={12}>
-                                <AnimationContainer animation="fadeInLeft" delay={400}>
+                                <AnimationContainer animation="fadeInLeft" delay={800}>
                                     <a href="/Webdevelopment" className="read_more_link"><img className="service_img" src={webservice} alt="Web-devlopment" /></a>
                                 </AnimationContainer>
                             </Col>
                             <Col className="service_text_col" md={7} sm={12} xs={12}>
-                                <AnimationContainer animation="fadeInDown" delay={600}>
+                                <AnimationContainer animation="fadeInDown" delay={800}>
                                     <a href="/Webdevelopment" className="read_more_link"><h1 className="service_heading">Web development</h1></a>
                                     <div className="service_separator"></div>
                                     <p className="service_para">It refers to the work related to developing websites and their hosting through the use of the internet. The process of web development includes web content development, web design, network security and marketing.</p>

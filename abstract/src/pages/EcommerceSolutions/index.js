@@ -5,6 +5,7 @@ import Ecommerce from '../../pagesMaterial/ServicesPage/Services/EcommerceSoluti
 import Header from '../../pagesMaterial/ServicesPage/Header/Header'
 import Contact from '../../sections/contact/ContactCreative2/ContactCreative2'
 import Footer2 from '../../components/footer/Footer2/Footer2'
+import Projects from '../../pagesMaterial/ServicesPage/Services/projects/projects'
 
 class Index extends React.Component {
 
@@ -20,6 +21,7 @@ class Index extends React.Component {
                 </Helmet>
                 <Header />
                 <Ecommerce />
+                <Projects />
                 <Contact />
                 <Footer2 />
             </div>

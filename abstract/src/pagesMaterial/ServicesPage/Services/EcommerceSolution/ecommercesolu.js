@@ -40,7 +40,7 @@ class Ecommercesolu extends React.Component {
                                 </AnimationContainer>
                             </Col>
                             <Col className="service_text_col" md={7} sm={12} xs={12}>
-                                <AnimationContainer animation="fadeInUp" delay={1000}>
+                                <AnimationContainer animation="fadeInUp" delay={800}>
                                     <a href="/EcommerceSolutions" className="read_more_link"><h1 className="service_heading">E-Commerce Solutions</h1></a>
                                     <div className="service_separator"></div>
                                     <p className="service_para">Through eCommerce solutions, we help you get e-commerce services that help you to conduct business digitally. The range of eCommerce is broad, including traditional designs and creative websites, dropshipping stores. Our e-commerce solutions include:</p>

@@ -17,6 +17,12 @@ import tabletslide from './imagesforservice/tabletslide.jpg'
 import addtocart from './imagesforservice/addtocart.png'
 import image1 from './imagesforservice/slideersection2/image1.png'
 import image2 from './imagesforservice/slideersection2/image2.png'
+import mobslide1 from './imagesforservice/mobileslide/slide1.png'
+import mobslide2 from './imagesforservice/mobileslide/slide2.png'
+import mobslide3 from './imagesforservice/mobileslide/slide3.png'
+import tabslide1 from './imagesforservice/tabletslide/slide1.png'
+import tabslide2 from './imagesforservice/tabletslide/slide2.png'
+import tabslide3 from './imagesforservice/tabletslide/slide3.png'
 
 class Ecommercesolu2 extends React.Component {
     render() {
@@ -82,62 +88,46 @@ class Ecommercesolu2 extends React.Component {
                                 </ul> */}
                             </Col>
                             <Col className="animationcol" lg={6} md={6} sm={12} xs={12}>
-                                <AnimationContainer animation="fadeInDown" delay={800}>
-                                    <div className="mobileanimation">
-                                        <div className="animated_mobile_inside_div">
-                                            <Slider {...settings2}>
-                                                <img className="animated_mobile_inside" src={phoneslide} alt="Business Software Solutions" />
-                                                <img className="animated_mobile_inside" src={phoneslide} alt="Business Software Solutions" />
-                                                <img className="animated_mobile_inside" src={phoneslide} alt="Business Software Solutions" />
-                                                <img className="animated_mobile_inside" src={phoneslide} alt="Business Software Solutions" />
-                                            </Slider>
-                                        </div>
-                                    </div>
-                                </AnimationContainer>
                                 <AnimationContainer animation="fadeInRight" delay={800}>
                                     <div className="tabletanimation">
                                         <div className="animated_tablet_inside_div">
                                             <Slider {...settings2}>
-                                                <img className="animated_tablet_img" src={tabletslide} alt="Business Software Solutions" />
-                                                <img className="animated_tablet_img" src={tabletslide} alt="Business Software Solutions" />
-                                                <img className="animated_tablet_img" src={tabletslide} alt="Business Software Solutions" />
-                                                <img className="animated_tablet_img" src={tabletslide} alt="Business Software Solutions" />
+                                                <img className="animated_tablet_img" src={tabslide1} alt="tabslide1" />
+                                                <img className="animated_tablet_img" src={tabslide2} alt="tabslide2" />
+                                                <img className="animated_tablet_img" src={tabslide3} alt="tabslide3" />
+                                                {/* <img className="animated_tablet_img" src={tabletslide} alt="e-commerce" /> */}
                                             </Slider>
                                         </div>
                                     </div>
                                 </AnimationContainer>
+                                <div className="mobileanimation">
+                                    <div className="animated_mobile_inside_div">
+                                        <Slider {...settings2}>
+                                            <img className="animated_mobile_inside" src={mobslide1} alt="mobslide1" />
+                                            <img className="animated_mobile_inside" src={mobslide2} alt="mobslide2" />
+                                            <img className="animated_mobile_inside" src={mobslide3} alt="mobslide3" />
+                                            <img className="animated_mobile_inside" src={phoneslide} alt="e-commerce" />
+                                        </Slider>
+                                    </div>
+                                </div>
                                 <AnimationContainer animation="fadeInDown" delay={800}>
                                     <div className="laptopanimation">
                                         <div className="animated_laptop_inside_div">
                                             <Slider {...settings2}>
-                                                <img className="animated_laptop_img" src={tabletslide} alt="Business Software Solutions" />
-                                                <img className="animated_laptop_img" src={tabletslide} alt="Business Software Solutions" />
-                                                <img className="animated_laptop_img" src={tabletslide} alt="Business Software Solutions" />
-                                                <img className="animated_laptop_img" src={tabletslide} alt="Business Software Solutions" />
+                                                <img className="animated_laptop_img" src={tabslide1} alt="tabslide1" />
+                                                <img className="animated_laptop_img" src={tabslide2} alt="tabslide2" />
+                                                <img className="animated_laptop_img" src={tabslide3} alt="tabslide3" />
+                                                {/* <img className="animated_laptop_img" src={tabletslide} alt="e-commerce" /> */}
                                             </Slider>
                                         </div>
                                     </div>
                                 </AnimationContainer>
-                                {/* <div className="laptopanimation">
-                                    <div className="animated_laptop_inside_div">
-                                        <img className="animated_laptop_img" src={tabletslide} alt="Business Software Solutions" />
-                                    </div>
-                                </div> */}
-                                {/* <div className="tabletanimation">
-                                    <div className="animated_tablet_inside_div">
-                                        <img className="animated_tablet_img" src={tabletslide} alt="Business Software Solutions" />
-                                    </div>
-                                </div> */}
-                                {/* <div className="laptopanimation"> */}
-                                {/* <div className="animated_tablet_inside_div">
-                                        <img className="animated_tablet_img" src={tabletslide} alt="Business Software Solutions" />
-                                    </div> */}
-                                {/* </div> */}
-                                {/* <img className="service_img" src={phone} alt="Business Software Solutions" /> */}
                             </Col>
+                        </Row>
+                        <Row>
                             <Col className="animationcol" lg={6} md={6} sm={12} xs={12}>
                                 <div className="div_1_for_slide">
-                                    <AnimationContainer animation="fadeInDown" delay={1000}>
+                                    <AnimationContainer animation="fadeInUp" delay={1000}>
                                         <img className="image_1_for_slide" src={image1} alt="e-commerce" />
                                     </AnimationContainer>
                                 </div>
@@ -147,7 +137,7 @@ class Ecommercesolu2 extends React.Component {
                                     </AnimationContainer>
                                 </div>
                             </Col>
-                            <Col className="serviceinsdie_text_col" lg={6} md={6} sm={12} xs={12}>
+                            <Col className="serviceinsdie_text_col_2" lg={6} md={6} sm={12} xs={12}>
                                 <AnimationContainer animation="fadeInRight" delay={800}>
                                     <div className="serviceinsdie_text_div">
                                         <h4 className="service_heading_style">Managed E-Commerce Solutions</h4>
@@ -157,6 +147,8 @@ class Ecommercesolu2 extends React.Component {
                                     </div>
                                 </AnimationContainer>
                             </Col>
+                        </Row>
+                        <Row className="services_inside_row">
                             <Col className="serviceinsdie_text_col" lg={6} md={6} sm={12} xs={12}>
                                 <AnimationContainer animation="fadeInLeft" delay={800}>
                                     <div className="serviceinsdie_text_div">
@@ -168,8 +160,8 @@ class Ecommercesolu2 extends React.Component {
                                 </AnimationContainer>
                             </Col>
                             <Col className="animationcol" lg={6} md={6} sm={12} xs={12}>
-                                <AnimationContainer animation="fadeInRight" delay={1000}>
-                                    <img className="image_1_for_slide" src={addtocart} alt="e-commerce" />
+                                <AnimationContainer animation="fadeInUp" delay={1000}>
+                                    <img className="image_3_for_slide" src={addtocart} alt="e-commerce" />
                                 </AnimationContainer>
                             </Col>
                         </Row>

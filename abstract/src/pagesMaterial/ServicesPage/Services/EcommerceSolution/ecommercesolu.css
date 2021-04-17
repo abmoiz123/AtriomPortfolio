@@ -1,7 +1,11 @@
 .serviceinsdie_text_col {
-    margin: auto;
+    margin: 80px auto;
     width: 50%;
 }
+/* .serviceinsdie_text_col_2 {
+    margin: auto;
+    width: 50%;
+} */
 .serviceinsdie_text_div {
     height: fit-content;
 }
@@ -19,14 +23,23 @@
     color: #fff;
     text-align: justify;
 }
+/* .animationcol {
+    margin-bottom: 20px !important;
+    position: relative !important;
+    height: 1000px !important;
+    border: 1px solid;
+} */
 .mobileanimation {
-    position: relative;
-    top: 0px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    z-index: 1 !important;
     width: 100%;
     height: 350px;
     background-size: contain;
     background-image: url("./imagesforservice/phone3.png");
     background-repeat: no-repeat;
+    /* border: 1px solid; */
 }
 .animated_mobile_inside_div {
     width: 153px;
@@ -44,14 +57,15 @@
     border-radius: 15px;
 }
 .tabletanimation {
-    position: absolute;
-    top: -200px;
+    position: relative;
+    top: 0px;
     left: 150px;
     width: 100%;
     height: 350px;
     background-size: contain;
     background-image: url("./imagesforservice/tablet2.png");
     background-repeat: no-repeat;
+    /* border: 1px solid; */
 }
 .animated_tablet_inside_div {
     width: 86.5%;
@@ -70,13 +84,14 @@
 }
 .laptopanimation {
     position: relative;
-    top: 100px;
+    top: -60px;
     left: -40px;
     width: 130%;
     height: 430px;
     background-size: contain;
     background-image: url("./imagesforservice/laptop.png");
     background-repeat: no-repeat;
+    /* border: 1px solid; */
 }
 .animated_laptop_inside_div {
     width: 74%;
@@ -85,13 +100,11 @@
     left: 100px;
     top: 39px;
     overflow: hidden;
-    /* border-radius: 10px; */
 }
 .animated_laptop_img {
     display: block;
     width: 100%;
     height: 100%;
-    /* border-radius: 10px; */
 }
 .div_1_for_slide {
     position: absolute;
@@ -119,6 +132,10 @@
 .animationcol {
     height: fit-content;
 }
+.image_3_for_slide {
+    width: 100%;
+    height: auto;
+}
 /* * {
     border: 1px solid;
 } */
@@ -135,8 +152,14 @@
         color: #fff;
         text-align: justify;
     }
+    .services_inside_row {
+        flex-direction: column-reverse !important;
+    }
     .mobileanimation {
-        position: relative;
+        position: absolute;
+        top: 30px;
+        left: 50px;
+        z-index: 1 !important;
         width: 100%;
         height: 200px;
     }
@@ -155,12 +178,14 @@
         border-radius: 10px;
     }
     .tabletanimation {
-        top: -100px;
-        left: 85px;
+        position: relative;
+        top: 0px;
+        left: 200px;
         width: 100%;
         height: 200px;
     }
     .animated_tablet_inside_div {
+        position: absolute;
         width: 269px;
         height: 183px;
         left: 8px;
@@ -172,5 +197,62 @@
         width: 100%;
         height: 100%;
         border-radius: 8px;
+    }
+    .laptopanimation {
+        position: relative;
+        top: -30px;
+        left: 3%;
+        width: 100%;
+        height: 270px;
+    }
+    .animated_laptop_inside_div {
+        width: 336px;
+        height: 210px;
+        left: 66px;
+        top: 26px;
+    }
+    .animated_laptop_img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .div_1_for_slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .image_1_for_slide {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 90%;
+        height: 90%;
+    }
+    .div_2_for_slide {
+        width: 100%;
+        height: 100%;
+    }
+    .image_2_for_slide {
+        position: relative;
+        left: 50px;
+        top: 40px;
+        width: 90%;
+        height: 100%;
+    }
+    .animationcol {
+        height: fit-content;
+    }
+    .serviceinsdie_text_col {
+        margin: auto;
+        width: 50%;
+    }
+    .serviceinsdie_text_col_2 {
+        margin-top: 40px;
+    }
+    .image_3_for_slide {
+        width: 100%;
+        height: auto;
     }
 }

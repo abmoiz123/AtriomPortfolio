@@ -175,9 +175,6 @@ class Projects extends React.Component {
         const Section = styled.section`
             position: relative;
             overflow: hidden;
-            padding-bottom: 30px;
-            // background-image: url(${servicebackgroundimage});
-            // background-size: cover;
             .heading {
                 width: 100%;
             }
@@ -185,10 +182,10 @@ class Projects extends React.Component {
         `
 
         const ServiceContainer = styled.div`
-            padding: 0px;
+            padding: 50px 0px 0px 0px;
         `
         const ProjectContainer = styled.div`
-            padding: 10px 50px;
+            padding: 10px 50px 50px 50px;
             @media (max-width:767px) {
               padding: 10px 10px;
             }

@@ -50,15 +50,15 @@ class Header extends React.Component {
                 height: 50px;
             }
         `
-        
-        
-        return(
+
+
+        return (
             <NavbarWrapper>
                 <NavbarContainer>
                     <LogoWrapper className="logo">
-                        <Logo src="/img/Atriom-Logo-2.png" alt="Atriom" />
+                        <a href="/"><Logo src="/img/Atriom-Logo-2.png" alt="Atriom" /></a>
                     </LogoWrapper>
-                    <Menubtn/>
+                    <Menubtn />
                 </NavbarContainer>
             </NavbarWrapper>
         )

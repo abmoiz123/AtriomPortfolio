@@ -10,27 +10,25 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import AnimationContainer from 'components/animation-container'
 import AnimatedHeading from 'components/animated-heading'
-import servicebackgroundimage from '../../../../../static/polygonz.png'
 import './ecommercesolu.css'
-import phoneslide from './imagesforservice/phoneslide.jpg'
-import tabletslide from './imagesforservice/tabletslide.jpg'
 import addtocart from './imagesforservice/addtocart.png'
 import image1 from './imagesforservice/slideersection2/image1.png'
 import image2 from './imagesforservice/slideersection2/image2.png'
+import phone from './imagesforservice/slidersection3/phoneslide.png'
+import phone2 from './imagesforservice/slidersection3/phoneslide2.png'
 import mobslide1 from './imagesforservice/mobileslide/slide1.png'
 import mobslide2 from './imagesforservice/mobileslide/slide2.png'
 import mobslide3 from './imagesforservice/mobileslide/slide3.png'
 import tabslide1 from './imagesforservice/tabletslide/slide1.png'
 import tabslide2 from './imagesforservice/tabletslide/slide2.png'
 import tabslide3 from './imagesforservice/tabletslide/slide3.png'
+import Ecommercecounter from './ecommercecounter'
 
 class Ecommercesolu2 extends React.Component {
     render() {
         const Section = styled.section`
             position: relative;
             overflow: hidden;
-            // background-image: url(${servicebackgroundimage});
-            // background-size: cover;
             .heading {
                 width: 100%;
             }
@@ -38,9 +36,9 @@ class Ecommercesolu2 extends React.Component {
         `
 
         const ServiceContainer = styled.div`
-            padding: 50px 0;
+            padding: 50px 0px 0px 0px;
             @media (max-width:767px) {
-                padding: 20px 0;
+                padding: 20px 0px 0px 0px;
             }
         `
 
@@ -95,7 +93,6 @@ class Ecommercesolu2 extends React.Component {
                                                 <img className="animated_tablet_img" src={tabslide1} alt="tabslide1" />
                                                 <img className="animated_tablet_img" src={tabslide2} alt="tabslide2" />
                                                 <img className="animated_tablet_img" src={tabslide3} alt="tabslide3" />
-                                                {/* <img className="animated_tablet_img" src={tabletslide} alt="e-commerce" /> */}
                                             </Slider>
                                         </div>
                                     </div>
@@ -106,7 +103,6 @@ class Ecommercesolu2 extends React.Component {
                                             <img className="animated_mobile_inside" src={mobslide1} alt="mobslide1" />
                                             <img className="animated_mobile_inside" src={mobslide2} alt="mobslide2" />
                                             <img className="animated_mobile_inside" src={mobslide3} alt="mobslide3" />
-                                            <img className="animated_mobile_inside" src={phoneslide} alt="e-commerce" />
                                         </Slider>
                                     </div>
                                 </div>
@@ -117,7 +113,6 @@ class Ecommercesolu2 extends React.Component {
                                                 <img className="animated_laptop_img" src={tabslide1} alt="tabslide1" />
                                                 <img className="animated_laptop_img" src={tabslide2} alt="tabslide2" />
                                                 <img className="animated_laptop_img" src={tabslide3} alt="tabslide3" />
-                                                {/* <img className="animated_laptop_img" src={tabletslide} alt="e-commerce" /> */}
                                             </Slider>
                                         </div>
                                     </div>
@@ -165,7 +160,28 @@ class Ecommercesolu2 extends React.Component {
                                 </AnimationContainer>
                             </Col>
                         </Row>
+                        <Row>
+                            <Col className="animationcol" lg={6} md={6} sm={12} xs={12}>
+                                <AnimationContainer animation="fadeInRight" delay={1000}>
+                                    <img className="image_3_for_slide" src={phone} alt="e-commerce" />
+                                </AnimationContainer>
+                                <AnimationContainer animation="fadeInLeft" delay={1000}>
+                                    <img className="image_4_for_slide" src={phone2} alt="e-commerce" />
+                                </AnimationContainer>
+                            </Col>
+                            <Col className="serviceinsdie_text_col" lg={6} md={6} sm={12} xs={12}>
+                                <AnimationContainer animation="fadeInLeft" delay={800}>
+                                    <div className="serviceinsdie_text_div">
+                                        <h4 className="service_heading_style">Managed E-Commerce Solutions</h4>
+                                        <p className="service_para_style">
+                                            They is designed to help you conduct your business electronically. Some of the solutions we offer include answers to a given problem. Such features will come in handy to enable you to carry out your eCommerce transactions efficiently. Therefore, if you are an online merchant looking to improve your business with clients, then you have come to the right place.
+                                    </p>
+                                    </div>
+                                </AnimationContainer>
+                            </Col>
+                        </Row>
                     </Container>
+                    <Ecommercecounter />
                 </ServiceContainer>
             </Section>
         )

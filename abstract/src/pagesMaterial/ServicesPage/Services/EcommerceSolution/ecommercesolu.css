@@ -2,10 +2,6 @@
     margin: 80px auto;
     width: 50%;
 }
-/* .serviceinsdie_text_col_2 {
-    margin: auto;
-    width: 50%;
-} */
 .serviceinsdie_text_div {
     height: fit-content;
 }
@@ -15,7 +11,6 @@
     letter-spacing: 1.1px;
     font-weight: 900;
     color: #fadb2a;
-    text-shadow: #fff 2px 2px;
 }
 .service_para_style {
     font-size: 18px;
@@ -31,22 +26,22 @@
 } */
 .mobileanimation {
     position: absolute;
-    top: 30px;
+    top: -5px;
     left: 20px;
     z-index: 1 !important;
-    width: 100%;
-    height: 350px;
+    width: 95%;
+    height: 320px;
     background-size: contain;
-    background-image: url("./imagesforservice/phone3.png");
+    background-image: url("./imagesforservice/phone.png");
     background-repeat: no-repeat;
     /* border: 1px solid; */
 }
 .animated_mobile_inside_div {
-    width: 153px;
-    height: 325px;
+    width: 140px;
+    height: 300px !important;
     position: relative;
-    left: 13px;
-    top: 13px;
+    left: 11px;
+    top: 11px;
     overflow: hidden;
     border-radius: 15px;
 }
@@ -59,20 +54,19 @@
 .tabletanimation {
     position: relative;
     top: 0px;
-    left: 150px;
-    width: 100%;
-    height: 350px;
+    left: 200px;
+    width: 95%;
+    height: 300px;
     background-size: contain;
-    background-image: url("./imagesforservice/tablet2.png");
+    background-image: url("./imagesforservice/tablet.png");
     background-repeat: no-repeat;
-    /* border: 1px solid; */
 }
 .animated_tablet_inside_div {
-    width: 86.5%;
+    width: 78%;
     height: 320px;
     position: relative;
-    left: 16px;
-    top: 14px;
+    left: 13px;
+    top: 11px;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -108,6 +102,7 @@
 }
 .div_1_for_slide {
     position: absolute;
+    top: -100px;
     width: 100%;
     height: 100%;
 }
@@ -124,8 +119,8 @@
 }
 .image_2_for_slide {
     position: relative;
-    left: 0px;
-    top: 90px;
+    left: 20px;
+    top: -10px;
     width: 100%;
     height: 110%;
 }
@@ -136,9 +131,12 @@
     width: 100%;
     height: auto;
 }
-/* * {
-    border: 1px solid;
-} */
+.image_4_for_slide {
+    position: absolute;
+    top: -550px;
+    width: 100%;
+    height: auto;
+}
 @media only screen and (max-width: 600px) {
     .service_heading_style {
         font-size: 25px;
@@ -200,8 +198,8 @@
     }
     .laptopanimation {
         position: relative;
-        top: -30px;
-        left: 3%;
+        top: -50px;
+        left: 30px;
         width: 100%;
         height: 270px;
     }
@@ -218,6 +216,7 @@
     }
     .div_1_for_slide {
         position: absolute;
+        top: 30px;
         width: 100%;
         height: 100%;
         text-align: center;
@@ -255,4 +254,116 @@
         width: 100%;
         height: auto;
     }
+    .image_4_for_slide {
+        top: -510px;
+    }
 }
+@media only screen and (max-width: 400px) {
+    .mobileanimation {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        z-index: 1 !important;
+        width: 23%;
+        height: 150px;
+    }
+    .animated_mobile_inside_div {
+        width: 65px;
+        height: 140px !important;
+        position: relative;
+        left: 6px;
+        top: 5px;
+        border-radius: 10px;
+    }
+    .animated_mobile_inside {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .tabletanimation {
+        position: relative;
+        top: 0px;
+        left: 120px;
+        width: 70%;
+        height: 150px;
+    }
+    .animated_tablet_inside_div {
+        position: absolute;
+        width: 201px;
+        height: 183px;
+        left: 6px;
+        top: 5px;
+        border-radius: 8px;
+    }
+    .animated_tablet_img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+    .laptopanimation {
+        position: relative;
+        top: -30px;
+        left: -8px;
+        width: 110%;
+        height: 210px;
+    }
+    .animated_laptop_inside_div {
+        width: 262px;
+        height: 165px !important;
+        left: 51px;
+        top: 17px;
+    }
+    .animated_laptop_img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .div_1_for_slide {
+        position: absolute;
+        top: -20px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .image_1_for_slide {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 90%;
+        height: 90%;
+    }
+    .div_2_for_slide {
+        width: 100%;
+        height: 100%;
+    }
+    .image_2_for_slide {
+        position: relative;
+        left: 30px;
+        top: 10px;
+        width: 88%;
+        height: 100%;
+    }
+    .animationcol {
+        height: fit-content;
+    }
+    .serviceinsdie_text_col {
+        margin: auto;
+        width: 50%;
+    }
+    .serviceinsdie_text_col_2 {
+        margin-top: 40px;
+    }
+    .image_3_for_slide {
+        width: 100%;
+        height: auto;
+    }
+    .image_4_for_slide {
+        top: -330px;
+    }
+}
+/* * {
+    border: 1px solid;
+} */

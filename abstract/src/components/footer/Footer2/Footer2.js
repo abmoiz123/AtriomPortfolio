@@ -32,7 +32,48 @@ class Footer2 extends React.Component {
     constructor() {
         super()
         this.state = {
-            tags: ['Web Development', 'E-Commerce Solution', 'Search Engine Optimization', 'Social Media Marketing', 'Business Software Solutions', 'Mobile App Development', 'Customized Software Development', 'Graphic Design & Video Animation']
+            tags: [
+                {
+                    id: 1,
+                    service: 'Web Development',
+                    link: '/Webdevelopment'
+                },
+                {
+                    id: 2,
+                    service: 'E-Commerce Solution',
+                    link: '/EcommerceSolutions'
+                },
+                {
+                    id: 3,
+                    service: 'Search Engine Optimization',
+                    link: '/SearchEngineOptimization'
+                },
+                {
+                    id: 4,
+                    service: 'Social Media Marketing',
+                    link: '/SocialMediaMarketing'
+                },
+                {
+                    id: 5,
+                    service: 'Business Software Solutions',
+                    link: '/BusinessSoftwareSolutions'
+                },
+                {
+                    id: 6,
+                    service: 'Mobile App Development',
+                    link: '/MobileAppDevelopment'
+                },
+                {
+                    id: 7,
+                    service: 'Customized Software Development',
+                    link: '/CustomizedSoftwareDevelopment'
+                },
+                {
+                    id: 8,
+                    service: 'Graphic Design & Video Animation',
+                    link: '/GraphicDesignandVideoAnimation'
+                },
+            ]
         }
     }
     render() {
@@ -45,6 +86,7 @@ class Footer2 extends React.Component {
                 margin-left: 6px;
             `
 
+        let tag = this.state.tags
         return (
             <Container fluid className="footer_container">
                 <Row>
@@ -179,12 +221,12 @@ class Footer2 extends React.Component {
                                     <h3 className="About_Us_heading">Our Partners</h3>
                                     <Separator className="About_Us_heading" />
                                     <ul className="partners_ul">
-                                       <li className="partners_li"><img src={googlepartner} alt="Partners" className="partners_pic" /></li> 
-                                       <li className="partners_li"><img src={hubspot} alt="Partners" className="partners_pic" /></li> 
-                                       <li className="partners_li"><img src={ppc} alt="Partners" className="partners_pic" /></li> 
-                                       <li className="partners_li"><img src={bingads} alt="Partners" className="partners_pic" /></li> 
-                                       <li className="partners_li"><img src={facebookpartner} alt="Partners" className="partners_pic" /></li> 
-                                       <li className="partners_li"><img src={shopify} alt="Partners" className="partners_pic" /></li> 
+                                        <li className="partners_li"><img src={googlepartner} alt="Partners" className="partners_pic" /></li>
+                                        <li className="partners_li"><img src={hubspot} alt="Partners" className="partners_pic" /></li>
+                                        <li className="partners_li"><img src={ppc} alt="Partners" className="partners_pic" /></li>
+                                        <li className="partners_li"><img src={bingads} alt="Partners" className="partners_pic" /></li>
+                                        <li className="partners_li"><img src={facebookpartner} alt="Partners" className="partners_pic" /></li>
+                                        <li className="partners_li"><img src={shopify} alt="Partners" className="partners_pic" /></li>
                                     </ul>
                                 </div>
                             </Navbar.Collapse>
@@ -203,11 +245,22 @@ class Footer2 extends React.Component {
                                     <h3 className="About_Us_heading">Popular Tags</h3>
                                     <Separator className="About_Us_heading" />
                                     <ul className="popular_tags_ul">
-                                        {this.state.tags.map((v, i) =>
-                                            <li className="popular_tags_li" key={i}><a className="popular_tags_a" href="/">{v}</a></li>
-                                        )}
-                                        {/* <li className="popular_tags_li"><a className="popular_tags_a" href="/">Atriom Technologies</a></li>
-                                        <li className="popular_tags_li"><a className="popular_tags_a" href="/">Atriom Technologies</a></li> */}
+                                        {tag.map((v, i) => {
+                                            return (
+                                                <li
+                                                    className="popular_tags_li"
+                                                    key={i}
+                                                >
+                                                    <a
+                                                        id={v.id}
+                                                        className="popular_tags_a"
+                                                        href={v.link}
+                                                    >
+                                                        {v.service}
+                                                    </a>
+                                                </li>
+                                            )
+                                        })}
                                     </ul>
                                 </div>
                             </Navbar.Collapse>

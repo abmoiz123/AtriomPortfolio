@@ -5,18 +5,26 @@ import {
     Col,
 } from 'react-bootstrap'
 import styled from 'styled-components'
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+import AnimationContainer from 'components/animation-container'
 import AnimatedHeading from 'components/animated-heading'
-import servicebackgroundimage from '../../../../../static/polygonz.png'
-import webservice from '../../Servicesimg/webdevelopservice.jpg'
-import '../projects/Projects.css'
-
-class Webdevlopment extends React.Component {
+import addtocart from '../EcommerceSolution/imagesforservice/addtocart.png'
+import mobslide1 from '../EcommerceSolution/imagesforservice/mobileslide/slide1.png'
+import mobslide2 from '../EcommerceSolution/imagesforservice/mobileslide/slide2.png'
+import mobslide3 from '../EcommerceSolution/imagesforservice/mobileslide/slide3.png'
+import tabslide1 from '../EcommerceSolution/imagesforservice/tabletslide/slide1.png'
+import tabslide2 from '../EcommerceSolution/imagesforservice/tabletslide/slide2.png'
+import tabslide3 from '../EcommerceSolution/imagesforservice/tabletslide/slide3.png'
+import webimg1 from '../../Servicesimg/graphicdesignservice.jpg'
+import webimg2 from '../../Servicesimg/webdevelopservice.jpg'
+import './webdevlopment.css'
+class Webdevelopment extends React.Component {
     render() {
         const Section = styled.section`
             position: relative;
             overflow: hidden;
-            background-image: url(${servicebackgroundimage});
-            background-size: cover;
             .heading {
                 width: 100%;
             }
@@ -24,25 +32,105 @@ class Webdevlopment extends React.Component {
         `
 
         const ServiceContainer = styled.div`
-            padding: 50px 0;
+            padding: 50px 0px 0px 0px;
             @media (max-width:767px) {
-                padding: 20px 0;
+                padding: 20px 0px 0px 0px;
             }
         `
 
+        const settings2 = {
+            arrows: false,
+            dots: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplaySpeed: 5000,
+            autoplay: true,
+        };
         return (
             <Section>
                 <ServiceContainer>
                     <Container>
                         <AnimatedHeading text="Web Development" />
-                        <Row className="services_define_row">
-                            <Col className="service_define_img_col" md={6} sm={12} xs={12}>
-                                <img className="service_define_img" src={webservice} alt="Web-devlopment" />
+                        <Row className="services_inside_row">
+                            <Col className="serviceinsdie_text_col" lg={6} md={6} sm={12} xs={12}>
+                                <AnimationContainer animation="fadeInLeft" delay={800}>
+                                    <div className="serviceinsdie_text_div">
+                                        <h4 className="service_heading_style">Develop Responsive & UserFriendly Web</h4>
+                                        <p className="service_para_style">
+                                            They is designed to help you conduct your business electronically. Some of the solutions we offer include answers to a given problem. Such features will come in handy to enable you to carry out your eCommerce transactions efficiently. Therefore, if you are an online merchant looking to improve your business with clients, then you have come to the right place.
+                                            They is designed to help you conduct your business electronically. Some of the solutions we offer include answers to a given problem. Such features will come in handy to enable you to carry out your eCommerce transactions efficiently.
+                                        </p>
+                                    </div>
+                                </AnimationContainer>
                             </Col>
-                            <Col className="service_define_text_col" md={6} sm={12} xs={12}>
-                                <p className="service_define_para">It refers to the work related to developing websites and their hosting through the use of the internet. The process of web development includes web content development, web design, network security and marketing. <br />Therefore, Atriom Technologies offer you web development services to assist you to generate more product according to awareness, communicating with your potential clients, generating leads to promote or sell your product and services.
-                                    Through it, you will be able to reach out to many consumers in addition to selling your product and services online. You can also avail information about your clients’ needs so that they can purchase easily with no hassle what so ever. A well updated and maintained website will give you a competitive advantage in the market by improving your business image.
-                                </p>
+                            <Col className="animationcol" lg={6} md={6} sm={12} xs={12}>
+                                <AnimationContainer animation="fadeInRight" delay={800}>
+                                    <div className="tabletanimation">
+                                        <div className="animated_tablet_inside_div">
+                                            <Slider {...settings2}>
+                                                <img className="animated_tablet_img" src={tabslide1} alt="tabslide1" />
+                                                <img className="animated_tablet_img" src={tabslide2} alt="tabslide2" />
+                                                <img className="animated_tablet_img" src={tabslide3} alt="tabslide3" />
+                                            </Slider>
+                                        </div>
+                                    </div>
+                                </AnimationContainer>
+                                <div className="mobileanimation">
+                                    <div className="animated_mobile_inside_div">
+                                        <Slider {...settings2}>
+                                            <img className="animated_mobile_inside" src={mobslide1} alt="mobslide1" />
+                                            <img className="animated_mobile_inside" src={mobslide2} alt="mobslide2" />
+                                            <img className="animated_mobile_inside" src={mobslide3} alt="mobslide3" />
+                                        </Slider>
+                                    </div>
+                                </div>
+                                <AnimationContainer animation="fadeInDown" delay={800}>
+                                    <div className="laptopanimation">
+                                        <div className="animated_laptop_inside_div">
+                                            <Slider {...settings2}>
+                                                <img className="animated_laptop_img" src={tabslide1} alt="tabslide1" />
+                                                <img className="animated_laptop_img" src={tabslide2} alt="tabslide2" />
+                                                <img className="animated_laptop_img" src={tabslide3} alt="tabslide3" />
+                                            </Slider>
+                                        </div>
+                                    </div>
+                                </AnimationContainer>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col className="animationcol" lg={6} md={6} sm={12} xs={12}>
+                                <AnimationContainer animation="fadeInUp" delay={800}>
+                                    <img className="webimage_for_slide" src={webimg1} alt="webdevelopment" />
+                                </AnimationContainer>
+                            </Col>
+                            <Col lg={6} md={6} sm={12} xs={12}>
+                                <AnimationContainer animation="fadeInRight" delay={800}>
+                                    <div className="serviceinsdie_text_div">
+                                        <h4 className="service_heading_style">Develop Responsive & UserFriendly Web</h4>
+                                        <p className="service_para_style">
+                                            They is designed to help you conduct your business electronically. Some of the solutions we offer include answers to a given problem. Such features will come in handy to enable you to carry out your eCommerce transactions efficiently. Therefore, if you are an online merchant looking to improve your business with clients, then you have come to the right place.
+                                    </p>
+                                    </div>
+                                </AnimationContainer>
+                            </Col>
+                        </Row>
+                        <Row className="services_inside_row_web">
+                            <Col lg={6} md={6} sm={12} xs={12}>
+                                <AnimationContainer animation="fadeInLeft" delay={800}>
+                                    <div className="serviceinsdie_text_div">
+                                        <h4 className="service_heading_style">Develop Responsive & UserFriendly Web</h4>
+                                        <p className="service_para_style">
+                                            They is designed to help you conduct your business electronically. Some of the solutions we offer include answers to a given problem. Such features will come in handy to enable you to carry out your eCommerce transactions efficiently. Therefore, if you are an online merchant looking to improve your business with clients, then you have come to the right place.
+                                    </p>
+                                    </div>
+                                </AnimationContainer>
+                            </Col>
+                            <Col className="animationcol" lg={6} md={6} sm={12} xs={12}>
+                                <AnimationContainer animation="fadeInUp" delay={800}>
+                                    <img className="webimage_for_slide" src={webimg2} alt="webdevelopment" />
+                                </AnimationContainer>
                             </Col>
                         </Row>
                     </Container>
@@ -53,4 +141,4 @@ class Webdevlopment extends React.Component {
 
 }
 
-export default Webdevlopment;
+export default Webdevelopment;

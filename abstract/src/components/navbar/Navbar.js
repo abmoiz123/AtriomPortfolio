@@ -112,7 +112,7 @@ class Navbar extends React.Component {
             <NavbarWrapper className={`header${this.state.sticky === true ? ' sticky' : ''}`}>
                 <NavbarContainer>
                     <LogoWrapper className="logo">
-                        <Logo src="/img/Atriom-Logo-2.png" alt="Atriom" />
+                        <a href="/"><Logo src="/img/Atriom-Logo-2.png" alt="Atriom" /></a>
                     </LogoWrapper>
                     <Menubtn/>
                 </NavbarContainer>

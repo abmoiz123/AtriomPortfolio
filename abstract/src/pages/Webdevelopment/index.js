@@ -22,7 +22,7 @@ class Index extends React.Component {
                 </Helmet>
                 <Header />
                 <Webdevlopment />
-                <Webdevlopment3 />
+                {/* <Webdevlopment3 /> */}
                 <Projects />
                 <Contact />
                 <Footer2 />

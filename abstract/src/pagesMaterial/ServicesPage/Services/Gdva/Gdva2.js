@@ -5,16 +5,19 @@ import {
     Col,
 } from 'react-bootstrap'
 import styled from 'styled-components'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+import AnimationContainer from 'components/animation-container'
 import AnimatedHeading from 'components/animated-heading'
-import servicebackgroundimage from '../../../../../static/polygonz.png'
+import gdva1 from './gdvaimages/gdva1.png'
+import gdva2 from './gdvaimages/gdva2.png'
+import gdva3 from './gdvaimages/gdva3.png'
 
 class Gdva2 extends React.Component {
     render() {
         const Section = styled.section`
             position: relative;
             overflow: hidden;
-            background-image: url(${servicebackgroundimage});
-            background-size: cover;
             .heading {
                 width: 100%;
             }
@@ -22,27 +25,69 @@ class Gdva2 extends React.Component {
         `
 
         const ServiceContainer = styled.div`
-            padding: 50px 0;
+            padding: 50px 0px 0px 0px;
             @media (max-width:767px) {
-                padding: 20px 0;
+                padding: 20px 0px 0px 0px;
             }
         `
-
         return (
             <Section>
                 <ServiceContainer>
                     <Container>
                         <AnimatedHeading text="Graphic Design & Video Animation" />
-                        <Row className="services_row">
-                            <Col className="service_img_col" md={6} sm={12} xs={12}>
-                                <img className="service_img" src={servicebackgroundimage} alt="Graphic Design" />
+                        <Row className="services_inside_row">
+                            <Col className="serviceinsdieseo_text_col" lg={6} md={6} sm={12} xs={12}>
+                                <AnimationContainer animation="fadeInLeft" delay={800}>
+                                    <div className="serviceinsdie_text_div">
+                                        <h4 className="service_heading_style">Our Experts Provide Animated Video Creation Services</h4>
+                                        <p className="service_para_style">
+                                            We strive towards customer satisfaction; thus, we make sure to create a strong bond with our clients. We wish to make them feel comfortable and enjoy the whole process while also making sure that in the end, we give them something that exceeds their expectations.
+                                        </p>
+                                    </div>
+                                </AnimationContainer>
                             </Col>
-                            <Col className="service_text_col" md={6} sm={12} xs={12}>
-                                <p className="service_para">
-                                    There is no limit what so ever to what you can get designed at Atriom Technologies. The art of varying motion of either flat cell animation or as drawn animation or animation consisting of photographs either in whole or partially. Motion graphics are essential in helping to make it easy to remember concepts. With graphic designing services you can easily reach out to your potential clients quick and rapid in a more attractive way. It is a modern way of representing data, creating awareness, and call to action for potential customers.
-                                <br />
-                                Having noted the significance of graphic design and animation, we offer the service to you so that you can use it to meet your business goals. So, contact us now and get the design you’ll like!
-                                </p>
+                            <Col className="animationcol" lg={6} md={6} sm={12} xs={12}>
+                                <AnimationContainer animation="fadeInUp" delay={800}>
+                                    <img className="webimage_for_slide" src={gdva1} alt="gdva" />
+                                </AnimationContainer>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col className="animationcol" lg={6} md={6} sm={12} xs={12}>
+                                <AnimationContainer animation="fadeInUp" delay={800}>
+                                    <img className="webimage_for_slide" src={gdva2} alt="gdva" />
+                                </AnimationContainer>
+                            </Col>
+                            <Col lg={6} md={6} sm={12} xs={12}>
+                                <AnimationContainer animation="fadeInRight" delay={800}>
+                                    <div className="serviceinsdie_text_div">
+                                        <h4 className="service_heading_style">Digital Graphiks is The Best Custom Logo Design Company</h4>
+                                        <p className="service_para_style">
+                                            We ensure to give our clients the best logo design according to their requirements and needs.
+                                            We ensure to give our clients the best logo design according to their requirements and needs.
+                                            We ensure to give our clients the best logo design according to their requirements and needs.
+                                        </p>
+                                    </div>
+                                </AnimationContainer>
+                            </Col>
+                        </Row>
+                        <Row className="services_inside_row_web">
+                            <Col lg={6} md={6} sm={12} xs={12}>
+                                <AnimationContainer animation="fadeInLeft" delay={800}>
+                                    <div className="serviceinsdie_text_div">
+                                        <h4 className="service_heading_style">Digital Graphiks is The Best Custom Logo Design Company</h4>
+                                        <p className="service_para_style">
+                                            We ensure to give our clients the best logo design according to their requirements and needs.
+                                            We ensure to give our clients the best logo design according to their requirements and needs.
+                                            We ensure to give our clients the best logo design according to their requirements and needs.
+                                        </p>
+                                    </div>
+                                </AnimationContainer>
+                            </Col>
+                            <Col className="animationcol" lg={6} md={6} sm={12} xs={12}>
+                                <AnimationContainer animation="fadeInUp" delay={800}>
+                                    <img className="webimage_for_slide" src={gdva3} alt="gdva" />
+                                </AnimationContainer>
                             </Col>
                         </Row>
                     </Container>

@@ -5,16 +5,19 @@ import {
     Col,
 } from 'react-bootstrap'
 import styled from 'styled-components'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+import AnimationContainer from 'components/animation-container'
 import AnimatedHeading from 'components/animated-heading'
-import servicebackgroundimage from '../../../../../static/polygonz.png'
+import bssimg1 from './bssimages/bss1.png'
+import bssimg2 from './bssimages/bss2.png'
+import bssimg3 from './bssimages/bss3.png'
 
 class Bss2 extends React.Component {
     render() {
         const Section = styled.section`
             position: relative;
-            overflow: hidden;
-            background-image: url(${servicebackgroundimage});
-            background-size: cover;
+            overflow: hidden; 
             .heading {
                 width: 100%;
             }
@@ -22,27 +25,65 @@ class Bss2 extends React.Component {
         `
 
         const ServiceContainer = styled.div`
-            padding: 50px 0;
+            padding: 50px 0px 0px 0px;
             @media (max-width:767px) {
-                padding: 20px 0;
+                padding: 20px 0px 0px 0px;
             }
         `
-
         return (
             <Section>
                 <ServiceContainer>
                     <Container>
                         <AnimatedHeading text="Business Software Solutions" />
-                        <Row className="services_row">
-                            <Col className="service_img_col" md={6} sm={12} xs={12}>
-                                <img className="service_img" src={servicebackgroundimage} alt="Business Software Solutions" />
+                        <Row className="services_inside_row">
+                            <Col className="serviceinsdieseo_text_col" lg={6} md={6} sm={12} xs={12}>
+                                <AnimationContainer animation="fadeInLeft" delay={800}>
+                                    <div className="serviceinsdie_text_div">
+                                        <h4 className="service_heading_style">We are the Leaders among Top Social Media Marketing Companies</h4>
+                                        <p className="service_para_style">
+                                            Other than SEO expert Karachi, our experts are also SEO consultant Karachi. They help you in gaining top ranking in google search results. Among one of the top leading digital marketing companies in Karachi, we have been providing high-quality work to our clients for the past several years.
+                                        </p>
+                                    </div>
+                                </AnimationContainer>
                             </Col>
-                            <Col className="service_text_col" md={6} sm={12} xs={12}>
-                                <p className="service_para">
-                                It is a set of computer programs that businesses use to perform various functions. The applications are useful in increasing productivity and also measuring the production of the company to see which areas need improvement.
-                                <br />
-                                Therefore, we help you combine ideas that will help you achieve your set objectives. The solution could be in the form of marketing, auditing, payroll, and market analysis and research, amongst other business-related activities that will help solve problems with your company.
-                                </p>
+                            <Col className="animationcol" lg={6} md={6} sm={12} xs={12}>
+                                <AnimationContainer animation="fadeInUp" delay={800}>
+                                    <img className="seoimage_for_slide" src={bssimg1} alt="bss" />
+                                </AnimationContainer>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col className="animationcol" lg={6} md={6} sm={12} xs={12}>
+                                <AnimationContainer animation="fadeInUp" delay={800}>
+                                    <img className="webimage_for_slide" src={bssimg2} alt="bss" />
+                                </AnimationContainer>
+                            </Col>
+                            <Col lg={6} md={6} sm={12} xs={12}>
+                                <AnimationContainer animation="fadeInRight" delay={800}>
+                                    <div className="serviceinsdie_text_div">
+                                        <h4 className="service_heading_style">Top SEO Company Grow Traffic for your Website</h4>
+                                        <p className="service_para_style">
+                                            Do you know that effective Search Engine Optimization practices can increase the engagement of your website effectively? Being a top SEO company, our experts do a wide-ranging competitor research and market analysis to see which technique of SEO is the best for our client. This technique brings a long-lasting traffic towards your website.
+                                        </p>
+                                    </div>
+                                </AnimationContainer>
+                            </Col>
+                        </Row>
+                        <Row className="services_inside_row">
+                            <Col lg={6} md={6} sm={12} xs={12}>
+                                <AnimationContainer animation="fadeInLeft" delay={800}>
+                                    <div className="serviceinsdie_text_div">
+                                        <h4 className="service_heading_style">We have earned a huge name for providing successful SMM Strategy</h4>
+                                        <p className="service_para_style">
+                                            No business is successful without a strong marketing strategy. Any business whether it is of goods or services needs to be marketed effectively. You always need to reach out to your audience at the right time & at the right place to your audience at the right time & at the right place.
+                                        </p>
+                                    </div>
+                                </AnimationContainer>
+                            </Col>
+                            <Col className="animationcol" lg={6} md={6} sm={12} xs={12}>
+                                <AnimationContainer animation="fadeInUp" delay={800}>
+                                    <img className="webimage_for_slide" src={bssimg3} alt="bss" />
+                                </AnimationContainer>
                             </Col>
                         </Row>
                     </Container>

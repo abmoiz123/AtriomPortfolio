@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
+import Projects from '../../pagesMaterial/ServicesPage/Services/projects/projects'
 import Bss2 from '../../pagesMaterial/ServicesPage/Services/Bss/Bss2'
 import Header from '../../pagesMaterial/ServicesPage/Header/Header'
 import Contact from '../../sections/contact/ContactCreative2/ContactCreative2'
@@ -20,6 +21,7 @@ class Index extends React.Component {
                 </Helmet>
                 <Header />
                 <Bss2 />
+                <Projects />
                 <Contact />
                 <Footer2 />
             </div>

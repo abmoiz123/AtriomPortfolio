@@ -1,0 +1,50 @@
+/* * {
+    border: 1px solid;
+} */
+.serviceinsdieseo_text_col {
+    margin: 50px auto;
+    width: 50%;
+}
+.seoimage_for_slide {
+    position: relative;
+    bottom: 50px;
+    width: 112%;
+    height: 500px !important;
+    border-radius: 20px !important;
+    transition: 0.4s;
+}
+.seoimage_for_slide:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+@media only screen and (max-width: 600px) {
+    .seoimage_for_slide {
+        position: relative;
+        bottom: 30px;
+        right: 10px;
+        width: 105%;
+        height: auto !important;
+        border-radius: 20px !important;
+        transition: 0.4s;
+    }
+    .serviceinsdieseo_text_col {
+        margin: auto auto;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .seoimage_for_slide {
+        position: relative;
+        bottom: 30px;
+        right: 7px;
+        width: 105%;
+        height: auto !important;
+        border-radius: 20px !important;
+        transition: 0.4s;
+    }
+    .serviceinsdieseo_text_col {
+        margin: auto auto;
+        width: 100%;
+    }
+}

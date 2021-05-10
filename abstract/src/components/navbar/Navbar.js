@@ -60,8 +60,8 @@ class Navbar extends React.Component {
             z-index: 50;
             width: 100%;
             padding: 15px 30px;
-            @media (max-width: 500px) {
-                padding: 10px 30px;
+            @media (max-width: 767px) {
+                padding: 10px 20px;
             }
             // z-index: 100;
             // &.sticky {
@@ -90,7 +90,7 @@ class Navbar extends React.Component {
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            @media (max-width: 500px) {
+            @media (max-width: 767px) {
                 flex: 0 0 100%;
                 max-width: 100%;
                 // justify-content: center;
@@ -100,9 +100,9 @@ class Navbar extends React.Component {
         const Logo = styled.img`
             height: 100%;
             @media (max-width: 1023px) {
-                height: 40px;
+                height: 80%;
             }
-            @media (max-width: 500px) {
+            @media (max-width: 767px) {
                 height: 50px;
             }
         `

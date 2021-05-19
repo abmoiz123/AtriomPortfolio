@@ -7,7 +7,7 @@ import AboutOne from 'sections/about/AboutOne.js'
 import ServicesOne from 'sections/services/ServicesOne.js'
 import PortfolioOne from 'sections/portfolio/PortfolioOne.js'
 import TeamOne from 'sections/team/TeamOne.js'
-// import Blog from '../sections/Blog/Blog'
+import Blog from '../sections/Blog/Blog'
 import ClientsOne from 'sections/clients/ClientsOne.js'
 import ContactCreative2 from "../sections/contact/ContactCreative2/ContactCreative2"
 class Index extends React.Component {
@@ -28,7 +28,7 @@ class Index extends React.Component {
           <ServicesOne />
           <PortfolioOne />
           <ClientsOne />
-          {/* <Blog /> */}
+          <Blog />
           <TeamOne />
           <ContactCreative2 />
         </Layout>

@@ -130,74 +130,84 @@ class TeamPage extends React.Component {
                         </Col>
                     </Row>
                     <Row className="images_row">
-                        <Col className="slide_text_box_div" lg={2} md={4} sm={12} xs={12}>
+                        <Col className="slide_text_box_div" lg={2} md={3} sm={12} xs={12}>
                             <p className="slide_text_box">Collaborative workspaces spark the conversations, arguments and all out brawls that spark the most creative ideas and solutions to complex problems. And if it takes riding a Google bike in figure 8's around the office to help a client ... well, then that's what it takes.</p>
                         </Col>
-                        <Col lg={10} md={8} sm={12} xs={12}>
+                        <Col lg={10} md={9} sm={12} xs={12}>
                             <AnimationContainer animation="fadeInUp" delay={600}>
                                 <img className="img_2" src={TeamImages.img4} alt="img3" />
                             </AnimationContainer>
                         </Col>
                     </Row>
                     <Row className="images_row">
-                        <Col className="images_col" lg={4} md={4} sm={6} xs={12}>
+                        <Col className="images_col" lg={4} md={4} sm={12} xs={12}>
                             <AnimationContainer animation="fadeInUp" delay={600}>
-                                <div>
-                                    <button onClick={this.showQuotationbtn} className="quotation_btn">
-                                        <img className="quotation_img" src={TeamImages.quotation} alt="quotation" />
-                                    </button>
-                                    <img className={this.state.forQuotation ? 'img_5_edit' : 'img_5'} src={TeamImages.img5} alt="img5" />
-                                    <div className={this.state.forQuotation ? 'anima_text_div_edit' : 'anima_text_div'}>
-                                        <AnimationContainer animation="fadeInUp" delay={600}>
-                                            <p className="anima_text_p">Ronnie Cardno and Esti Nadoff, two of our senior account strategists celebrating some fine ROI.</p>
-                                        </AnimationContainer>
-                                    </div>
+                                <button onClick={this.showQuotationbtn} className="quotation_btn">
+                                    <img className="quotation_img" src={TeamImages.quotation} alt="quotation" />
+                                </button>
+                                <img className={this.state.forQuotation ? 'img_5_edit' : 'img_5'} src={TeamImages.img5} alt="img5" />
+                                <div className={this.state.forQuotation ? 'anima_text_div_edit' : 'anima_text_div'}>
+                                    <AnimationContainer animation="fadeInUp" delay={600}>
+                                        <p className="anima_text_p">Ronnie Cardno and Esti Nadoff, two of our senior account strategists celebrating some fine ROI.</p>
+                                    </AnimationContainer>
                                 </div>
                             </AnimationContainer>
                         </Col>
-                        <Col className="images_col" lg={8} md={8} sm={6} xs={12}>
+                        <Col className="images_col" lg={8} md={8} sm={12} xs={12}>
                             <AnimationContainer animation="fadeInUp" delay={600}>
                                 <img className="img_6" src={TeamImages.img6} alt="img6" />
                             </AnimationContainer>
                         </Col>
                     </Row>
                     <Row className="images_row">
-                        <Col lg={10} md={8} sm={12} xs={12}>
-                            <img className="img_2" src={TeamImages.img7} alt="img3" />
+                        <Col lg={10} md={9} sm={12} xs={12}>
+                            <AnimationContainer animation="fadeInUp" delay={600}>
+                                <img className="img_2" src={TeamImages.img7} alt="img3" />
+                            </AnimationContainer>
                         </Col>
-                        <Col className="slide_text_box_div" lg={2} md={4} sm={12} xs={12}>
+                        <Col className="slide_text_box_div" lg={2} md={3} sm={12} xs={12}>
                             <p className="slide_text_box_2">Collaborative workspaces spark the conversations, arguments and all out brawls that spark the most creative ideas and solutions to complex problems. And if it takes riding a Google bike in figure 8's around the office to help a client ... well, then that's what it takes.</p>
                         </Col>
                     </Row>
                     <Row className="images_row">
-                        <Col className="images_col" lg={4} md={4} sm={6} xs={12}>
-                            <button onClick={this.showQuotationbtn} className="quotation_btn">
-                                <img className="quotation_img" src={TeamImages.quotation} alt="quotation" />
-                            </button>
-                            <img className={this.state.forQuotation ? 'img_5_edit' : 'img_5'} src={TeamImages.img8} alt="img8" />
-                            <div className={this.state.forQuotation ? 'anima_text_div_edit' : 'anima_text_div'}>
-                                <AnimationContainer animation="fadeInUp" delay={600}>
-                                    <p className="anima_text_p">Isaac's digital advertising online courses have been studied by over 200,000 students worldwide.</p>
-                                </AnimationContainer>
-                            </div>
+                        <Col className="images_col" lg={4} md={4} sm={12} xs={12}>
+                            <AnimationContainer animation="fadeInUp" delay={600}>
+                                <button onClick={this.showQuotationbtn} className="quotation_btn">
+                                    <img className="quotation_img" src={TeamImages.quotation} alt="quotation" />
+                                </button>
+                                <img className={this.state.forQuotation ? 'img_5_edit' : 'img_5'} src={TeamImages.img8} alt="img8" />
+                                <div className={this.state.forQuotation ? 'anima_text_div_edit' : 'anima_text_div'}>
+                                    <AnimationContainer animation="fadeInUp" delay={600}>
+                                        <p className="anima_text_p">Isaac's digital advertising online courses have been studied by over 200,000 students worldwide.</p>
+                                    </AnimationContainer>
+                                </div>
+                            </AnimationContainer>
                         </Col>
-                        <Col className="images_col" lg={8} md={8} sm={6} xs={12}>
-                            <img className="img_6" src={TeamImages.img9} alt="img9" />
+                        <Col className="images_col" lg={8} md={8} sm={12} xs={12}>
+                            <AnimationContainer animation="fadeInUp" delay={1200}>
+                                <img className="img_6" src={TeamImages.img9} alt="img9" />
+                            </AnimationContainer>
                         </Col>
                     </Row>
                     <Row className="ceo_images_row">
                         <Col className="ceo_intro_col" lg={5} md={12} sm={12} xs={12}>
-                            <p className="leadership_status">SENIOR LEADERSHIP</p>
-                            <p className="ceo_name_status">Meet Patrick Gilbert, Director Of Client Services</p>
-                            <Separator />
-                            <div className="ceo_intro_para_div">
-                                <p className="ceo_intro_para">Patrick earned a B.S. in Marketing from Penn State University. Patrick is the world's preeminent expert on Google Ad's machine learning, having written a series of articles that went viral inside Google. That led to his being invited by Google to lecture in Dublin, London, New York and Brazil.</p>
-                                <p className="ceo_intro_para">If the Buffalo Bills ever win a Super Bowl, he hopes you think of him and say, “Good for him. He never gave up on that terrible franchise.”</p>
-                            </div>
+                            <AnimationContainer animation="fadeInLeft" delay={600}>
+                                <p className="leadership_status">SENIOR LEADERSHIP</p>
+                                <p className="ceo_name_status">Meet Patrick Gilbert, Director Of Client Services</p>
+                                <Separator />
+                                <div className="ceo_intro_para_div">
+                                    <p className="ceo_intro_para">Patrick earned a B.S. in Marketing from Penn State University. Patrick is the world's preeminent expert on Google Ad's machine learning, having written a series of articles that went viral inside Google. That led to his being invited by Google to lecture in Dublin, London, New York and Brazil.</p>
+                                    <p className="ceo_intro_para">If the Buffalo Bills ever win a Super Bowl, he hopes you think of him and say, “Good for him. He never gave up on that terrible franchise.”</p>
+                                </div>
+                            </AnimationContainer>
                         </Col>
                         <Col lg={7} md={12} sm={12} xs={12}>
-                            <div className="img_10_div"><img className="img_10" src={TeamImages.img10} alt="img3" /></div>
-                            <div className="img_11_div"><img className="img_10" src={TeamImages.img11} alt="img3" /></div>
+                            <AnimationContainer animation="fadeInRight" delay={600}>
+                                <div className="img_10_div"><img className="img_10" src={TeamImages.img10} alt="img3" /></div>
+                            </AnimationContainer>
+                            <AnimationContainer animation="fadeInUp" delay={1200}>
+                                <div className="img_11_div"><img className="img_10" src={TeamImages.img11} alt="img3" /></div>
+                            </AnimationContainer>
                         </Col>
                     </Row>
                 </Container>

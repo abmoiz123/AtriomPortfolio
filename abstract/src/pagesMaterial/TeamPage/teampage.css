@@ -3,6 +3,7 @@
     top: 80px;
     left: 12.5%;
     right: 12.5%;
+    z-index: 1;
     align-items: center !important;
     justify-content: center !important;
 }
@@ -136,7 +137,7 @@
     margin: 0px;
     margin-left: 25px;
     margin-right: 25px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: normal;
     color: white;
 }
@@ -269,17 +270,12 @@
 }
 .ceo_intro_para_div {
     flex: 1;
-    /* padding: 20px 0px; */
-    padding-top: 20px;
+    padding: 20px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .ceo_intro_para {
-    padding: 0px;
-    margin: 0px;
-    padding-bottom: 25px;
-    font-size: larger;
     line-height: 35px;
     text-align: justify;
 }
@@ -293,22 +289,6 @@
         padding: 30px 30px;
     }
     .ceo_intro_para {
-        font-size: small !important;
-        padding-bottom: 5px !important;
-        line-height: 25px;
-        text-align: justify;
-    }
-    /* * {
-        border: 1px solid;
-    } */
-}
-@media only screen and (max-width: 767px) {
-    .ceo_images_row {
-        padding: 30px 30px;
-    }
-    .ceo_intro_para {
-        font-size: larger;
-        padding-bottom: 5px !important;
         line-height: 25px;
         text-align: justify;
     }
@@ -428,13 +408,13 @@
 .img_5 {
     position: relative;
     width: 100%;
-    height: max-content !important;
+    height: 100%;
     overflow: hidden;
 }
 .img_5_edit {
     position: relative;
     width: 100%;
-    height: max-content !important;
+    height: 100%;
     overflow: hidden;
     opacity: 0.5;
 }
@@ -464,7 +444,7 @@
     }
     .slide_text_box_2 {
         position: absolute;
-        top: -80px;
+        top: -120px;
         left: 15%;
         padding: 25px 15px;
         border-radius: 15px;

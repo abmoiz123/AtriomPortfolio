@@ -1,11 +1,12 @@
 import React from 'react'
-// import { Row, Col, Container } from 'react-bootstrap'
+import { Col, Container } from 'react-bootstrap'
 import AnimationContainer from 'components/animation-container'
 import styled from 'styled-components'
 import AnimatedHeading from 'components/animated-heading'
-import backgroundimg from './BlogPageImages/img0.jpeg'
+import backgroundimg from './BlogPageImages/mock1.jpg'
 import './BlogPage.css'
-import { Container } from 'react-bootstrap'
+import img1 from './BlogPageImages/img1.jpg'
+import img2 from './BlogPageImages/img2.png'
 
 class BlogPage extends React.Component {
 
@@ -66,25 +67,48 @@ class BlogPage extends React.Component {
             img {
                 // position: absolute;
                 width: 100%;
-                opacity: 0.2;
+                opacity: 0.7;
             }
         `
         return (
             <Section>
-                <div className="ourteamheading"><AnimatedHeading text="Our Case Studies" /></div>
+                <div className="ourcaseheading"><AnimatedHeading text="Our Case Studies" /></div>
                 <CompanyImage style={{ height: `${this.state.width > 500 ? this.state.height : 350}px` }}>
                     <img src={backgroundimg} style={{ height: `${this.state.width >= 300 && this.state.width < 1200 ? "100%" : "auto"}` }} alt="companyimg" />
+                    <div className="blogpage_company_text_div">
+                        <AnimationContainer animation="fadeInUp" delay={800}>
+                            <h1 className="blogpage_company_text_h1">Let’s Talk Results</h1>
+                            <p className="blogpage_company_text_p">From AdWords management to remarketing to conversion rate optimization, <strong>we help our clients get better results</strong> with our creative and data-driven approach to online advertising.</p>
+                        </AnimationContainer>
+                    </div>
                 </CompanyImage>
-                <div className="blogpage_company_text_div">
-                    <AnimationContainer animation="fadeInUp" delay={800}>
-                        <h1 className="blogpage_company_text_h1">Let’s Talk Results</h1>
-                        <p className="blogpage_company_text_p">From AdWords management to remarketing to conversion rate optimization, <strong>we help our clients get better results</strong> with our creative and data-driven approach to online advertising.</p>
-                    </AnimationContainer>
-                </div>
-                {/* <Container>
-
-                </Container> */}
-            </Section>
+                <Container className="blogPage_Container">
+                    <Col className="blogPage_img_Col">
+                        <div className="blogPage_img_div">
+                            <img className="blogPage_img" src={img1} alt="companyimg" />
+                            <div className="blog_content_anima_div">
+                                <AnimationContainer animation="fadeInDown" delay={800}>
+                                    <img className="blog_logo" src={img2} alt="companyimg" />
+                                    <p className="blog_title_p">Fintech App Rebrands, Uses Automation To Profitably Grow Customer Base</p>
+                                    <a className="blog_case_a" href="/CaseStudy">read case study</a>
+                                </AnimationContainer>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col className="blogPage_img_Col">
+                        <div className="blogPage_img_div">
+                            <img className="blogPage_img" src={img1} alt="companyimg" />
+                            <div className="blog_content_anima_div">
+                                <AnimationContainer animation="fadeInDown" delay={800}>
+                                    <img className="blog_logo" src={img2} alt="companyimg" />
+                                    <p className="blog_title_p">Fintech App Rebrands, Uses Automation To Profitably Grow Customer Base</p>
+                                    <a className="blog_case_a" href="/CaseStudy">read case study</a>
+                                </AnimationContainer>
+                            </div>
+                        </div>
+                    </Col>
+                </Container>
+            </Section >
         )
     }
 }

@@ -4,7 +4,8 @@ import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 // import Typewriter from 'typewriter-effect'
 // import LoopVideo from './assets/loop.mp4'
-import LoopVideo from './assets/intro_video.mp4'
+// import LoopVideo from './assets/intro_video.mp4'
+import homeimg from './assets/mock2.jpg'
 // import webimage from '../../../static/web.png'
 // import mobimage from '../../../static/mobile.png'
 // import seoimage from '../../../static/seo.png'
@@ -42,31 +43,49 @@ class HeroVideo extends React.Component {
     render() {
 
         const Section = styled.section`
-            // border: 5px solid black;
             position: relative;
-            .particles {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-            }
-
-            background-size: cover;
-            background-repeat: no-repeat;
         `
+        // const Section = styled.section`
+        //     // border: 5px solid black;
+        //     position: relative;
+        //     .particles {
+        //         position: absolute;
+        //         width: 100%;
+        //         height: 100%;
+        //     }
 
-        const VideoContainer = styled.div`
+        //     background-size: cover;
+        //     background-repeat: no-repeat;
+        // `
+
+
+        const CompanyImage = styled.div`
             width: 100%;
             display: flex;
             align-items: center;
             overflow: hidden;
             position: relative;
-            video {
-                position: absolute;
+            // background-color: #fff;
+            // background-image: linear-gradient(0deg, grey, #fff);
+            img {
+                // position: absolute;
                 width: 100%;
-                opacity: 0.7;
-                // z-index: 1;
+                // opacity: 0.7;
             }
         `
+        // const VideoContainer = styled.div`
+        //     width: 100%;
+        //     display: flex;
+        //     align-items: center;
+        //     overflow: hidden;
+        //     position: relative;
+        //     video {
+        //         position: absolute;
+        //         width: 100%;
+        //         opacity: 0.7;
+        //         // z-index: 1;
+        //     }
+        // `
         // const Heading1 = styled.h1`
         //     font-size: 80px;
         //     font-family: Teko;
@@ -252,14 +271,14 @@ class HeroVideo extends React.Component {
 
         return (
             <Section id="home">
-                <VideoContainer style={{ height: `${this.state.width > 500 ? this.state.height : 350}px` }}>
-                    {/* <video autoPlay="autoplay" loop="loop" muted style={{height: `${this.state.width >= 1024 && this.state.width < 1200 ? "100%": "auto"}`}}>
-                        <source src={LoopVideo} type="video/mp4" />
-                    </video> */}
+                <CompanyImage style={{ height: `${this.state.width > 500 ? this.state.height : 350}px` }}>
+                    <img src={homeimg} style={{ height: `${this.state.width >= 300 && this.state.width < 1200 ? "100%" : "auto"}` }} alt="companyimg" />
+                </CompanyImage>
+                {/* <VideoContainer style={{ height: `${this.state.width > 500 ? this.state.height : 350}px` }}>
                     <video autoPlay="autoplay" loop="loop" muted style={{ height: `${this.state.width >= 1024 && this.state.width < 1200 ? "100%" : "auto"}` }}>
                         <source src={LoopVideo} type="video/mp4" />
                     </video>
-                    {/* <Container>
+                    <Container>
                         <Content>
                             <Heading1>
                                 Creative
@@ -282,8 +301,8 @@ class HeroVideo extends React.Component {
                                 />
                             </Type>
                         </Content>
-                    </Container> */}
-                </VideoContainer>
+                    </Container>
+                </VideoContainer> */}
                 <BottomContent>
                     <Container>
                         <Row>
@@ -324,7 +343,7 @@ class HeroVideo extends React.Component {
                                         <ServiceHeading>Software Development</ServiceHeading>
                                         <ServiceSeparator />
                                         <ServiceText>
-                                            We work on industry-specific technology, experienced to deliver highly flexible, scalable, and interoperable mobile, desktop, hybrid and web applications. With our software development services, you will surely empower your business.    
+                                            We work on industry-specific technology, experienced to deliver highly flexible, scalable, and interoperable mobile, desktop, hybrid and web applications. With our software development services, you will surely empower your business.
                                         </ServiceText>
                                     </ServiceContent>
                                 </Service>

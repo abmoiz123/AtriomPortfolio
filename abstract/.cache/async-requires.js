@@ -7,6 +7,7 @@ exports.components = {
   "component---src-pages-about-index-js": () => import("./../src/pages/About/index.js" /* webpackChunkName: "component---src-pages-about-index-js" */),
   "component---src-pages-blog-index-js": () => import("./../src/pages/Blog/index.js" /* webpackChunkName: "component---src-pages-blog-index-js" */),
   "component---src-pages-business-software-solutions-index-js": () => import("./../src/pages/BusinessSoftwareSolutions/index.js" /* webpackChunkName: "component---src-pages-business-software-solutions-index-js" */),
+  "component---src-pages-case-study-index-js": () => import("./../src/pages/CaseStudy/index.js" /* webpackChunkName: "component---src-pages-case-study-index-js" */),
   "component---src-pages-clients-index-js": () => import("./../src/pages/Clients/index.js" /* webpackChunkName: "component---src-pages-clients-index-js" */),
   "component---src-pages-contact-index-js": () => import("./../src/pages/Contact/index.js" /* webpackChunkName: "component---src-pages-contact-index-js" */),
   "component---src-pages-customized-software-development-index-js": () => import("./../src/pages/CustomizedSoftwareDevelopment/index.js" /* webpackChunkName: "component---src-pages-customized-software-development-index-js" */),

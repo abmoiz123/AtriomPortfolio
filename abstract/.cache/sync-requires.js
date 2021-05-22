@@ -10,6 +10,7 @@ exports.components = {
   "component---src-pages-about-index-js": hot(preferDefault(require("C:\\Users\\ITC\\Desktop\\Abstract\\abstract\\src\\pages\\About\\index.js"))),
   "component---src-pages-blog-index-js": hot(preferDefault(require("C:\\Users\\ITC\\Desktop\\Abstract\\abstract\\src\\pages\\Blog\\index.js"))),
   "component---src-pages-business-software-solutions-index-js": hot(preferDefault(require("C:\\Users\\ITC\\Desktop\\Abstract\\abstract\\src\\pages\\BusinessSoftwareSolutions\\index.js"))),
+  "component---src-pages-case-study-index-js": hot(preferDefault(require("C:\\Users\\ITC\\Desktop\\Abstract\\abstract\\src\\pages\\CaseStudy\\index.js"))),
   "component---src-pages-clients-index-js": hot(preferDefault(require("C:\\Users\\ITC\\Desktop\\Abstract\\abstract\\src\\pages\\Clients\\index.js"))),
   "component---src-pages-contact-index-js": hot(preferDefault(require("C:\\Users\\ITC\\Desktop\\Abstract\\abstract\\src\\pages\\Contact\\index.js"))),
   "component---src-pages-customized-software-development-index-js": hot(preferDefault(require("C:\\Users\\ITC\\Desktop\\Abstract\\abstract\\src\\pages\\CustomizedSoftwareDevelopment\\index.js"))),

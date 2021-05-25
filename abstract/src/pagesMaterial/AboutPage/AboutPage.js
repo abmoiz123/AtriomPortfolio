@@ -1,8 +1,10 @@
 import React from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
 import styled from 'styled-components'
+import AnimatedHeading from 'components/animated-heading'
 import Navbar from '../../components/navbar/Navbar'
-import LoopVideo from '../../sections/hero/assets/intro_video.mp4'
+import homeimg from './mock3.jpg'
+// import LoopVideo from '../../sections/hero/assets/intro_video.mp4'
 import newwebimage from '../../../static/WEBDEVELOPMENT.png'
 import newmobimage from '../../../static/MOBDEVELOPMENT.png'
 
@@ -35,27 +37,45 @@ class AboutPage extends React.Component {
     }
 
     render() {
-
         const Section = styled.section`
-            // border: 5px solid black;
             position: relative;
-            background-size: cover;
-            background-repeat: no-repeat;
         `
 
-        const VideoContainer = styled.div`
+        // const Section = styled.section`
+        //     // border: 5px solid black;
+        //     position: relative;
+        //     background-size: cover;
+        //     background-repeat: no-repeat;
+        // `
+
+        const CompanyImage = styled.div`
+        width: 100%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        background-color: #fff;
+        background-image: linear-gradient(0deg, grey, #fff);
+        img {
+            // position: absolute;
             width: 100%;
-            display: flex;
-            align-items: center;
-            overflow: hidden;
-            position: relative;
-            video {
-                position: absolute;
-                width: 100%;
-                opacity: 0.7;
-                // z-index: 1;
-            }
-        `
+            opacity: 0.7;
+        }
+    `
+
+        // const VideoContainer = styled.div`
+        //     width: 100%;
+        //     display: flex;
+        //     align-items: center;
+        //     overflow: hidden;
+        //     position: relative;
+        //     video {
+        //         position: absolute;
+        //         width: 100%;
+        //         opacity: 0.7;
+        //         // z-index: 1;
+        //     }
+        // `
 
         const BottomContent = styled.div`
             position: absolute;
@@ -145,13 +165,17 @@ class AboutPage extends React.Component {
         `
 
         return (
-            <Section>
+            <Section> 
                 <Navbar />
-                <VideoContainer style={{ height: `${this.state.width > 500 ? this.state.height : 350}px` }}>
+                <div className="ourcaseheading"><AnimatedHeading text="About Us" /></div>
+                <CompanyImage style={{ height: `${this.state.width > 500 ? this.state.height : 350}px` }}>
+                    <img src={homeimg} style={{ height: `${this.state.width >= 300 && this.state.width < 1200 ? "100%" : "auto"}` }} alt="companyimg" />
+                </CompanyImage>
+                {/* <VideoContainer style={{ height: `${this.state.width > 500 ? this.state.height : 350}px` }}>
                     <video autoPlay="autoplay" loop="loop" muted style={{ height: `${this.state.width >= 1024 && this.state.width < 1200 ? "100%" : "auto"}` }}>
                         <source src={LoopVideo} type="video/mp4" />
                     </video>
-                </VideoContainer>
+                </VideoContainer> */}
                 <BottomContent>
                     <Container>
                         <Row>

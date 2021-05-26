@@ -1,11 +1,11 @@
 import React from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
 import { StaticQuery, graphql } from 'gatsby'
+import AnimatedHeading from 'components/animated-heading'
 import styled from 'styled-components'
 import AnimationContainer from 'components/animation-container'
 import Slider from 'react-slick'
 import backgroundImage from '../../../static/polygonz.png'
-// import Particles from 'react-particles-js';
 
 class ClientsOne extends React.Component {
 
@@ -18,81 +18,21 @@ class ClientsOne extends React.Component {
   render() {
     const Section = styled.section`
             position: relative;
-            overflow: hidden; 
-            // background-color: #000;
-            // background-color: #013567;
-            // .particles {
-            //     position: absolute;
-            //     width: 100%;
-            //     height: 100%;
-            // }
+            overflow: hidden;
             background-image: url(${backgroundImage});
             background-size: cover;
             // padding: 100px 0; 
             .heading {
                 width: 100%;
             }
-            // @media (max-width:767px) {   
-            //   .particles {
-            //     display: none;
-            //   }
-            // }
           }
         `
-
-
-    const Heading = styled.h1`
-            font-size: 110px;
-            line-height: 100px;
-            font-family: Teko;
-            // color: #fff;
-            color: #f6b10a;
-            text-transform: uppercase;
-            text-align: center;
-            width: 100%;
-            @media (min-width:768px) and (max-width:1399px) {
-                font-size: 70px;
-                line-height: 70px;
-            }
-            @media (max-width:767px) {
-                font-size: 40px;
-                line-height: 40px;
-                text-align: center;
-            }
-        `
-    const Color = styled.span`
-          // color:  #04e5e5;
-          color:  #fff;
-          font-size: 120px;
-          line-height: 80px;
-          font-family: Teko;
-          text-transform: uppercase;
-          letter-spacing: 2px;
-          @media (min-width:768px) and (max-width:1399px) {
-              font-size: 70px;
-              line-height: 70px;
-          }
-          @media (max-width:767px) {
-              font-size: 40px;
-              line-height: 40px;
-          }
-      `
-
-      const ContainerStyle = styled(Container)`
+    const ContainerStyle = styled(Container)`
             padding: 100px 0;
             @media (max-width:767px) {
               padding: 50px 0;
             }
         `
-
-    const LeftCol = styled(Col)`
-          display: flex;
-          align-items: center;
-          // @media (max-width:767px) {
-          //   margin: 30px;
-          // }
-      `
-
     const Mob = styled(Col)`
           display: none;
           @media (max-width:767px) {
@@ -115,124 +55,18 @@ class ClientsOne extends React.Component {
       autoplay: true,
       speed: 2000,
       autoplaySpeed: 2000,
-      cssEase: "linear"
+      cssEase: "linear",
     };
 
 
     return (
       <Section id="clients">
-        {/* <Particles
-          className="particles"
-          params={{
-            "particles": {
-              "number": {
-                "value": 100,
-                "density": {
-                  "enable": true,
-                  "value_area": 2000
-                }
-              },
-              "color": {
-                "value": ["#f6b10a", "#f6b10a"]
-              },
-              "shape": {
-                "type": "circle",
-                "stroke": {
-                  "width": 0,
-                  "color": "#fff"
-                }
-              },
-              "opacity": {
-                "value": 0.5,
-                "random": false,
-                "anim": {
-                  "enable": true,
-                  "speed": 0.5,
-                  "opacity_min": 0.1,
-                  "sync": false
-                }
-              },
-              "size": {
-                "value": 8.017060304327615,
-                "random": true,
-                "anim": {
-                  "enable": true,
-                  "speed": 12.181158184520175,
-                  "size_min": 0.1,
-                  "sync": true
-                }
-              },
-              "line_linked": {
-                "enable": true,
-                "distance": 150,
-                "color": this.context.theme === "dark" ? "#fff" : "#555",
-                "opacity": 0.5,
-                "width": 1
-              },
-              "move": {
-                "enable": true,
-                "speed": 1,
-                "direction": "none",
-                "random": false,
-                "straight": false,
-                "out_mode": "bounce",
-                "bounce": false,
-                "attract": {
-                  "enable": false,
-                  "rotateX": 600,
-                  "rotateY": 1200
-                }
-              }
-            },
-            "interactivity": {
-              "detect_on": "canvas",
-              "events": {
-                "onhover": {
-                  "enable": false,
-                  "mode": "repulse"
-                },
-                "onclick": {
-                  "enable": false,
-                  "mode": "push"
-                },
-                "resize": true
-              },
-              "modes": {
-                "grab": {
-                  "distance": 400,
-                  "line_linked": {
-                    "opacity": 1
-                  }
-                },
-                "bubble": {
-                  "distance": 400,
-                  "size": 40,
-                  "duration": 2,
-                  "opacity": 8,
-                  "speed": 3
-                },
-                "repulse": {
-                  "distance": 200,
-                  "duration": 0.4
-                },
-                "push": {
-                  "particles_nb": 4
-                },
-                "remove": {
-                  "particles_nb": 2
-                }
-              }
-            },
-            "retina_detect": true
-          }} /> */}
         <ContainerStyle>
           <Row>
-            <LeftCol md={6}>
-              <Heading>
-                <Color>Clients</Color> we worked with
-                        </Heading>
-            </LeftCol>
-            <Col md={6}>
+            <Col lg={6} md={12}>
+              <AnimatedHeading text="Clients We Worked With" />
+            </Col>
+            <Col lg={6} md={12}>
               <Mob>
                 <Slider {...settings}>
                   {this.clients()}
@@ -253,8 +87,11 @@ class ClientsOne extends React.Component {
   clients() {
     return this.props.clients.map((value, index) => {
       const Client = styled.img`
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100px;
             height: 100px;
-            width: 100px
         `
 
       const ClientCol = styled(Col)`

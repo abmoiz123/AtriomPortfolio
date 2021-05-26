@@ -15,30 +15,21 @@ import seoimage from '../../../static/SEO2.png'
 import emailimage from '../../../static/EMAILS.png'
 import networkimage from '../../../static/NETWORK2.png'
 import sketchimage from '../../../static/UIUX.png'
-// import servicebackgroundimage from '../../../static/servicebackground.jpg'
 import servicebackgroundimage from '../../../static/polygonz.png'
 import './ServiceOne.css'
 
 class ServicesOne extends React.Component {
 
-
     shouldComponentUpdate() {
         return false
     }
-    // check = (e) => {
-    //     let id = e.target.id
-    //     console.log(id)
-    // }
 
     render() {
         const Section = styled.section`
             position: relative;
             overflow: hidden;
-            // background-color: #111;
-            // background-image: url(${this.props.background.childImageSharp.fluid.src});
             background-image: url(${servicebackgroundimage});
             background-size: cover;
-            // background-repeat: no-repeat;
             .heading {
                 width: 100%;
             }
@@ -46,11 +37,12 @@ class ServicesOne extends React.Component {
         `
 
         const ServiceContainer = styled.div`
-            // background-color: rgba(0,0,0,.9);
-            // background-color: #fff;
             padding: 100px 0;
+            @media (max-width:992px) {
+                padding: 50px 0;
+            }
             @media (max-width:767px) {
-                padding: 20px 0;
+                padding: 50px 10px;
             }
         `
 
@@ -64,6 +56,12 @@ class ServicesOne extends React.Component {
             &:hover {
                 background-color: #013567;
                 // box-shadow: 0 28px 60px rgb(4, 229, 229, .1);
+                box-shadow: 0 28px 60px rgb(255,255,255, .3);
+                transform: translateY(-10px);
+            }
+            @media (max-width:992px) {
+                padding: 20px;
+                background-color: #013567;
                 box-shadow: 0 28px 60px rgb(255,255,255, .3);
                 transform: translateY(-10px);
             }
@@ -81,8 +79,15 @@ class ServicesOne extends React.Component {
             font-family: Teko;
             // color: #fff;
             color: #f6b10a;
+            @media (max-width:992px) {
+                font-size: 30px;
+            }
             @media (max-width:767px) {
-                font-size: 20px;
+                font-size: 25px;
+                padding: 10px 0px;
+            }
+            @media (max-width:400px) {
+                padding: 0px;
             }
         `
         const ServiceSeparator = styled.div`
@@ -99,9 +104,15 @@ class ServicesOne extends React.Component {
                 max-height: 90px;
             }
             @media (max-width:767px) {    
-                margin-bottom: 10px;
+                margin: 10px 0px;
                 img {
                     max-height: 70px;
+                }
+            }
+            @media (max-width:400px) {    
+                margin: 5px 0px;
+                img {
+                    max-height: 50px;
                 }
             }
         `
@@ -110,6 +121,9 @@ class ServicesOne extends React.Component {
             text-Align: left;
             padding: 0;
             margin: 11px 0 0 0;
+            @media (max-width:767px) {    
+                margin: 11px 5px 0 10px;
+            }
         `
 
         const ServiceListElement = styled.li`
@@ -212,7 +226,7 @@ class ServicesOne extends React.Component {
                                             <img src={webimage} alt="Web Development" />
                                         </ServiceIcon>
                                         <ServiceHeading>
-                                            Web Development
+                                            Website Development
                                         </ServiceHeading>
                                         <ServiceSeparator />
                                         <Navbar className="readmore_con" expand="lg">

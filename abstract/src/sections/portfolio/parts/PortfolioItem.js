@@ -60,6 +60,9 @@ class PortfolioItem extends React.Component {
             transition: .5s;
             width: 100%;
             text-align: center;
+            @media (max-width:992px) {
+                transform: translateY(130px);
+            }
         `
         const Heading = styled.h4`
             color: #fff;

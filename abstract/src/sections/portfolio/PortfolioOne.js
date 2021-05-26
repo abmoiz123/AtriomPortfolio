@@ -15,6 +15,9 @@ class PortfolioOne extends React.Component {
           // background-color: #050505;
           background-color: #013567;
           padding: 100px 0;
+          @media (max-width:992px) {
+            padding: 50px 0;
+          }
           @media (max-width:767px) {
             padding: 30px 0;
           }
@@ -62,8 +65,10 @@ class PortfolioOne extends React.Component {
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 3,
-            initialSlide: 3
+            className: "center",
+            centerMode: true,
+            centerPadding: "130px",
+            slidesToShow: 1,
           }
         },
         {
@@ -73,9 +78,6 @@ class PortfolioOne extends React.Component {
             centerMode: true,
             centerPadding: "50px",
             slidesToShow: 1,
-            // speed: 500,
-            // slidesToShow: 1,
-            // slidesToScroll: 1
           }
         }
       ]

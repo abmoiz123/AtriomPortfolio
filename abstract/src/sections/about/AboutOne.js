@@ -1,10 +1,12 @@
 import React from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
 import styled from 'styled-components'
-import RevealContent from 'components/reveal-content'
+import AnimatedHeading from 'components/animated-heading'
+// import RevealContent from 'components/reveal-content'
 import Counter from 'components/counter'
 import AnimationContainer from 'components/animation-container'
 import Particles from 'react-particles-js';
+import './AboutOne.css'
 class AboutOne extends React.Component {
 
   shouldComponentUpdate() {
@@ -15,7 +17,6 @@ class AboutOne extends React.Component {
     const Section = styled.section`
             position: relative;
             overflow: hidden; 
-            // background-color: #000;
             background-color: #013567;
             .particles {
                 position: absolute;
@@ -26,54 +27,20 @@ class AboutOne extends React.Component {
         `
 
     const AboutContainer = styled(Container)`
-            padding: 250px 0 100px 0;
-            @media (min-width:600px) and (max-width:768px) {
-                padding: 350px 0 100px 0;
-            }
-            @media (min-width:769px) and (max-width:1024px) {
-              padding: 300px 0 100px 0;
-            }
-            @media (min-width:1025px) and (max-width:1399px) {
-              padding: 400px 0 100px 0;
+            padding: 350px 0px 100px 0px;
+            @media (max-width:992px) {
+              padding: 200px 0px 100px 0px;
             }
             @media (max-width:767px) {
-                padding: 10px 50px;
+                padding: 100px 10px 100px 10px;
+            }
+            @media (max-width:576px) {
+              padding: 70px 10px 70px 10px;
+            }
+            @media (max-width:400px) {
+              padding: 50px 10px 50px 10px;
             }
         `
-    const Heading = styled.h1`
-            font-size: 100px;
-            line-height: 90px;
-            font-family: Teko;
-            color: #fff;
-            text-transform: uppercase;
-            @media (min-width:768px) and (max-width:1399px) {
-                font-size: 70px;
-                line-height: 70px;
-            }
-            @media (max-width:767px) {
-                font-size: 30px;
-                line-height: 30px;
-                text-align: center;
-            }
-        `
-    const Color = styled.span` 
-            // color: #04e5e5;
-            color: rgb(246, 177, 10);
-            font-size: 120px;
-            line-height: 100px;
-            font-family: Teko;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            @media (min-width:768px) and (max-width:1399px) {
-                font-size: 80px;
-                line-height: 80px;
-            }
-            @media (max-width:767px) {
-                font-size: 40px;
-                line-height: 40px;
-            }
-        `
-
     const CounterComponent = styled.div`
             margin: 30px 0;
             .value {
@@ -92,6 +59,9 @@ class AboutOne extends React.Component {
                 position: absolute;
                 font-size: 39px;
                 top: -28px;
+            }
+            @media (max-width:992px) {
+                text-align:center;
             }
             @media (max-width:767px) {
                 margin: 10px 0;
@@ -116,12 +86,6 @@ class AboutOne extends React.Component {
             }
 
         `
-
-    const LeftCol = styled(Col)`
-            display: flex;
-            align-items: center;
-        `
-
     return (
       <Section id="about">
         <Particles
@@ -232,37 +196,33 @@ class AboutOne extends React.Component {
           }} />
         <AboutContainer>
           <Row>
-            <LeftCol md={6}>
-              <RevealContent>
-                <Heading>
-                  Renowned <Color>Software</Color> Company From <Color>London</Color>
-                </Heading>
-              </RevealContent>
-            </LeftCol>
-            <Col md={6}>
+            <Col lg={6} md={12} sm={12}>
+              <AnimatedHeading text="Renowned Software Company From London" />
+            </Col>
+            <Col lg={6} md={12} sm={12} >
               <Row>
-                <Col md={6}>
+                <Col md={6} sm={6} xs={6}>
                   <AnimationContainer animation="fadeInLeft" delay={1000}>
                     <CounterComponent>
                       <Counter value={5} duration={5} delay={1000} symbol="+" text="5 Years of Experience" />
                     </CounterComponent>
                   </AnimationContainer>
                 </Col>
-                <Col md={6}>
+                <Col md={6} sm={6} xs={6}>
                   <AnimationContainer animation="fadeInRight" delay={1000}>
                     <CounterComponent>
                       <Counter value={300} duration={5} delay={1000} symbol="+" text="Clients Worked With" />
                     </CounterComponent>
                   </AnimationContainer>
                 </Col>
-                <Col md={6}>
+                <Col md={6} sm={6} xs={6}>
                   <AnimationContainer animation="fadeInLeft" delay={1000}>
                     <CounterComponent>
                       <Counter value={20} duration={5} delay={1000} text="Team Members" />
                     </CounterComponent>
                   </AnimationContainer>
                 </Col>
-                <Col md={6}>
+                <Col md={6} sm={6} xs={6}>
                   <AnimationContainer animation="fadeInRight" delay={1000}>
                     <CounterComponent>
                       <Counter value={10} duration={5} delay={1000} symbol="+" text="Honourable Awards" />

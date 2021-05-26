@@ -22,6 +22,9 @@ class Blog extends React.Component {
           background-size: cover;
           padding: 100px 0;
           position: relative;
+          @media (max-width:992px) {
+            padding: 50px 0px;
+            }
           @media (max-width:767px) {
               padding: 30px 0px;
           } 
@@ -43,22 +46,39 @@ class Blog extends React.Component {
             }
         `
         const settings = {
-          centerMode: true,
-          centerPadding: "220px",
-          dots: true,
-          infinite: true,
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          autoplay: true,
-          speed: 4000,
-          autoplaySpeed: 4000,
-          cssEase: "linear",
+            centerMode: true,
+            centerPadding: "65px",
+            dots: true,
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: true,
+            speed: 4000,
+            autoplaySpeed: 4000,
+            cssEase: "linear",
             responsive: [
+                {
+                    breakpoint: 767,
+                    settings: {
+                        centerPadding: "100px",
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                },
                 {
                     breakpoint: 600,
                     settings: {
-                        centerPadding: "20px",
+                        centerPadding: "110px",
                         slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        centerPadding: "100px",
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
                     }
                 },
             ]
@@ -73,42 +93,42 @@ class Blog extends React.Component {
                     </Container>
                     <TeamContainer>
                         <Slider {...settings}>
-                                <div className="Blog_div">
-                                    <a className="light_box" href="/">
-                                        <img className="blog_img" src={Blog1} alt={"Blog"} />
-                                        <div className="blog_heading">Marketing<span className="blog_title">Online Media Management</span></div>
-                                    </a>
-                                </div>
-                                <div className="Blog_div">
-                                    <a className="light_box" href="/">
-                                        <img className="blog_img" src={Blog1} alt={"Blog"} />
-                                        <div className="blog_heading">Marketing<span className="blog_title">Online Media Management</span></div>
-                                    </a>
-                                </div>
-                                <div className="Blog_div">
-                                    <a className="light_box" href="/">
-                                        <img className="blog_img" src={Blog1} alt={"Blog"} />
-                                        <div className="blog_heading">Marketing<span className="blog_title">Online Media Management</span></div>
-                                    </a>
-                                </div>
-                                <div className="Blog_div">
-                                    <a className="light_box" href="/">
-                                        <img className="blog_img" src={Blog1} alt={"Blog"} />
-                                        <div className="blog_heading">Marketing<span className="blog_title">Online Media Management</span></div>
-                                    </a>
-                                </div>
-                                <div className="Blog_div">
-                                    <a className="light_box" href="/">
-                                        <img className="blog_img" src={Blog1} alt={"Blog"} />
-                                        <div className="blog_heading">Marketing<span className="blog_title">Online Media Management</span></div>
-                                    </a>
-                                </div>
-                                <div className="Blog_div">
-                                    <a className="light_box" href="/">
-                                        <img className="blog_img" src={Blog1} alt={"Blog"} />
-                                        <div className="blog_heading">Marketing<span className="blog_title">Online Media Management</span></div>
-                                    </a>
-                                </div>
+                            <div className="Blog_div">
+                                <a className="light_box" href="/">
+                                    <img className="blog_img" src={Blog1} alt={"Blog"} />
+                                    <div className="blog_heading">Marketing<span className="blog_title">Online Media Management</span></div>
+                                </a>
+                            </div>
+                            <div className="Blog_div">
+                                <a className="light_box" href="/">
+                                    <img className="blog_img" src={Blog1} alt={"Blog"} />
+                                    <div className="blog_heading">Marketing<span className="blog_title">Online Media Management</span></div>
+                                </a>
+                            </div>
+                            <div className="Blog_div">
+                                <a className="light_box" href="/">
+                                    <img className="blog_img" src={Blog1} alt={"Blog"} />
+                                    <div className="blog_heading">Marketing<span className="blog_title">Online Media Management</span></div>
+                                </a>
+                            </div>
+                            <div className="Blog_div">
+                                <a className="light_box" href="/">
+                                    <img className="blog_img" src={Blog1} alt={"Blog"} />
+                                    <div className="blog_heading">Marketing<span className="blog_title">Online Media Management</span></div>
+                                </a>
+                            </div>
+                            <div className="Blog_div">
+                                <a className="light_box" href="/">
+                                    <img className="blog_img" src={Blog1} alt={"Blog"} />
+                                    <div className="blog_heading">Marketing<span className="blog_title">Online Media Management</span></div>
+                                </a>
+                            </div>
+                            <div className="Blog_div">
+                                <a className="light_box" href="/">
+                                    <img className="blog_img" src={Blog1} alt={"Blog"} />
+                                    <div className="blog_heading">Marketing<span className="blog_title">Online Media Management</span></div>
+                                </a>
+                            </div>
                         </Slider>
                     </TeamContainer>
                 </Col>

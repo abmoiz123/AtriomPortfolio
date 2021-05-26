@@ -69,6 +69,7 @@ class Animated_Heading extends React.Component {
             line-height: ${this.props.lineHeight ? this.props.lineHeight : "90px"};
             font-family: Teko;
             text-transform: uppercase;
+            word-wrap: break-word;
             @media (max-width: 767px) {
                 font-size: 40px;
                 line-height: 40px;
@@ -82,6 +83,7 @@ class Animated_Heading extends React.Component {
             }
         `
         const Space = styled.span`
+            word-wrap: break-word;
             font-size: 100px;
             margin: 0 ${this.props.space ? this.props.space : "10px"};
             @media (max-width: 767px) {

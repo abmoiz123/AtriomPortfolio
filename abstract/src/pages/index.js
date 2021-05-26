@@ -10,6 +10,7 @@ import TeamOne from 'sections/team/TeamOne.js'
 import Blog from '../sections/Blog/Blog'
 import ClientsOne from 'sections/clients/ClientsOne.js'
 import ContactCreative2 from "../sections/contact/ContactCreative2/ContactCreative2"
+
 class Index extends React.Component {
 
   render() {
@@ -22,12 +23,7 @@ class Index extends React.Component {
           <title>{site.meta.title}</title>
           <meta name="description" content={site.meta.description} />
         </Helmet>
-        <Home />
-        <AboutOne />
-        <ClientsOne />
-        {/* <ContactCreative2 /> */}
-        <Blog />
-        {/* <Layout>
+        <Layout>
           <Home />
           <AboutOne />
           <ServicesOne />
@@ -36,7 +32,7 @@ class Index extends React.Component {
           <Blog />
           <TeamOne />
           <ContactCreative2 />
-        </Layout> */}
+        </Layout>
       </div>
     )
   }

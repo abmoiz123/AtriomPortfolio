@@ -69,22 +69,35 @@ class TeamOne extends React.Component {
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 992,
           settings: {
             slidesToShow: 3,
-            initialSlide: 3
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            centerMode: true,
+            centerPadding: "110px",
+            slidesToShow: 1,
+            slidesToScroll: 1,
           }
         },
         {
           breakpoint: 480,
           settings: {
-            className: "center",
             centerMode: true,
-            centerPadding: "70px",
+            centerPadding: "40px",
             slidesToShow: 1,
-            // speed: 500,
-            // slidesToShow: 1,
-            // slidesToScroll: 1
+            slidesToScroll: 1,
           }
         }
       ]

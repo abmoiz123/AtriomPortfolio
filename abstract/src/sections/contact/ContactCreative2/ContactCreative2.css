@@ -16,19 +16,41 @@
     padding: 0px !important;
     margin: 0px !important;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
     .creative_container {
-        padding: 25px 15px !important;
-        overflow: hidden !important;
+        padding: 50px !important;
     }
     .formRow {
-        border-radius: 50px;
-        background-color: #013567 !important;
-        margin: 0px !important;
-        padding: 20px 0px !important;
+        padding: 40px 20px !important;
     }
     .form_col {
         padding: 0px !important;
         margin: 0px !important;
     }
 }
+@media only screen and (max-width: 767px) {
+    .creative_container {
+        padding: 50px !important;
+    }
+    .formRow {
+        margin: 0px !important;
+        padding: 40px 0px !important;
+    }
+    .form_col {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .creative_container {
+        padding: 25px 15px !important;
+        overflow: hidden !important;
+    }
+    .formRow {
+        margin: 0px !important;
+        padding: 20px 0px !important;
+    }
+}
+/* * {
+    border: 1px solid;
+} */

@@ -23,7 +23,7 @@ import hubspot from '../../../../static/hubspot.png'
 import ppc from '../../../../static/ppc.png'
 import bingads from '../../../../static/bingads.png'
 import facebookpartner from '../../../../static/facebookpartner.png'
-import review from '../../../../static/review.png'
+// import review from '../../../../static/review.png'
 import shopify from '../../../../static/shopify.jpg'
 
 
@@ -90,7 +90,7 @@ class Footer2 extends React.Component {
         return (
             <Container fluid className="footer_container">
                 <Row>
-                    <Col lg={3} md={3} sm={12}>
+                    <Col lg={3} md={4} sm={6}>
                         <Navbar className="info_col" expand="lg">
                             <Navbar.Toggle className="nav_toggle" aria-controls="basic-navbar-nav">
                                 <div className="about_us_div">
@@ -113,7 +113,7 @@ class Footer2 extends React.Component {
                             </Navbar.Collapse>
                         </Navbar>
                     </Col>
-                    <Col lg={2} md={2} sm={12}>
+                    <Col lg={2} md={4} sm={6}>
                         <Navbar className="info_col" expand="lg">
                             <Navbar.Toggle className="nav_toggle" aria-controls="basic-navbar-nav">
                                 <div className="about_us_div">
@@ -137,7 +137,7 @@ class Footer2 extends React.Component {
                             </Navbar.Collapse>
                         </Navbar>
                     </Col>
-                    <Col lg={2} md={2} sm={12}>
+                    <Col lg={2} md={4} sm={6}>
                         <Navbar className="info_col" expand="lg">
                             <Navbar.Toggle className="nav_toggle" aria-controls="basic-navbar-nav">
                                 <div className="about_us_div">
@@ -161,7 +161,7 @@ class Footer2 extends React.Component {
                             </Navbar.Collapse>
                         </Navbar>
                     </Col>
-                    <Col lg={5} md={5} sm={12}>
+                    <Col lg={5} md={12} sm={6}>
                         <Navbar className="info_col" expand="lg">
                             <Navbar.Toggle className="nav_toggle" aria-controls="basic-navbar-nav">
                                 <div className="about_us_div">
@@ -186,7 +186,7 @@ class Footer2 extends React.Component {
                                     </InputGroup>
                                     <h6 className="About_Us_heading">Follow Us</h6>
                                     <Separator className="About_Us_heading" />
-                                    <ul className="social_btn_icon">
+                                    <ul className="social_btn_icon_ul">
                                         <li className="social_btn_li"><a className="social_btn_a" href="https://www.facebook.com/">
                                             <FaFacebookF className="social_icon" />
                                         </a>

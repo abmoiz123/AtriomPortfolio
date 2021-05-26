@@ -1,12 +1,11 @@
 import React from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
 import styled from 'styled-components'
-import AnimatedHeading from 'components/animated-heading'
-// import RevealContent from 'components/reveal-content'
+// import AnimatedHeading from 'components/animated-heading'
+import RevealContent from 'components/reveal-content'
 import Counter from 'components/counter'
 import AnimationContainer from 'components/animation-container'
 import Particles from 'react-particles-js';
-import './AboutOne.css'
 class AboutOne extends React.Component {
 
   shouldComponentUpdate() {
@@ -39,6 +38,44 @@ class AboutOne extends React.Component {
             }
             @media (max-width:400px) {
               padding: 50px 10px 50px 10px;
+            }
+        `
+    const Heading = styled.h1`
+            font-size: 100px;
+            line-height: 90px;
+            font-family: Teko;
+            color: #fff;
+            text-transform: uppercase;
+            @media (min-width:768px) and (max-width:1399px) {
+                font-size: 70px;
+                line-height: 70px;
+            }
+            @media (max-width:992px) {
+                text-align: center;
+            }
+            @media (max-width:767px) {
+                font-size: 30px;
+                line-height: 30px;
+                text-align: center;
+            }
+            @media (max-width:576px) {
+                text-align: center;
+            }
+        `
+    const Color = styled.span`
+            color: #f6b10a;
+            font-size: 120px;
+            line-height: 100px;
+            font-family: Teko;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            @media (min-width:768px) and (max-width:1399px) {
+                font-size: 80px;
+                line-height: 80px;
+            }
+            @media (max-width:767px) {
+                font-size: 40px;
+                line-height: 40px;
             }
         `
     const CounterComponent = styled.div`
@@ -85,6 +122,10 @@ class AboutOne extends React.Component {
                 }
             }
 
+        `
+    const LeftCol = styled(Col)`
+            display: flex;
+            align-items: center;
         `
     return (
       <Section id="about">
@@ -196,9 +237,16 @@ class AboutOne extends React.Component {
           }} />
         <AboutContainer>
           <Row>
-            <Col lg={6} md={12} sm={12}>
+            <LeftCol lg={6} md={12} sm={12}>
+              <RevealContent>
+                <Heading>
+                  Renowned <Color>Software</Color> Company From <Color>London</Color>
+                </Heading>
+              </RevealContent>
+            </LeftCol>
+            {/* <Col lg={6} md={12} sm={12}>
               <AnimatedHeading text="Renowned Software Company From London" />
-            </Col>
+            </Col> */}
             <Col lg={6} md={12} sm={12} >
               <Row>
                 <Col md={6} sm={6} xs={6}>

@@ -2,7 +2,6 @@
 .footer_container {
     color: white;
     background-color: #013567;
-    /* padding: 20px !important; */
     padding-top: 15px !important;
     padding-bottom: 5px !important;
 }
@@ -10,8 +9,6 @@
 .info_col {
     padding: 0px !important;
     margin: 0px !important;
-    /* border: 1px solid !important; */
-    /* height: 100% !important; */
 }
 
 .about_us_div {
@@ -92,7 +89,7 @@
     outline: none !important;
     border: none !important;
 }
-.social_btn_icon {
+.social_btn_icon_ul {
     padding: 0px;
     display: flex;
     flex-direction: row;
@@ -189,6 +186,72 @@
     width: 370px;
     height: 32px;
 }
+@media only screen and (max-width: 992px) {
+    .About_Us_heading {
+        display: none;
+    }
+
+    .info_ul {
+        width: auto;
+        list-style-type: circle;
+        font-size: small;
+        margin-left: 20px;
+    }
+    .nav_toggle {
+        background-color: #00468b !important;
+        width: 100%;
+        border: none !important;
+        outline: none !important;
+    }
+    .info_col {
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+    }
+    .copyright_div {
+        flex-direction: column-reverse;
+    }
+    .copyright_p {
+        flex: 1;
+        margin: 0px;
+        padding: 0px;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .popular_tags_a {
+        background-color: #00468b;
+        padding: 5px 10px;
+        transition: 0.1s;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 6px;
+        color: white;
+    }
+    .subscribeinput {
+        width: 100% !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    .social_btn_icon_ul {
+        justify-content: center;
+    }
+    .social_btn_li {
+        margin: 0px 5px;
+    }
+    .paymentpic {
+        width: 80%;
+        height: 60px;
+    }
+    .partners_ul {
+        justify-content: space-between;
+    }
+    .partners_pic {
+        max-width: 130px;
+        max-height: 75px;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
 @media only screen and (max-width: 600px) {
     .About_Us_heading {
         display: none;
@@ -212,7 +275,6 @@
     }
     .copyright_div {
         flex-direction: column-reverse;
-        /* margin-top: 20px; */
     }
     .copyright_p {
         flex: 1;
@@ -253,3 +315,6 @@
         border-radius: 10px;
     }
 }
+/* * {
+    border: 1px solid;
+} */

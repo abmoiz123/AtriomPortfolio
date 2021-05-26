@@ -12,7 +12,7 @@ class ContactCreative2 extends React.Component {
 
     return (
       <Container fluid className="creative_container">
-        <AnimationContainer animation="fadeIn">
+        <AnimationContainer animation="fadeIn"> 
           <Row className="formRow">
             <Col className="form_col" lg={8} md={8} sm={12}><ContactForm2 /></Col>
             <Col className="form_col" lg={4} md={4} sm={12}><ContactSection /></Col>

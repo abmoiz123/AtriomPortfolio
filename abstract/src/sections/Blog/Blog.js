@@ -5,7 +5,6 @@ import AnimatedHeading from 'components/animated-heading'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import backgroundImage from '../../../static/polygonz.png'
 import Blog1 from '../../../static/blog1.jpg'
 import './Blog.css'
 class Blog extends React.Component {
@@ -17,16 +16,14 @@ class Blog extends React.Component {
     render() {
 
         const Section = styled.section`
-        //   background-color: #013567;
-          background-image: url(${backgroundImage});
-          background-size: cover;
-          padding: 100px 0;
+          background-color: #013567;
+          padding: 100px 0px 0px 0px;
           position: relative;
           @media (max-width:992px) {
-            padding: 50px 0px;
+            padding: 50px 0px 0px 0px;
             }
           @media (max-width:767px) {
-              padding: 30px 0px;
+              padding: 30px 0px 0px 0px;
           } 
 
         `
@@ -47,16 +44,24 @@ class Blog extends React.Component {
         `
         const settings = {
             centerMode: true,
-            centerPadding: "65px",
+            centerPadding: "0px",
             dots: true,
             infinite: true,
-            slidesToShow: 2,
+            slidesToShow: 3,
             slidesToScroll: 1,
             autoplay: true,
             speed: 4000,
             autoplaySpeed: 4000,
             cssEase: "linear",
             responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        centerPadding: "60px",
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
                 {
                     breakpoint: 767,
                     settings: {
@@ -68,7 +73,7 @@ class Blog extends React.Component {
                 {
                     breakpoint: 600,
                     settings: {
-                        centerPadding: "110px",
+                        centerPadding: "80px",
                         slidesToShow: 1,
                         slidesToScroll: 1,
                     }
@@ -76,7 +81,7 @@ class Blog extends React.Component {
                 {
                     breakpoint: 400,
                     settings: {
-                        centerPadding: "100px",
+                        centerPadding: "40px",
                         slidesToShow: 1,
                         slidesToScroll: 1,
                     }

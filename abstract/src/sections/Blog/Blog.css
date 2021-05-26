@@ -58,27 +58,11 @@
     }
     .blog_heading {
         margin: 0px 10px;
-        display: block;
-        position: relative;
         bottom: 60px;
-        width: 100%;
         font-size: 18px;
-        font-weight: bolder;
-        color: #fadb2a !important;
-        text-decoration: none !important;
-    }
-    .blog_heading:link .blog_heading:hover {
-        text-decoration: none !important;
-        outline: none;
-        color: #fadb2a !important;
     }
     .blog_title {
-        text-decoration: none !important;
-        display: block;
-        width: 100%;
-        color: #00468b;
         font-size: 15px;
-        font-weight: bolder;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -87,57 +71,39 @@
         width: 95%;
     }
     .blog_heading {
-        margin: 0px 10px;
-        display: block;
-        position: relative;
-        bottom: 60px;
-        width: 100%;
         font-size: 18px;
-        font-weight: bolder;
-        color: #fadb2a !important;
-        text-decoration: none !important;
-    }
-    .blog_heading:link .blog_heading:hover {
-        text-decoration: none !important;
-        outline: none;
-        color: #fadb2a !important;
     }
     .blog_title {
-        text-decoration: none !important;
-        display: block;
-        width: 100%;
-        color: #00468b;
         font-size: 15px;
-        font-weight: bolder;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
     .Blog_div {
+        max-height: 200px;
+        height: 200px;
         max-width: 95%;
         width: 95%;
     }
     .blog_heading {
         margin: 0px 10px;
-        display: block;
-        position: relative;
-        bottom: 60px;
-        width: 100%;
         font-size: 13px;
-        font-weight: bolder;
-        color: #fadb2a !important;
-        text-decoration: none !important;
-    }
-    .blog_heading:link .blog_heading:hover {
-        text-decoration: none !important;
-        outline: none;
-        color: #fadb2a !important;
     }
     .blog_title {
-        text-decoration: none !important;
-        display: block;
-        width: 100%;
-        color: #00468b;
         font-size: 15px;
-        font-weight: bolder;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .Blog_div {
+        max-height: 180px;
+        height: 180px;
+        max-width: 95%;
+        width: 95%;
+    }
+    .blog_heading {
+        margin: 0px 10px;
+        font-size: 13px;
+    }
+    .blog_title {
+        font-size: 15px;
     }
 }

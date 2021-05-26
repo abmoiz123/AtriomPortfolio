@@ -54,7 +54,7 @@ class ContactForm2 extends React.Component {
   render() {
 
 
-
+ 
     const Separator = styled.div`
             height: 5px;
             width: 50px;
@@ -130,7 +130,7 @@ class ContactForm2 extends React.Component {
       <Container className="contact_form_container">
         <Heading className="Heading">
           Let's Think Together
-              </Heading>
+        </Heading>
         <Separator />
         <Row className="Contact_form_row">
           <Col className="Contact_form_col" md={6}>

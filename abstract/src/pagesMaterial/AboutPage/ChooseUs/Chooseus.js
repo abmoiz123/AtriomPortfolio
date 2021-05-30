@@ -14,7 +14,6 @@ import seoimage from '../../../../static/SEO2.png'
 import emailimage from '../../../../static/EMAILS.png'
 import networkimage from '../../../../static/NETWORK2.png'
 import sketchimage from '../../../../static/UIUX.png'
-import servicebackgroundimage from '../../../../static/polygonz.png'
 import './ChooseUs.css'
 
 class ChooseUs extends React.Component {
@@ -29,9 +28,6 @@ class ChooseUs extends React.Component {
             position: relative;
             overflow: hidden;
             background-color: #013567;
-            // background-image: url(${servicebackgroundimage});
-            // background-size: cover;
-            // background-repeat: no-repeat;
             .heading {
                 width: 100%;
             }
@@ -45,8 +41,11 @@ class ChooseUs extends React.Component {
 
         const ServiceContainer = styled.div`
             padding: 300px 0 100px 0;
+            @media (max-width:992px) {
+                padding: 220px 0 80px 0;
+            }
             @media (max-width:767px) {
-                padding: 20px 0;
+                padding: 50px 15px;
             }
         `
 
@@ -60,17 +59,23 @@ class ChooseUs extends React.Component {
             transition: .2s;
             &:hover {
                 background-color: #013567;
-                // box-shadow: 0 28px 60px rgb(4, 229, 229, .1);
                 box-shadow: 0 28px 60px rgb(255,255,255, .3);
                 transform: translateY(-10px);
             }
             @media (max-width:767px) {
-                height: 180px !important;
-                padding: 10px 0px;
+                height: 250px !important;
+                padding: 20px;
                 background-color: #013567;
-                // box-shadow: 0 28px 60px rgb(4, 229, 229, .1);
                 box-shadow: 0 28px 60px rgb(255,255,255, .3);
                 transform: translateY(-10px);
+            }
+            @media (max-width:576px) {
+                height: 220px !important;
+                padding: 10px;
+            }
+            @media (max-width:400px) {
+                height: auto !important;
+                padding: 10px;
             }
         `
         const ServiceHeading = styled.h4`
@@ -79,15 +84,13 @@ class ChooseUs extends React.Component {
             font-family: Teko;
             margin-top: 20px;
             color: #fff;
-            // color: #f6b10a;
             @media (max-width:767px) {
-                font-size: 20px;
+                font-size: 25px;
             }
         `
         const ServiceSeparator = styled.div`
             height: 5px;
             width: 50px;
-            // background-color: #04e5e5;
             background-color: #00468b;
             margin-bottom: 10px;
             margin: auto;
@@ -100,7 +103,13 @@ class ChooseUs extends React.Component {
             @media (max-width:767px) {    
                 margin-bottom: 10px;
                 img {
-                    max-height: 70px;
+                    max-height: 100px;
+                }
+            }
+            @media (max-width:576px) {    
+                margin-bottom: 10px;
+                img {
+                    max-height: 80px;
                 }
             }
         `
@@ -217,7 +226,7 @@ class ChooseUs extends React.Component {
                     <Container>
                         <AnimatedHeading text="Why Choose Us" />
                         <Row>
-                            <Col className="service_col" md={4} sm={6} xs={6}>
+                            <Col className="service_col" lg={4} md={6} sm={6} xs={12}>
                                 <AnimationContainer animation="fadeInLeft" delay={200}>
                                     <ServiceElement className="service_element">
                                         <ServiceIcon>
@@ -230,7 +239,7 @@ class ChooseUs extends React.Component {
                                     </ServiceElement>
                                 </AnimationContainer>
                             </Col>
-                            <Col className="service_col" md={4} sm={6} xs={6}>
+                            <Col className="service_col" lg={4} md={6} sm={6} xs={12}>
                                 <AnimationContainer animation="fadeInRight" delay={600}>
                                     <ServiceElement className="service_element">
                                         <ServiceIcon>
@@ -243,7 +252,7 @@ class ChooseUs extends React.Component {
                                     </ServiceElement>
                                 </AnimationContainer>
                             </Col>
-                            <Col className="service_col" md={4} sm={6} xs={6}>
+                            <Col className="service_col" lg={4} md={6} sm={6} xs={12}>
                                 <AnimationContainer animation="fadeInDown" delay={400}>
                                     <ServiceElement className="service_element">
                                         <ServiceIcon>
@@ -256,7 +265,7 @@ class ChooseUs extends React.Component {
                                     </ServiceElement>
                                 </AnimationContainer>
                             </Col>
-                            <Col className="service_col" md={4} sm={6} xs={6}>
+                            <Col className="service_col" lg={4} md={6} sm={6} xs={12}>
                                 <AnimationContainer animation="fadeInLeft" delay={800}>
                                     <ServiceElement className="service_element">
                                         <ServiceIcon>
@@ -269,7 +278,7 @@ class ChooseUs extends React.Component {
                                     </ServiceElement>
                                 </AnimationContainer>
                             </Col>
-                            <Col className="service_col" md={4} sm={6} xs={6}>
+                            <Col className="service_col" lg={4} md={6} sm={6} xs={12}>
                                 <AnimationContainer animation="fadeInUp" delay={1000}>
                                     <ServiceElement className="service_element">
                                         <ServiceIcon>
@@ -282,7 +291,7 @@ class ChooseUs extends React.Component {
                                     </ServiceElement>
                                 </AnimationContainer>
                             </Col>
-                            <Col className="service_col" md={4} sm={6} xs={6}>
+                            <Col className="service_col" lg={4} md={6} sm={6} xs={12}>
                                 <AnimationContainer animation="fadeInRight" delay={1200}>
                                     <ServiceElement className="service_element">
                                         <ServiceIcon>
@@ -295,9 +304,6 @@ class ChooseUs extends React.Component {
                                     </ServiceElement>
                                 </AnimationContainer>
                             </Col>
-                            {/* <div className="sun">
-                                <div className="dot"></div>
-                            </div> */}
                         </Row>
                     </Container>
                 </ServiceContainer>

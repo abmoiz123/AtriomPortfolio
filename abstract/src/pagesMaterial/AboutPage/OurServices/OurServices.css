@@ -26,6 +26,11 @@
 .nav_toggle2:hover {
     color: #fff;
 }
+@media only screen and (max-width: 400px) {    
+    .nav_toggle2 {    
+        font-size: 12px !important;
+    }
+}
 /* * {
     border: 1px solid;
 } */

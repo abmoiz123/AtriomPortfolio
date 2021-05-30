@@ -8,23 +8,23 @@ class Header extends React.Component {
     render() {
 
         const NavbarWrapper = styled.div`
-            // position: absolute;
             background-color: #013567;
-            // z-index: 50;
             width: 100%;
             padding: 8px 30px;
-            @media (max-width: 500px) {
+            @media (max-width: 992px) {
                 padding: 10px 30px;
+            }
+            @media (max-width: 400px) {
+                padding: 10px 15px;
             }
         `
 
         const NavbarContainer = styled.div`
             display: flex;
             position: relative;
-            @media (max-width: 500px) {
-                // display: block;
-                padding: 0;
-            }
+            // @media (max-width: 500px) {
+            //     padding: 0;
+            // }
             
         `
 
@@ -34,20 +34,26 @@ class Header extends React.Component {
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            @media (max-width: 500px) {
-                flex: 0 0 100%;
-                max-width: 100%;
-                // justify-content: center;
+            @media (max-width: 576px) {
+                flex: 0 0 40%;
+                max-width: 40%;
+            }
+            @media (max-width: 400px) {
+                flex: 0 0 45%;
+                max-width: 45%;
             }
         `
 
         const Logo = styled.img`
-            height: 100%;
-            @media (max-width: 1023px) {
-                height: 40px;
+            height: auto !important;
+            width: 100%;
+            @media (max-width: 576px) {
+                height: auto !important;
+                width: 100%;
             }
-            @media (max-width: 500px) {
-                height: 50px;
+            @media (max-width: 576px) {
+                height: auto !important;
+                width: 100%;
             }
         `
 

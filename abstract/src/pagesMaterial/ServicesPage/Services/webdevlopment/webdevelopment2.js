@@ -32,6 +32,9 @@ class Webdevelopment extends React.Component {
 
         const ServiceContainer = styled.div`
             padding: 50px 0px 0px 0px;
+            @media (max-width:992px) {
+                padding: 0px;
+            }
             @media (max-width:767px) {
                 padding: 20px 0px 0px 0px;
             }
@@ -50,10 +53,10 @@ class Webdevelopment extends React.Component {
         return (
             <Section>
                 <ServiceContainer>
-                    <Container>
+                    <Container className="services_inside_container">
                         <AnimatedHeading text="Web Development" />
                         <Row className="services_inside_row">
-                            <Col className="serviceinsdie_text_col" lg={6} md={6} sm={12} xs={12}>
+                            <Col className="serviceinsdie_text_web_col_2" lg={6} md={12} sm={12} xs={12}>
                                 <AnimationContainer animation="fadeInLeft" delay={800}>
                                     <div className="serviceinsdie_text_div">
                                         <h4 className="service_heading_style">Develop Responsive & UserFriendly Web</h4>
@@ -64,7 +67,7 @@ class Webdevelopment extends React.Component {
                                     </div>
                                 </AnimationContainer>
                             </Col>
-                            <Col className="animationcol" lg={6} md={6} sm={12} xs={12}>
+                            <Col className="animationcol" lg={6} md={12} sm={12} xs={12}>
                                 <AnimationContainer animation="fadeInRight" delay={800}>
                                     <div className="tabletanimation">
                                         <div className="animated_tablet_inside_div">
@@ -99,14 +102,14 @@ class Webdevelopment extends React.Component {
                             </Col>
                         </Row>
                         <Row>
-                            <Col className="animationcol" lg={6} md={6} sm={12} xs={12}>
+                            <Col className="animationcol" lg={6} md={12} sm={12} xs={12}>
                                 <AnimationContainer animation="fadeInUp" delay={800}>
                                     <img className="webimage_for_slide" src={webimg1} alt="webdevelopment" />
                                 </AnimationContainer>
                             </Col>
-                            <Col lg={6} md={6} sm={12} xs={12}>
+                            <Col lg={6} md={12} sm={12} xs={12}>
                                 <AnimationContainer animation="fadeInRight" delay={800}>
-                                    <div className="serviceinsdie_text_div">
+                                    <div className="serviceinsdie_text_web_col">
                                         <h4 className="service_heading_style">Develop Your ecommerce website with us and Enjoy the Benefits</h4>
                                         <p className="service_para_style">
                                             The end product we give to our clients includes our commitment, quality, integrity, and care. We understand your business is important to you, thus, we want to help you and your business to grow by coming up with an end product that will surely satisfy you and boost your brand image.
@@ -116,9 +119,9 @@ class Webdevelopment extends React.Component {
                             </Col>
                         </Row>
                         <Row className="services_inside_row_web">
-                            <Col lg={6} md={6} sm={12} xs={12}>
+                            <Col lg={6} md={12} sm={12} xs={12}>
                                 <AnimationContainer animation="fadeInLeft" delay={800}>
-                                    <div className="serviceinsdie_text_div">
+                                    <div className="serviceinsdie_text_web_col">
                                         <h4 className="service_heading_style">A Web App Development Agency You Should Definitely Invest</h4>
                                         <p className="service_para_style">
                                             Any business that operates online knows how competitive the internet arena is. Therefore, in order to achieve good conversions and better sales, our web based application development services will enable you to stand your ground in this particular industry.
@@ -126,7 +129,7 @@ class Webdevelopment extends React.Component {
                                     </div>
                                 </AnimationContainer>
                             </Col>
-                            <Col className="animationcol" lg={6} md={6} sm={12} xs={12}>
+                            <Col className="animationcol" lg={6} md={12} sm={12} xs={12}>
                                 <AnimationContainer animation="fadeInUp" delay={800}>
                                     <img className="webimage_for_slide" src={webimg2} alt="webdevelopment" />
                                 </AnimationContainer>

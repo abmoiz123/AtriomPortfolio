@@ -14,11 +14,9 @@ import seoimage from '../../../../static/SEO2.png'
 import emailimage from '../../../../static/EMAILS.png'
 import networkimage from '../../../../static/NETWORK2.png'
 import sketchimage from '../../../../static/UIUX.png'
-// import servicebackgroundimage from '../../../static/servicebackground.jpg'
 import './OurServices.css'
 
 class OurServices extends React.Component {
-
 
     shouldComponentUpdate() {
         return false
@@ -31,15 +29,15 @@ class OurServices extends React.Component {
             .heading {
                 width: 100%;
             }
-          }
         `
 
         const ServiceContainer = styled.div`
-            // background-color: rgba(0,0,0,.9);
-            // background-color: #fff;
             padding: 100px 0;
+            @media (max-width:992px) {
+                padding: 50px 0;
+            }
             @media (max-width:767px) {
-                padding: 20px 0;
+                padding: 50px 10px;
             }
         `
 
@@ -53,6 +51,12 @@ class OurServices extends React.Component {
             &:hover {
                 background-color: #013567;
                 // box-shadow: 0 28px 60px rgb(4, 229, 229, .1);
+                box-shadow: 0 28px 60px rgb(255,255,255, .3);
+                transform: translateY(-10px);
+            }
+            @media (max-width:992px) {
+                padding: 20px;
+                background-color: #013567;
                 box-shadow: 0 28px 60px rgb(255,255,255, .3);
                 transform: translateY(-10px);
             }
@@ -70,8 +74,15 @@ class OurServices extends React.Component {
             font-family: Teko;
             // color: #fff;
             color: #f6b10a;
+            @media (max-width:992px) {
+                font-size: 30px;
+            }
             @media (max-width:767px) {
-                font-size: 20px;
+                font-size: 25px;
+                padding: 10px 0px;
+            }
+            @media (max-width:400px) {
+                padding: 0px;
             }
         `
         const ServiceSeparator = styled.div`
@@ -88,24 +99,37 @@ class OurServices extends React.Component {
                 max-height: 90px;
             }
             @media (max-width:767px) {    
-                margin-bottom: 10px;
+                margin: 10px 0px;
                 img {
                     max-height: 70px;
+                }
+            }
+            @media (max-width:400px) {    
+                margin: 5px 0px;
+                img {
+                    max-height: 50px;
                 }
             }
         `
 
         const ServiceList = styled.ul`
+            text-Align: left;
             padding: 0;
             margin: 11px 0 0 0;
+            @media (max-width:767px) {    
+                margin: 11px 5px 0 10px;
+            }
         `
 
         const ServiceListElement = styled.li`
+            // overflow: hidden;
+            // text-overflow: ellipsis;
+            // text-Align: justify;
             list-style: none;
             color: #fff;
             // color: #013567;
             font-weight: 300;
-            font-size: 14px;
+            font-size: 13px;
             margin: 5px 0px;
             &::before {
                 display: inline-block;
@@ -134,8 +158,6 @@ class OurServices extends React.Component {
                                 <AnimationContainer animation="fadeInLeft" delay={200}>
                                     <ServiceElement>
                                         <ServiceIcon>
-                                            {/* <img src={this.props.mobile.childImageSharp.fluid.src} alt="Mobile App Development" />
-                                                      */}
                                             <img src={mobimage} alt="Mobile App Development" />
                                         </ServiceIcon>
                                         <ServiceHeading>
@@ -147,13 +169,13 @@ class OurServices extends React.Component {
                                             <Navbar.Collapse className="readmore_col" id="basic-navbar-nav">
                                                 <ServiceList>
                                                     <ServiceListElement>
-                                                        Lorem ipsum dolor sit amet
+                                                        End to end develop Android/IOS apps
                                                     </ServiceListElement>
                                                     <ServiceListElement>
-                                                        In vitae ultricies lacus vitae
+                                                        Dart, Flutter, DevOps, ReactNative
                                                     </ServiceListElement>
                                                     <ServiceListElement>
-                                                        Pellentesque blandit libero
+                                                        Agile and Linear Development
                                                     </ServiceListElement>
                                                 </ServiceList>
                                             </Navbar.Collapse>
@@ -165,7 +187,6 @@ class OurServices extends React.Component {
                                 <AnimationContainer animation="fadeInRight" delay={600}>
                                     <ServiceElement>
                                         <ServiceIcon>
-                                            {/* <img src={this.props.email.childImageSharp.fluid.src} alt="Mobile App Development" /> */}
                                             <img src={emailimage} alt="Email Marketing" />
                                         </ServiceIcon>
                                         <ServiceHeading>
@@ -177,13 +198,13 @@ class OurServices extends React.Component {
                                             <Navbar.Collapse className="readmore_col" id="basic-navbar-nav">
                                                 <ServiceList>
                                                     <ServiceListElement>
-                                                        Lorem ipsum dolor sit amet
+                                                        Custom E-commerce Development
                                                     </ServiceListElement>
                                                     <ServiceListElement>
-                                                        In vitae ultricies lacus vitae
+                                                        Amazon and DropShipping Services
                                                     </ServiceListElement>
                                                     <ServiceListElement>
-                                                        Pellentesque blandit libero
+                                                        Business Performance Optimization
                                                     </ServiceListElement>
                                                 </ServiceList>
                                             </Navbar.Collapse>
@@ -195,11 +216,10 @@ class OurServices extends React.Component {
                                 <AnimationContainer animation="fadeInDown" delay={400}>
                                     <ServiceElement>
                                         <ServiceIcon>
-                                            {/* <img src={this.props.web.childImageSharp.fluid.src} alt="Mobile App Development" /> */}
                                             <img src={webimage} alt="Web Development" />
                                         </ServiceIcon>
                                         <ServiceHeading>
-                                            Web  Development
+                                            Website Development
                                         </ServiceHeading>
                                         <ServiceSeparator />
                                         <Navbar className="readmore_con" expand="lg">
@@ -207,13 +227,13 @@ class OurServices extends React.Component {
                                             <Navbar.Collapse className="readmore_col" id="basic-navbar-nav">
                                                 <ServiceList>
                                                     <ServiceListElement>
-                                                        Lorem ipsum dolor sit amet
+                                                        WordPress, Shopify, Magento
                                                     </ServiceListElement>
                                                     <ServiceListElement>
-                                                        In vitae ultricies lacus vitae
+                                                        JS, Laravel and PHP Web Development
                                                     </ServiceListElement>
                                                     <ServiceListElement>
-                                                        Pellentesque blandit libero
+                                                        Responsive, UserFriendly Cross-Platform
                                                     </ServiceListElement>
                                                 </ServiceList>
                                             </Navbar.Collapse>
@@ -225,7 +245,6 @@ class OurServices extends React.Component {
                                 <AnimationContainer animation="fadeInLeft" delay={800}>
                                     <ServiceElement>
                                         <ServiceIcon>
-                                            {/* <img src={this.props.seo.childImageSharp.fluid.src} alt="Mobile App Development" /> */}
                                             <img src={seoimage} alt="seo experts" />
                                         </ServiceIcon>
                                         <ServiceHeading>
@@ -237,13 +256,13 @@ class OurServices extends React.Component {
                                             <Navbar.Collapse className="readmore_col" id="basic-navbar-nav">
                                                 <ServiceList>
                                                     <ServiceListElement>
-                                                        Lorem ipsum dolor sit amet
+                                                        Link Building and Speed Optimization
                                                     </ServiceListElement>
                                                     <ServiceListElement>
-                                                        In vitae ultricies lacus vitae
+                                                        Content Optimization
                                                     </ServiceListElement>
                                                     <ServiceListElement>
-                                                        Pellentesque blandit libero
+                                                        Complete Keyword Analysis 
                                                     </ServiceListElement>
                                                 </ServiceList>
                                             </Navbar.Collapse>
@@ -255,7 +274,6 @@ class OurServices extends React.Component {
                                 <AnimationContainer animation="fadeInUp" delay={1000}>
                                     <ServiceElement>
                                         <ServiceIcon>
-                                            {/* <img src={this.props.network.childImageSharp.fluid.src} alt="Mobile App Development" /> */}
                                             <img src={networkimage} alt="Network Management" />
                                         </ServiceIcon>
                                         <ServiceHeading>
@@ -267,13 +285,13 @@ class OurServices extends React.Component {
                                             <Navbar.Collapse className="readmore_col" id="basic-navbar-nav">
                                                 <ServiceList>
                                                     <ServiceListElement>
-                                                        Lorem ipsum dolor sit amet
+                                                        Develop and Modify Your Application
                                                     </ServiceListElement>
                                                     <ServiceListElement>
-                                                        In vitae ultricies lacus vitae
+                                                        Software Testing and Management
                                                     </ServiceListElement>
                                                     <ServiceListElement>
-                                                        Pellentesque blandit libero
+                                                        Advance Custom Development
                                                     </ServiceListElement>
                                                 </ServiceList>
                                             </Navbar.Collapse>
@@ -285,7 +303,6 @@ class OurServices extends React.Component {
                                 <AnimationContainer animation="fadeInRight" delay={1200}>
                                     <ServiceElement>
                                         <ServiceIcon>
-                                            {/* <img src={this.props.ui.childImageSharp.fluid.src} alt="Mobile App Development" /> */}
                                             <img src={sketchimage} alt="UI/UX Development" />
                                         </ServiceIcon>
                                         <ServiceHeading>
@@ -297,13 +314,13 @@ class OurServices extends React.Component {
                                             <Navbar.Collapse className="readmore_col" id="basic-navbar-nav">
                                                 <ServiceList>
                                                     <ServiceListElement>
-                                                        Lorem ipsum dolor sit amet
+                                                        Corporate and Animated Videos
                                                     </ServiceListElement>
                                                     <ServiceListElement>
-                                                        In vitae ultricies lacus vitae
+                                                        3D Creature and Character Animation 
                                                     </ServiceListElement>
                                                     <ServiceListElement>
-                                                        Pellentesque blandit libero
+                                                        Commercial and Visual Effects
                                                     </ServiceListElement>
                                                 </ServiceList>
                                             </Navbar.Collapse>

@@ -20,7 +20,6 @@ class OurSpecialization extends React.Component {
             overflow: hidden;
             background-image: url(${servicebackgroundimage});
             background-size: cover;
-            // background-repeat: no-repeat;
             .heading {
                 width: 100%;
             }
@@ -28,9 +27,10 @@ class OurSpecialization extends React.Component {
         `
 
         const ServiceContainer = styled.div`
-            // background-color: rgba(0,0,0,.9);
-            // background-color: #fff;
             padding: 100px 0;
+            @media (max-width:992px) {
+                padding: 50px 0;
+            }
             @media (max-width:767px) {
                 padding: 20px 0;
             }
@@ -56,7 +56,7 @@ class OurSpecialization extends React.Component {
                                     <div className="special_separator"></div>
                                     <p className="special_text">It is a tool on your web that will help create content and also manage information on your site's webpage, mainly when dealing with huge audiences around the world. Open content refers to the work that other people can modify or copy while attributing content to the original creator but without necessarily having to seek permission. Through our web creation services, you can be sure to access the CMS services.</p>
                                 </div>
-                            </Col>
+                            </Col> 
                             <Col md={12} className="special_div">
                                 <div className="special_img_div"><img className="special_img" src={digimark} alt="Custom Business" /> </div>
                                 <div className="special_text_div">

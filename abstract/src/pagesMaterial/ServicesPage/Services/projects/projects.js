@@ -222,6 +222,11 @@ class Projects extends React.Component {
         color: #fff;
         font-weight: 600;
         font-size: 25px;
+        @media (max-width:767px) {
+            color: #013567;
+            font-weight: 500;
+            font-size: 20px;
+        }
         @media (max-width:600px) {
             color: #013567;
             font-weight: 500;
@@ -234,6 +239,11 @@ class Projects extends React.Component {
         font-size: 20px;
         font-weight: 400;
         text-transform: uppercase;
+        @media (max-width:767px) {
+            color: #f6b10a;
+            font-size: 18px;
+            font-weight: 400;
+        }
         @media (max-width:600px) {
             color: #013567;
             font-size: 15px;
@@ -318,10 +328,28 @@ class Projects extends React.Component {
             swipe: true,
             responsive: [
                 {
-                    breakpoint: 600,
+                    breakpoint: 992,
                     settings: {
                         centerPadding: "80px",
                         slidesToShow: 2,
+                        slidesToScroll: 1,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        centerPadding: "80px",
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        centerPadding: "150px",
+                        slidesToShow: 1,
                         slidesToScroll: 1,
                         arrows: false,
                     }
@@ -394,56 +422,9 @@ class Projects extends React.Component {
                                                     </div>
                                                 </div>
                                             </div>
-                                            // <Col md={4} key={i}>
-                                            //     <a href={v.link} target="_blank" rel="noopener noreferrer" id={v.id}>
-                                            //         <Item>
-                                            //             <ProjectImg src={v.image} alt={v.title} />
-                                            //             <MobileContent>
-                                            //                 <Text>
-                                            //                     <Heading>{v.title}</Heading>
-                                            //                     <SubHeading>{v.category}</SubHeading>
-                                            //                 </Text>
-                                            //             </MobileContent>
-                                            //         </Item>
-                                            //     </a>
-                                            // </Col>
                                         )
                                     })}
                                 </Slider>
-                                {/* <div className="client_review_col">
-                                    <div className="client_info_div">
-                                        <div className="client_Project_Name_div">
-                                            <p className="client_Project_Name">The Beauty Stock</p>
-                                            <p className="client_review_date">february 19, 2020</p>
-                                            <p className="client_get_service">E-Commerce</p>
-                                        </div>
-                                        <div className="client_project_logo_div">
-                                            <img className="client_project_logo" src={servicebackgroundimage} alt="atriom" />
-                                        </div>
-                                    </div>
-                                    <div className="client_review_detail">
-                                        <p className="review">One figure says it all: 128% average increase in revenue within 2 months of working with AMG. What more can you ask for? If you want to know your Google account is being managed to its full potential, AdVenture Media Group is the only option. Truly the best of the best Google Ad management available anywhere. We've been with AMG now for almost 1 year and since bringing them onboard, average revenue is up 128% consistently month to month. Easily the best investment we've made.</p>
-                                    </div>
-                                    <div className="client_info_div">
-                                        <div className="client_img_div">
-                                            <img className="client_img" src={ClientImg} alt="atriom" />
-                                        </div>
-                                        <div className="client_Name_div">
-                                            <p className="client_Name_p">Muhammad Kashan Aftab</p>
-                                            <p className="client_Name_p2">
-                                                <FontAwesomeIcon className="reviewIconStar" icon={faStar} />
-                                                <FontAwesomeIcon className="reviewIconStar" icon={faStar} />
-                                                <FontAwesomeIcon className="reviewIconStar" icon={faStar} />
-                                                <FontAwesomeIcon className="reviewIconStar" icon={faStar} />
-                                                <FontAwesomeIcon className="reviewIconStar" icon={faStar} />
-                                            </p>
-                                            <p className="client_status">CEO</p>
-                                        </div>
-                                        <div className="client_Project_visit_div">
-                                            <a className="visit_project_btn" href="/">Visit Project</a>
-                                        </div>
-                                    </div>
-                                </div> */}
                             </Col>
                             <Col md={2} sm={12} xs={12}></Col>
                         </Row>

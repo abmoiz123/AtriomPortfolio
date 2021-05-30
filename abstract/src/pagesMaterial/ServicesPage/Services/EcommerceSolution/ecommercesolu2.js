@@ -58,7 +58,7 @@ class Ecommercesolu2 extends React.Component {
                     <Container>
                         <AnimatedHeading text="E-Commerce Solutions" />
                         <Row className="services_inside_row">
-                            <Col className="serviceinsdie_text_col" lg={6} md={6} sm={12} xs={12}>
+                            <Col className="serviceinsdie_text_col" lg={6} md={12} sm={12} xs={12}>
                                 <AnimationContainer animation="fadeInLeft" delay={800}>
                                     <div className="serviceinsdie_text_div">
                                         <h4 className="service_heading_style">Managed E-Commerce Solutions</h4>
@@ -85,7 +85,7 @@ class Ecommercesolu2 extends React.Component {
                                     </li>
                                 </ul> */}
                             </Col>
-                            <Col className="animationcol" lg={6} md={6} sm={12} xs={12}>
+                            <Col className="animationcol" lg={6} md={12} sm={12} xs={12}>
                                 <AnimationContainer animation="fadeInRight" delay={800}>
                                     <div className="tabletanimation">
                                         <div className="animated_tablet_inside_div">
@@ -120,7 +120,7 @@ class Ecommercesolu2 extends React.Component {
                             </Col>
                         </Row>
                         <Row>
-                            <Col className="animationcol" lg={6} md={6} sm={12} xs={12}>
+                            <Col className="animationcol" lg={6} md={12} sm={12} xs={12}>
                                 <div className="div_1_for_slide">
                                     <AnimationContainer animation="fadeInUp" delay={1000}>
                                         <img className="image_1_for_slide" src={image1} alt="e-commerce" />
@@ -132,7 +132,7 @@ class Ecommercesolu2 extends React.Component {
                                     </AnimationContainer>
                                 </div>
                             </Col>
-                            <Col className="serviceinsdie_text_col_2" lg={6} md={6} sm={12} xs={12}>
+                            <Col className="serviceinsdie_text_col_2" lg={6} md={12} sm={12} xs={12}>
                                 <AnimationContainer animation="fadeInRight" delay={800}>
                                     <div className="serviceinsdie_text_div">
                                         <h4 className="service_heading_style">Managed E-Commerce Solutions</h4>
@@ -144,7 +144,7 @@ class Ecommercesolu2 extends React.Component {
                             </Col>
                         </Row>
                         <Row className="services_inside_row">
-                            <Col className="serviceinsdie_text_col" lg={6} md={6} sm={12} xs={12}>
+                            <Col className="serviceinsdie_text_col" lg={6} md={12} sm={12} xs={12}>
                                 <AnimationContainer animation="fadeInLeft" delay={800}>
                                     <div className="serviceinsdie_text_div">
                                         <h4 className="service_heading_style">Managed E-Commerce Solutions</h4>
@@ -154,14 +154,14 @@ class Ecommercesolu2 extends React.Component {
                                     </div>
                                 </AnimationContainer>
                             </Col>
-                            <Col className="animationcol" lg={6} md={6} sm={12} xs={12}>
+                            <Col className="animationcol" lg={6} md={12} sm={12} xs={12}>
                                 <AnimationContainer animation="fadeInUp" delay={1000}>
                                     <img className="image_3_for_slide" src={addtocart} alt="e-commerce" />
                                 </AnimationContainer>
                             </Col>
                         </Row>
                         <Row>
-                            <Col className="animationcol" lg={6} md={6} sm={12} xs={12}>
+                            <Col className="animationcol" lg={6} md={12} sm={12} xs={12}>
                                 <AnimationContainer animation="fadeInRight" delay={1000}>
                                     <img className="image_3_for_slide" src={phone} alt="e-commerce" />
                                 </AnimationContainer>
@@ -169,7 +169,7 @@ class Ecommercesolu2 extends React.Component {
                                     <img className="image_4_for_slide" src={phone2} alt="e-commerce" />
                                 </AnimationContainer>
                             </Col>
-                            <Col className="serviceinsdie_text_col" lg={6} md={6} sm={12} xs={12}>
+                            <Col className="serviceinsdie_text_col_end" lg={6} md={12} sm={12} xs={12}>
                                 <AnimationContainer animation="fadeInLeft" delay={800}>
                                     <div className="serviceinsdie_text_div">
                                         <h4 className="service_heading_style">Managed E-Commerce Solutions</h4>

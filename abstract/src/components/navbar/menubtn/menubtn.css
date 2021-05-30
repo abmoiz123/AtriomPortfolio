@@ -100,7 +100,6 @@
     line-height: 20px;
     padding: 10px;
     text-transform: uppercase;
-    /* background-color: #fadb2a; */
     display: block;
     transition: 1s;
     margin: 5px 0px;
@@ -114,25 +113,34 @@
 }
 @media only screen and (max-width: 767px) {
     .open .menu {
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        z-index: 100;
-        width: 60px;
-        height: 60px;
-        background: #f6b10a;
-        border-radius: 50% 50% 50% 50%;
-        -webkit-transition: .5s ease-in-out;
-        transition: .5s ease-in-out;
-        -webkit-box-shadow: 0 0 0 0 #013567, 0 0 0 0 #013567;
-          box-shadow: 0 0 0 0 #013567, 0 0 0 0 #013567;
-        cursor: pointer;
-      }
+        top: 5px;
+    }
+
+    .open .menu_ul {
+        width: 230px;
+        top: 95%;
+    }
+}
+@media only screen and (max-width: 576px) {
     .open .menu {
+        top: 2px;
+    } 
+    .open .menu_input:checked + .menu {
+      box-shadow: 0 0 0 10vw #00468b, 0 10vh 0 60vh #00468b;
+      border-radius: 50%;
+      opacity: 0.9;
+    }
+    .open .menu_ul {
+      top: 80px;
+      right: 5%;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .open .menu {
+        top: 1px;
         width: 50px;
         height: 50px;
-      }
-      
+    }
     .open .hamburger {
         position: relative;
         top: 49%;
@@ -141,49 +149,12 @@
         height: 2px;
     }
     .open .menu_input:checked + .menu {
-      box-shadow: 0 0 0 10vw #00468b, 0 20vh 0 50vh #00468b;
+      box-shadow: 0 0 0 10vw #00468b, 0 10vh 0 60vh #00468b;
       border-radius: 50%;
       opacity: 0.9;
     }
-
     .open .menu_ul {
-        z-index: 200;
-        position: absolute;
-        width: 230px;
-        top: 95%;
-        right: 10%;
-        overflow: auto;
-        text-align: center;
-        opacity: 0;
-        list-style-type: none;
-        -webkit-transition: .25s 0s ease-in-out;
-        transition: .25s 0s ease-in-out;
-    }
-    .menu_li {
-        float: right;
-        width: 100%;
-    }
-    .menu_li_a {
-        float: right;
-        width: 100px;
-        color: white;
-        font-weight: bold;
-        line-height: 20px;
-        padding: 6px;
-        font-size: small;
-        display: block;
-        transition: 1s;
-        margin: 3px 0px;
-    }
-    .menu_li_a:hover {
-        background-color: #fadb2a;
-        text-decoration: none;
-        width: 100%;
-        font-size: medium;
-        color: #013567;
+      top: 80px;
+      right: 15%;
     }
 }
-
-/* * {
-    border: 1px solid;
-} */

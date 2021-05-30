@@ -60,27 +60,17 @@ class Navbar extends React.Component {
             z-index: 50;
             width: 100%;
             padding: 15px 30px;
-            @media (max-width: 767px) {
-                padding: 10px 20px;
+            @media (max-width: 992px) {
+                padding: 10px 30px;
             }
-            // z-index: 100;
-            // &.sticky {
-            //     position: fixed;
-            //     background-color: rgb(0,53,105);
-            //     padding: 0 0;
-            //     @media (max-width: 500px) {
-            //         padding: 20px 0;
-            //     }
-            // }
+            @media (max-width: 400px) {
+                padding: 10px 15px;
+            }
         `
 
         const NavbarContainer = styled.div`
             display: flex;
             position: relative;
-            @media (max-width: 500px) {
-                display: block;
-                padding: 0;
-            }
             
         `
 
@@ -90,20 +80,26 @@ class Navbar extends React.Component {
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            @media (max-width: 767px) {
-                flex: 0 0 100%;
-                max-width: 100%;
-                // justify-content: center;
+            @media (max-width: 576px) {
+                flex: 0 0 40%;
+                max-width: 40%;
             }
+            @media (max-width: 400px) {
+                flex: 0 0 45%;
+                max-width: 45%;
+            }   
         `
 
         const Logo = styled.img`
-            height: 100%;
-            @media (max-width: 1023px) {
-                height: 80%;
+            height: auto !important;
+            width: 100%;
+            @media (max-width: 576px) {
+                height: auto !important;
+                width: 100%;
             }
-            @media (max-width: 767px) {
-                height: 50px;
+            @media (max-width: 576px) {
+                height: auto !important;
+                width: 100%;
             }
         `
         

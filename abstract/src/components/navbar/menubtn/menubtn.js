@@ -23,9 +23,9 @@ function MenuComponent() {
                     <li className="menu_li">
                         <a href='/Portfolio' className="menu_li_a">Portfolio</a>
                     </li>
-                    <li className="menu_li">
+                    {/* <li className="menu_li">
                         <a href='/Team' className="menu_li_a">Team</a>
-                    </li>
+                    </li> */}
                     <li className="menu_li">
                         <a href='/Clients' className="menu_li_a">Clients</a>
                     </li>

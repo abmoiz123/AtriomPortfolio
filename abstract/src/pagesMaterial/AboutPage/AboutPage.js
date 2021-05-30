@@ -97,21 +97,22 @@ class AboutPage extends React.Component {
         `
 
         const ServiceCol = styled(Col)`
-            // overflow: scroll;
             padding: 0;
             border-right: #444;
             &.no-border {
                 border-right: none;
             }
-            @media (max-width:500px) {
-                border-right:none;
+            @media (max-width:767px) {
+                margin: 20px auto 20px auto;
             }
+            @media (max-width:576px) {
+                border-right:none;
+                margin: 20px 15px;            }
         `
 
         const Service = styled.div`
-            height: 350px;
-            min-height: 350px;
-            // background-color: #111;
+            height: fit-content;
+            // min-height: 350px;
             background-color: #00468b;
             transition: .2s;
             display: flex;
@@ -120,8 +121,9 @@ class AboutPage extends React.Component {
             box-shadow: 0px 20px 30px rgb(255,255,255,.2);
             &:hover {
                 box-shadow: 0 28px 50px rgb(255,255,255,.5);
-                // background-color: #013567;
-                // opacity: 0.7;
+            }
+            @media (max-width:767px) {
+                border-radius: 30px;
             }
         `
         const ServiceContent = styled.div`
@@ -131,6 +133,9 @@ class AboutPage extends React.Component {
                 font-size: 14px;
                 font-weight: 300;
                 color: #efefef;
+            }
+            @media (max-width:992px) {
+                padding: 20px;
             }
         `
         const ServiceHeading = styled.h4`
@@ -152,6 +157,9 @@ class AboutPage extends React.Component {
             img {
                 max-height: 80px;
             }
+            @media (max-width:767px) {
+                margin-bottom: 0px;
+            }
         `
 
         const ServiceText = styled.p`
@@ -159,6 +167,10 @@ class AboutPage extends React.Component {
             font-size: 14px;
             font-weight: 300;
             color: #c5c5c5;
+            @media (max-width:992px) {
+                padding: 0px;
+                margin: 0px;
+            } 
             @media (max-width:767px) {
                 font-size: 11px !important;
             } 
@@ -179,7 +191,7 @@ class AboutPage extends React.Component {
                 <BottomContent>
                     <Container>
                         <Row>
-                            <ServiceCol md={6} style={{ borderRight: this.state.width > 500 ? "1px solid #444" : "none" }}>
+                            <ServiceCol md={6} style={{ borderRight: this.state.width > 767 ? "1px solid #444" : "none" }}>
                                 <Service>
                                     <ServiceContent>
                                         <ServiceIcon>
@@ -188,12 +200,12 @@ class AboutPage extends React.Component {
                                         <ServiceHeading>Misson Statement</ServiceHeading>
                                         <ServiceSeparator />
                                         <ServiceText>
-                                            a creative IT firm, we at Atriom Technologies has the motives to deliver innovative solutions that would allow you to achieve your goals and even surpass them, as well as will help you to gain visibility for your business. we at atriom understand the customer's point of view and treat those in a friendly manner while providing an environment that will ensure we leave a great impression.
-                                            </ServiceText>
+                                            a creative IT firm, we at Atriom Technologies has the motives to deliver innovative solutions that would allow you to achieve your goals and even surpass them, as well as will help you to gain visibility for your business.
+                                        </ServiceText>
                                     </ServiceContent>
                                 </Service>
                             </ServiceCol>
-                            <ServiceCol md={6} style={{ borderRight: this.state.width > 500 ? "1px solid #444" : "none" }}>
+                            <ServiceCol md={6} style={{ borderRight: this.state.width > 767 ? "1px solid #444" : "none" }}>
                                 <Service>
                                     <ServiceContent>
                                         <ServiceIcon>
